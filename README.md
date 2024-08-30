@@ -1,3 +1,23 @@
+# Monte's fork of RULER for Nexus
+
+## Getting Started
+1. Create conda environment for RULER:
+    ```
+    conda env create -f conda_ruler.yml
+    conda activate ruler
+    ```
+2. Confirm environment works by running a tiny Needle In A Haystack task with a single example:
+    ```
+    srun --pty --gres=gpu:rtxa5000:1 bash
+    python run.py
+    ```
+
+
+
+Original README:
+
+---------
+
 # 📏 RULER: What’s the Real Context Size of Your Long-Context Language Models?
 
 This repository contains code for our paper [RULER: What’s the Real Context Size of Your Long-Context Language Models](https://arxiv.org/abs/2404.06654). RULER generates synthetic examples to evaluate long-context language models with configurable sequence length and task complexity. We benchmark 17 open-source models across 4 task categories (in total 13 tasks) in RULER, evaluating long-context capabilities beyond simple in-context recall. Here are our main results.
