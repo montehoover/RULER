@@ -232,6 +232,7 @@ def main():
 
     # Load data
     if os.path.exists(pred_file):
+        print(f"pred file exists: {pred_file}")
         pred_index = [sample['index'] for sample in read_manifest(pred_file)]
         data = [sample for sample in read_manifest(task_file) if sample['index'] not in pred_index]
     else:
@@ -244,14 +245,14 @@ def main():
         nonlocal llm
 
         while True:
-            print("In processing loop")
+            # print("In processing loop")
             try:
                 pred_list = llm.process_batch(prompts=input_list)
                 break
             except Exception as e:
                 traceback.print_exc()
 
-        print("exited processing loop")
+        # print("exited processing loop")
         zipped_iter = zip(pred_list, idx_list, index_list, input_list,
                           outputs_list, others_list, truncation_list, length_list)
 
