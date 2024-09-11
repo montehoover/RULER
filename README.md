@@ -1,6 +1,6 @@
 # Monte's fork of RULER for Nexus
 
-## Getting Started
+## Getting started
 1. Create conda environment for RULER:
     ```
     conda env create -f conda_ruler.yml
@@ -9,11 +9,22 @@
 2. Confirm environment works by running a tiny Needle In A Haystack task with a single example:
     ```
     srun --pty --gres=gpu:rtxa5000:1 bash
-    python run.py
+    python run.py --tasks niah_single_1 --num_samples 1 --num_tokens 4096
     ```
 
-
-
+## Running entire benchmark
+1. Download data
+    ```
+    cd scripts/data/synthetic/json/
+    python download_paulgraham_essay.py
+    bash download_qa_dataset.sh
+    ```
+2. Run all tasks
+    ```
+    python run.py --tasks all
+    ```
+    
+<br>
 Original README:
 
 ---------
