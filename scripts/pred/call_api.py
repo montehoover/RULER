@@ -44,6 +44,13 @@ from pathlib import Path
 import traceback
 from nemo.collections.asr.parts.utils.manifest_utils import read_manifest
 
+# Local import of model_wrappers.py and client_wrappers.py:
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+import model_wrappers
+import client_wrappers
+
+
+
 SERVER_TYPES = (
     'trtllm',
     'vllm',
@@ -59,43 +66,51 @@ class ServerAction(argparse.Action):
     def __call__(self, parser, namespace, values, option_string=None):
         namespace.server_type = values
 
+def parse_args(manual_args=None):
+    parser = argparse.ArgumentParser()
+    # Data
+    parser.add_argument("--data_dir", type=Path, required=True, help='path to load the dataset jsonl files')
+    parser.add_argument("--save_dir", type=Path, required=True, help='path to save the prediction jsonl files')
+    parser.add_argument("--benchmark", type=str, default='synthetic', help='Options: [synthetic]')
+    parser.add_argument("--task", type=str, required=True, help='Options: tasks in benchmark')
+    parser.add_argument("--subset", type=str, default='validation', help='Options: validation or test')
+    parser.add_argument("--chunk_idx", type=int, default=0, help='index of current split chunk')
+    parser.add_argument("--chunk_amount", type=int, default=1, help='size of split chunk')
 
-parser = argparse.ArgumentParser()
-# Data
-parser.add_argument("--data_dir", type=Path, required=True, help='path to load the dataset jsonl files')
-parser.add_argument("--save_dir", type=Path, required=True, help='path to save the prediction jsonl files')
-parser.add_argument("--benchmark", type=str, default='synthetic', help='Options: [synthetic]')
-parser.add_argument("--task", type=str, required=True, help='Options: tasks in benchmark')
-parser.add_argument("--subset", type=str, default='validation', help='Options: validation or test')
-parser.add_argument("--chunk_idx", type=int, default=0, help='index of current split chunk')
-parser.add_argument("--chunk_amount", type=int, default=1, help='size of split chunk')
+    # Server
+    parser.add_argument("--server_type", default='nemo', action=ServerAction, choices=SERVER_TYPES)
+    parser.add_argument("--server_host", type=str, default='127.0.0.1')
+    parser.add_argument("--server_port", type=str, default='5000')
+    parser.add_argument("--ssh_server", type=str)
+    parser.add_argument("--ssh_key_path", type=str)
+    parser.add_argument("--model_name_or_path", type=str, default='gpt-3.5-turbo', 
+                        help='supported models from OpenAI or HF (provide a key or a local path to the checkpoint)')
 
-# Server
-parser.add_argument("--server_type", default='nemo', action=ServerAction, choices=SERVER_TYPES)
-parser.add_argument("--server_host", type=str, default='127.0.0.1')
-parser.add_argument("--server_port", type=str, default='5000')
-parser.add_argument("--ssh_server", type=str)
-parser.add_argument("--ssh_key_path", type=str)
-parser.add_argument("--model_name_or_path", type=str, default='gpt-3.5-turbo', 
-                    help='supported models from OpenAI or HF (provide a key or a local path to the checkpoint)')
+    # Inference
+    parser.add_argument("--temperature", type=float, default=1.0)
+    parser.add_argument("--top_k", type=int, default=32)
+    parser.add_argument("--top_p", type=float, default=1.0)
+    parser.add_argument("--random_seed", type=int, default=0)
+    parser.add_argument("--stop_words", type=str, default='')
+    parser.add_argument("--sliding_window_size", type=int)
+    parser.add_argument("--threads", type=int, default=4)
+    parser.add_argument("--batch_size", type=int, default=1)
 
-# Inference
-parser.add_argument("--temperature", type=float, default=1.0)
-parser.add_argument("--top_k", type=int, default=32)
-parser.add_argument("--top_p", type=float, default=1.0)
-parser.add_argument("--random_seed", type=int, default=0)
-parser.add_argument("--stop_words", type=str, default='')
-parser.add_argument("--sliding_window_size", type=int)
-parser.add_argument("--threads", type=int, default=4)
-parser.add_argument("--batch_size", type=int, default=1)
+    if manual_args is None:
+        args = parser.parse_args()
+    else:
+        default_args = {k.lstrip("-"): v.default for k, v in parser._option_string_actions.items() if v.default is not None}
+        # Combine default arguments with manual arguments in a dictionary so that manual args overwrite default args
+        args = argparse.Namespace(**{**default_args, **manual_args})
 
-args = parser.parse_args()
-args.stop_words = list(filter(None, args.stop_words.split(',')))
-if args.server_type == 'hf' or args.server_type == 'gemini':
-    args.threads = 1
+    args.stop_words = list(filter(None, args.stop_words.split(',')))
+    if args.server_type == 'hf' or args.server_type == 'gemini':
+        args.threads = 1
+    
+    return args
 
 
-def get_llm(tokens_to_generate):
+def get_llm(tokens_to_generate, args):
     if args.server_type == 'trtllm':
         from client_wrappers import TRTLLMClient
         llm = TRTLLMClient(
@@ -199,7 +214,8 @@ def get_llm(tokens_to_generate):
     return llm
 
 
-def main():
+def main(manual_args=None):
+    args = parse_args(manual_args)
     start_time = time.time()
     
     curr_folder = os.path.dirname(os.path.abspath(__file__))
@@ -239,7 +255,7 @@ def main():
         data = read_manifest(task_file)
 
     # Load api
-    llm = get_llm(config['tokens_to_generate'])
+    llm = get_llm(config['tokens_to_generate'], args)
 
     def get_output(outputs_parallel, idx_list, index_list, input_list, outputs_list, others_list, truncation_list, length_list):
         nonlocal llm

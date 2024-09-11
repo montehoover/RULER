@@ -39,12 +39,25 @@ from pathlib import Path
 from tqdm import tqdm
 from collections import defaultdict
 from nemo.collections.asr.parts.utils.manifest_utils import read_manifest, write_manifest
+import sys
+# Local import of syntheic/eval_constants.py:
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+import synthetic.eval_constants
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--data_dir", type=str, required=True, help='path to the prediction jsonl files')
-parser.add_argument("--benchmark", type=str, default='synthetic', help='Options: [synthetic]')
-parser.add_argument("--verbose", type=int, default=0, help='how many lines you want to display.')
-args = parser.parse_args()
+def parse_args(manual_args=None):
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--data_dir", type=str, required=True, help='path to the prediction jsonl files')
+    parser.add_argument("--benchmark", type=str, default='synthetic', help='Options: [synthetic]')
+    parser.add_argument("--verbose", type=int, default=0, help='how many lines you want to display.')
+    
+    if manual_args is None:
+        args = parser.parse_args()
+    else:
+        default_args = {k.lstrip("-"): v.default for k, v in parser._option_string_actions.items() if v.default is not None}
+        # Combine default arguments with manual arguments in a dictionary so that manual args overwrite default args
+        args = argparse.Namespace(**{**default_args, **manual_args})
+    
+    return args
 
 
 def postprocess_pred(predict_str: str, task_config: dict):
@@ -113,7 +126,7 @@ def run_evaluation_per_task(task_config: dict, predictions_file: str, verbose: i
     return task_score, task_nulls, predicts, indices
 
 
-def write_evaluation(results: dict):
+def write_evaluation(results: dict, args):
     tasks = list(results.keys())
     score = [results[task]['score'] for task in tasks]
     nulls = [results[task]['nulls'] for task in tasks]
@@ -131,7 +144,7 @@ def write_evaluation(results: dict):
     print(f'\nSaved eval results to {output_file}')
 
 
-def write_submission(results: dict):
+def write_submission(results: dict, args):
     COLUMNS = ["Task", "ID", "Prediction"]
     dfs = pd.DataFrame(columns=COLUMNS, data=[])
     
@@ -166,13 +179,14 @@ def aggregate_chunk(folder):
         write_manifest(os.path.join(folder, f'{task}.jsonl'), lines)
 
 
-def main():
+def main(manual_args=None):
+    args = parse_args(manual_args)
     curr_folder = os.path.dirname(os.path.abspath(__file__))
     
     try:
-        module = importlib.import_module(f"{args.benchmark}.constants")
+        module = importlib.import_module(f"{args.benchmark}.eval_constants")
     except ImportError:
-        print(f"Module eval.{args.benchmark}.constants not found.")
+        print(f"Module eval.{args.benchmark}.eval_constants not found.")
 
     tasks_base = module.TASKS
     with open(os.path.join(curr_folder, f"../{args.benchmark}.yaml"), "r") as f:
@@ -215,8 +229,8 @@ def main():
         }
         
     # Write to csv
-    write_evaluation(eval_results)
-    write_submission(subm_results)
+    write_evaluation(eval_results, args)
+    write_submission(subm_results, args)
 
 if __name__ == '__main__':
     main()
