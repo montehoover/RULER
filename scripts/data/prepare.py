@@ -40,9 +40,6 @@ import time
 import math
 import yaml
 from pathlib import Path
-import sys
-# Local import of template.py:
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from template import Templates
 import nltk
 try:
@@ -50,33 +47,25 @@ try:
 except LookupError:
     nltk.download('punkt')
  
-def parse_args(manual_args=None):
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--save_dir", type=Path, required=True, help='dataset folder to save dataset')
-    parser.add_argument("--benchmark", type=str, default='synthetic', help='Options: [synthetic]')
-    parser.add_argument("--task", type=str, required=True, help='tasks in benchmark')
-    parser.add_argument("--subset", type=str, default='validation', help='Options: validation or test')
-    parser.add_argument("--tokenizer_path", type=str, required=True, help='path to the tokenizer model')
-    parser.add_argument("--tokenizer_type",  type=str, default='nemo', help='[Options] nemo, hf, openai.')
-    parser.add_argument("--max_seq_length", type=int, required=True, help='max sequence length including all input tokens and generated tokens.')
-    parser.add_argument("--num_samples", type=int, default=500, help='maximum number of samples we want to test')
-    parser.add_argument("--random_seed", type=int, default=42)
-    parser.add_argument("--model_template_type", type=str, default='base', help='Options in `template.py`')
-    parser.add_argument("--remove_newline_tab", action='store_true', help='remove `\n` and `\t` in all strings.')
-    parser.add_argument("--chunk_idx", type=int, default=0, help='index of current split chunk')
-    parser.add_argument("--chunk_amount", type=int, default=1, help='size of split chunk')
 
-    if manual_args is None:
-        args = parser.parse_args()
-    else:
-        default_args = {k.lstrip("-"): v.default for k, v in parser._option_string_actions.items() if v.default is not None}
-        # Combine default arguments with manual arguments in a dictionary so that manual args overwrite default args
-        args = argparse.Namespace(**{**default_args, **manual_args})
+parser = argparse.ArgumentParser()
+parser.add_argument("--save_dir", type=Path, required=True, help='dataset folder to save dataset')
+parser.add_argument("--benchmark", type=str, default='synthetic', help='Options: [synthetic]')
+parser.add_argument("--task", type=str, required=True, help='tasks in benchmark')
+parser.add_argument("--subset", type=str, default='validation', help='Options: validation or test')
+parser.add_argument("--tokenizer_path", type=str, required=True, help='path to the tokenizer model')
+parser.add_argument("--tokenizer_type",  type=str, default='nemo', help='[Options] nemo, hf, openai.')
+parser.add_argument("--max_seq_length", type=int, required=True, help='max sequence length including all input tokens and generated tokens.')
+parser.add_argument("--num_samples", type=int, default=500, help='maximum number of samples we want to test')
+parser.add_argument("--random_seed", type=int, default=42)
+parser.add_argument("--model_template_type", type=str, default='base', help='Options in `template.py`')
+parser.add_argument("--remove_newline_tab", action='store_true', help='remove `\n` and `\t` in all strings.')
+parser.add_argument("--chunk_idx", type=int, default=0, help='index of current split chunk')
+parser.add_argument("--chunk_amount", type=int, default=1, help='size of split chunk')
 
-    return args
+args = parser.parse_args()
 
-def main(manual_args=None):
-    args = parse_args(manual_args)
+def main():
     start_time = time.time()
     curr_folder = os.path.dirname(os.path.abspath(__file__))
     
