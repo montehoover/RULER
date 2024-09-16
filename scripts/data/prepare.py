@@ -46,6 +46,7 @@ try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
     nltk.download('punkt')
+    nltk.download('punkt_tab')
  
 
 parser = argparse.ArgumentParser()
