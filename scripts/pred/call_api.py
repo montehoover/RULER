@@ -69,8 +69,8 @@ class ServerAction(argparse.Action):
 def parse_args(manual_args=None):
     parser = argparse.ArgumentParser()
     # Data
-    parser.add_argument("--data_dir", type=str, required=True, help='path to load the dataset jsonl files')
-    parser.add_argument("--save_dir", type=str, required=True, help='path to save the prediction jsonl files')
+    parser.add_argument("--data_dir", type=Path, required=True, help='path to load the dataset jsonl files')
+    parser.add_argument("--save_dir", type=Path, required=True, help='path to save the prediction jsonl files')
     parser.add_argument("--benchmark", type=str, default='synthetic', help='Options: [synthetic]')
     parser.add_argument("--task", type=str, required=True, help='Options: tasks in benchmark')
     parser.add_argument("--subset", type=str, default='validation', help='Options: validation or test')
@@ -129,7 +129,6 @@ def get_llm(tokens_to_generate, args):
 
     elif args.server_type == 'vllm':
         from client_wrappers import VLLMClient
-        import vllm  # unused import, but helpful for early error detection if vllm is not installed
         llm = VLLMClient(
             server_host=args.server_host,
             server_port=args.server_port,
@@ -237,15 +236,15 @@ def main(manual_args=None):
     config = tasks_customized.get(args.task)
     config.update(tasks_base[config['task']])
 
-    task_file = f"{args.data_dir}/{args.task}/{args.subset}.jsonl"
+    task_file = args.data_dir / args.task / f'{args.subset}.jsonl'
     
     if args.chunk_amount > 1:
-        pred_file = f"{args.save_dir}/{args.task}-{args.chunk_idx}.jsonl"
+        pred_file = args.save_dir / f'{args.task}-{args.chunk_idx}.jsonl'
     else:
-        pred_file = f"{args.save_dir}/{args.task}.jsonl"
+        pred_file = args.save_dir / f'{args.task}.jsonl'
         
     print(f'Predict {args.task} \nfrom {task_file}\nto {pred_file}')
-    Path(pred_file).parent.mkdir(parents=True, exist_ok=True)
+    pred_file.parent.mkdir(parents=True, exist_ok=True)
 
     # Load data
     if os.path.exists(pred_file):

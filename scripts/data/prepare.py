@@ -49,11 +49,10 @@ try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
     nltk.download('punkt')
-    nltk.download('punkt_tab')
  
 def parse_args(manual_args=None):
     parser = argparse.ArgumentParser()
-    parser.add_argument("--save_dir", type=str, required=True, help='dataset folder to save dataset')
+    parser.add_argument("--save_dir", type=Path, required=True, help='dataset folder to save dataset')
     parser.add_argument("--benchmark", type=str, default='synthetic', help='Options: [synthetic]')
     parser.add_argument("--task", type=str, required=True, help='tasks in benchmark')
     parser.add_argument("--subset", type=str, default='validation', help='Options: validation or test')
@@ -113,7 +112,7 @@ def main(manual_args=None):
     random_seed = 42 + args.chunk_idx
 
     
-    save_file = f"{args.save_dir}/{args.task}/{args.subset}.jsonl"
+    save_file = args.save_dir / args.task / f"{args.subset}.jsonl"
     file_exists = False
     if os.path.exists(save_file):
         with open(save_file, "r") as f:
