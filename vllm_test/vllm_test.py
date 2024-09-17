@@ -35,13 +35,21 @@ def main(args):
             #   load_format="bitsandbytes",
             #   dtype=torch.float16,
               )
-
-    outputs = llm.generate(prompts, sampling_params)
+    
+    # vllm_results:        
+    #     [ prompt1_result prompt2_result, ...]
+    # prompt1_result:
+    #     .prompt:  <input prompt string>
+    #     .outputs: [CompletionOutput] (only one completion object with greedy decoding)
+    # CompletionOutput:
+    #     .finish_reason: 'stop'
+    #     .text: <generated text string>
+    vllm_results = llm.generate(prompts, sampling_params)
 
     # Print the outputs.
-    for output in outputs:
-        prompt = output.prompt
-        generated_text = output.outputs[0].text
+    for result in vllm_results:
+        prompt = result.prompt
+        generated_text = result.outputs[0].text
         print(f"Prompt: {prompt!r}, Generated text: {generated_text!r}")
 
 

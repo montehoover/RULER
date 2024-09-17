@@ -9,8 +9,15 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Run RULER benchmark.")
 
     # Model choice stuff
-    parser.add_argument("--model_name", default="meta-llama/Llama-2-7b-chat-hf", type=str, help="Name of the model")
-    parser.add_argument("--framework", default="hf", type=str, help="Framework of the model", choices=["hf", "vllm"])
+    parser.add_argument("--model_name", default="meta-llama/Meta-Llama-3.1-8B-Instruct", type=str, help="Name of the model", choices=[
+        "meta-llama/Meta-Llama-3-8B-Instruct",
+        "meta-llama/Meta-Llama-3.1-8B-Instruct", 
+        "meta-llama/Llama-2-7b-chat-hf", 
+        "TinyLlama/TinyLlama-1.1B-Chat-v1.0", 
+        "gradientai/Llama-3-8B-Instruct-262k",
+        "gradientai/Llama-3-8B-Instruct-Gradient-1048k",
+        ])
+    parser.add_argument("--framework", default="hf", type=str, help="Framework of the model", choices=["hf", "local_vllm"])
     parser.add_argument("--tokenizer_type", default="hf", type=str, help="Type of the tokenizer")
     parser.add_argument("--model_template_type", default="meta-chat", type=str, help="Type of the model template", choices=["base", "meta-chat"])
     
