@@ -52,6 +52,7 @@ SERVER_TYPES = (
     'gemini',
     'hf',
     'mamba',
+    'local_vllm',
 )
 
 
@@ -191,6 +192,18 @@ def get_llm(tokens_to_generate):
             top_p=args.top_p,
             stop=args.stop_words,
             max_new_tokens=tokens_to_generate,
+        )
+    
+    elif args.server_type == 'local_vllm':
+        from model_wrappers import VllmModel
+        llm = VllmModel(
+            name_or_path=args.model_name_or_path,
+            repetition_penalty=1,
+            temperature=args.temperature,
+            top_k=args.top_k,
+            top_p=args.top_p,
+            stop=args.stop_words,
+            max_tokens=tokens_to_generate,
         )
         
     else:

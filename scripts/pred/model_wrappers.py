@@ -125,3 +125,18 @@ class MambaModel:
     def process_batch(self, prompts: List[str], **kwargs) -> List[dict]:
         # FIXME: naive implementation
         return [self.__call__(prompt, **kwargs) for prompt in prompts]
+
+class VllmModel:
+    def __init__(self, name_or_path: str, **generation_kwargs) -> None:
+        from vllm import LLM, SamplingParams
+        self.model = LLM(model=name_or_path)
+        self.sampling_params = SamplingParams(**generation_kwargs)
+
+    def __call__(self, prompt: str, **kwargs) -> dict:
+        return self.process_batch([prompt], **kwargs)[0]
+
+    def process_batch(self, prompts: List[str], **kwargs) -> List[dict]:
+        vllm_results = self.model.generate(prompts, self.sampling_params)
+        results = [{"text": result.outputs[0].text} for result in vllm_results]
+
+        return results
