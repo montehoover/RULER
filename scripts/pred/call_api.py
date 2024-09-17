@@ -70,6 +70,7 @@ parser.add_argument("--task", type=str, required=True, help='Options: tasks in b
 parser.add_argument("--subset", type=str, default='validation', help='Options: validation or test')
 parser.add_argument("--chunk_idx", type=int, default=0, help='index of current split chunk')
 parser.add_argument("--chunk_amount", type=int, default=1, help='size of split chunk')
+parser.add_argument("--num_tokens", type=int, default=4096, help='number of tokens expected in examples')
 
 # Server
 parser.add_argument("--server_type", default='nemo', action=ServerAction, choices=SERVER_TYPES)
@@ -198,6 +199,7 @@ def get_llm(tokens_to_generate):
         from model_wrappers import VllmModel
         llm = VllmModel(
             name_or_path=args.model_name_or_path,
+            max_model_len=args.num_tokens,
             repetition_penalty=1,
             temperature=args.temperature,
             top_k=args.top_k,

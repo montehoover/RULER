@@ -127,9 +127,9 @@ class MambaModel:
         return [self.__call__(prompt, **kwargs) for prompt in prompts]
 
 class VllmModel:
-    def __init__(self, name_or_path: str, **generation_kwargs) -> None:
+    def __init__(self, name_or_path: str, max_model_len: int, **generation_kwargs) -> None:
         from vllm import LLM, SamplingParams
-        self.model = LLM(model=name_or_path)
+        self.model = LLM(model=name_or_path, max_model_len=max_model_len)
         self.sampling_params = SamplingParams(**generation_kwargs)
 
     def __call__(self, prompt: str, **kwargs) -> dict:

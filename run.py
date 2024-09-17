@@ -103,6 +103,7 @@ def main():
             "--top_k", str(args.top_k),
             "--top_p", str(args.top_p),
             "--batch_size", str(args.batch_size),
+            "--num_tokens", str(args.num_tokens),
         ])
 
     subprocess.run([
