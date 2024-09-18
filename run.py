@@ -33,6 +33,7 @@ def parse_args():
     parser.add_argument("--temperature", default=0.0, type=float, help="Temperature for sampling. 0 corresponds to greedy decoding")
     parser.add_argument("--top_p", default=1.0, type=float, help="Top-p sampling")
     parser.add_argument("--top_k", default=1, type=int, help="Top-k sampling")
+    parser.add_argument("--save_kv_cache", action="store_true", help="Save the key-value cache for the model")
 
     args = parser.parse_args()
     return args
@@ -91,7 +92,7 @@ def main():
             "--num_samples", str(args.num_samples)
         ])
 
-        subprocess.run([
+        call_api = [
             "python", "scripts/pred/call_api.py",
             "--data_dir", data_dir,
             "--save_dir", pred_dir,
@@ -104,7 +105,10 @@ def main():
             "--top_p", str(args.top_p),
             "--batch_size", str(args.batch_size),
             "--num_tokens", str(args.num_tokens),
-        ])
+        ]
+        if args.save_kv_cache:
+            call_api.append("--save_kv_cache")
+        subprocess.run(call_api)
 
     subprocess.run([
         "python", "scripts/eval/evaluate.py",

@@ -90,6 +90,7 @@ parser.add_argument("--stop_words", type=str, default='')
 parser.add_argument("--sliding_window_size", type=int)
 parser.add_argument("--threads", type=int, default=4)
 parser.add_argument("--batch_size", type=int, default=1)
+parser.add_argument("--save_kv_cache", action="store_true", help="Save the key-value cache for the model")
 
 args = parser.parse_args()
 args.stop_words = list(filter(None, args.stop_words.split(',')))
@@ -318,9 +319,10 @@ def main():
         print(f"Total batches: {len(batched_data)}")
         for batch_idx, batch in tqdm(enumerate(batched_data), total=len(batched_data)):
             # Make directory to store kv_caches for each example (We set batch size to 1 so there is only one example in each batch)
-            kv_cache_dir = task_dir / f"example_{batch_idx}"
-            kv_cache_dir.mkdir(exist_ok=True)
-            os.chdir(kv_cache_dir)
+            if args.save_kv_cache:
+                kv_cache_dir = task_dir / f"example_{batch_idx}"
+                kv_cache_dir.mkdir(exist_ok=True)
+                os.chdir(kv_cache_dir)
 
             idx_list = [data_point['idx'] for data_point in batch]
             end_idx = idx_list[-1]  # the data in a batch is ordered
@@ -333,7 +335,6 @@ def main():
                     others_list=[data_point.get('others', {}) for data_point in batch],
                     truncation_list=[data_point.get('truncation', -1) for data_point in batch],
                     length_list=[data_point.get('length', -1) for data_point in batch],
-                    kv_cache_dir=kv_cache_dir,
                 )
             outputs_parallel = get_output(outputs_parallel, **kwargs)
             # print("begin threading")
