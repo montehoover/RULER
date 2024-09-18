@@ -365,5 +365,5 @@ dependencies:
       - youtokentome==1.0.6
       - zarr==2.18.2
       - zipp==3.20.0
-      - -e ../vllm       # - vllm==0.6.0
+      - -e ../vllm       # This causes pip to use your local fork of vllm. For a quick install of the official vllm, replace with "- vllm==0.6.0"
 
