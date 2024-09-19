@@ -23,7 +23,34 @@
     ```
     python run.py --tasks all
     ```
-    
+
+## Accelerating with vLLM
+vLLM allows us to do inference on context lengths that cause us to run out of GPU memory when using flash attention or sdpa with huggingface. With a Llama3-8b we can inference on lengths up to 40k on an A5000 and up to 215k on an A6000, each taking less than three minutes to do a full forward pass and generate a paragraph of text. Here are the instructions for using it:
+1. Look at [](conda_ruler_vllm.yml) and edit the last line of the file to be `- vllm==0.6.0`. (The file by default expects you to have a local fork of vllm, and we use that for saving KV caches (see below).)
+2. Create a conda environment from this file:
+   ```
+   conda env create -f conda_ruler_vllm.yml
+   conda activate vllm_ruler
+   ```
+3. Run something with long context:
+   ```
+   python run.py --framework local_vllm --num_tokens 32768
+   ```
+
+## Saving key, value caches for future runs
+1. Clone our fork of vLLM: [](https://github.com/montehoover/vllm)
+2. Look at the instructions in our vLLM repo for building, but instead of using that conda yaml file, use the yaml file here that combines vllm with ruler. Don't change the last line on the file. Unlike the instructions above, this will build the cuda kernels from scratch and takes about an hour. Execute the conda command within a many-cpu SLURM job for improved build time.
+   ```
+   conda env create -f conda_ruler_vllm.yml
+   conda activate vllm_ruler
+   ```
+5. Run with the save kv cache flag and look for caches in the output data folder:
+   ```
+   python run.py --framework local_vllm --save_kv_cache
+   ```
+
+
+
 <br>
 Original README:
 
