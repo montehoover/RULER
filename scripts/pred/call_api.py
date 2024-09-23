@@ -320,9 +320,10 @@ def main():
         for batch_idx, batch in tqdm(enumerate(batched_data), total=len(batched_data)):
             # Make directory to store kv_caches for each example (We set batch size to 1 so there is only one example in each batch)
             if args.save_kv_cache:
-                kv_cache_dir = task_dir / f"example_{batch_idx}"
-                kv_cache_dir.mkdir(exist_ok=True)
-                os.chdir(kv_cache_dir)
+                task_cache_dir = Path(f"/fs/cml-projects/llm-pretraining/topk/kv_caches/ruler/{args.num_tokens}/{args.task}")
+                example_cache_dir = task_cache_dir / f"example_{batch_idx}"
+                example_cache_dir.mkdir(exist_ok=True, parents=True)
+                os.chdir(example_cache_dir)
 
             idx_list = [data_point['idx'] for data_point in batch]
             end_idx = idx_list[-1]  # the data in a batch is ordered
