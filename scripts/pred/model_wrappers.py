@@ -20,7 +20,7 @@ from typing import Dict, List, Optional
 
 
 class HuggingFaceModel:
-    def __init__(self, name_or_path: str, **generation_kwargs) -> None:
+    def __init__(self, name_or_path: str, attn_implementation: str = "sdpa", topk: int = None, **generation_kwargs) -> None:
         from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 
         self.tokenizer = AutoTokenizer.from_pretrained(name_or_path, trust_remote_code=True)
@@ -28,21 +28,24 @@ class HuggingFaceModel:
         if 'Yarn-Llama' in name_or_path:
             model_kwargs = None
         else:
-            model_kwargs = {"attn_implementation": "flash_attention_2"}
+            model_kwargs = {"attn_implementation": attn_implementation}
+            if topk is not None:
+                model_kwargs["topk"] = topk
+                self.topk = topk
         
-        try:
-            self.pipeline = pipeline(
-                "text-generation",
-                model=name_or_path,
-                tokenizer=self.tokenizer,
-                trust_remote_code=True,
-                device_map="auto",
-                torch_dtype=torch.bfloat16,
-                model_kwargs=model_kwargs,
-            )
-        except:
-            self.pipeline = None
-            self.model = AutoModelForCausalLM.from_pretrained(name_or_path, trust_remote_code=True, device_map="auto", torch_dtype=torch.bfloat16,)
+        # try:
+        #     self.pipeline = pipeline(
+        #         "text-generation",
+        #         model=name_or_path,
+        #         tokenizer=self.tokenizer,
+        #         trust_remote_code=True,
+        #         device_map="auto",
+        #         torch_dtype=torch.bfloat16,
+        #         model_kwargs=model_kwargs,
+        #     )
+        # except:
+        self.pipeline = None
+        self.model = AutoModelForCausalLM.from_pretrained(name_or_path, trust_remote_code=True, device_map="auto", torch_dtype=torch.bfloat16, **model_kwargs)
             
         self.generation_kwargs = generation_kwargs
         self.stop = self.generation_kwargs.pop('stop')
@@ -57,13 +60,25 @@ class HuggingFaceModel:
     def __call__(self, prompt: str, **kwargs) -> dict:
         return self.process_batch([prompt], **kwargs)[0]
 
-    def process_batch(self, prompts: List[str], **kwargs) -> List[dict]:
+    def process_batch(self, prompts: List[str], faiss_cache=None, topk_k=None, **kwargs) -> List[dict]:
+        # kv_cache must be of type DynamicFaissCache
         if self.pipeline is None:
             inputs = self.tokenizer(prompts, return_tensors="pt", padding=True).to(self.model.device)
-            generated_ids = self.model.generate(
-                **inputs,
-                **self.generation_kwargs
-            )
+            if faiss_cache is not None:
+                input_ids = inputs["input_ids"]
+                generated_ids = self.model.generate(
+                    input_ids,
+                    use_cache=True,
+                    past_key_values=faiss_cache,
+                    topk_k=topk_k,
+                    query_mode=True,
+                    **self.generation_kwargs
+                )
+            else: 
+                generated_ids = self.model.generate(
+                    **inputs,
+                    **self.generation_kwargs
+                )
             generated_texts = self.tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
         else:
             output = self.pipeline(text_inputs=prompts, **self.generation_kwargs, )

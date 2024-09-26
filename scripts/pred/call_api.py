@@ -32,6 +32,7 @@ prediction jsonl:
 
 import argparse
 import json
+import torch
 import yaml
 import os
 import sys
@@ -72,7 +73,7 @@ parser.add_argument("--chunk_idx", type=int, default=0, help='index of current s
 parser.add_argument("--chunk_amount", type=int, default=1, help='size of split chunk')
 parser.add_argument("--num_tokens", type=int, default=4096, help='number of tokens expected in examples')
 
-# Server
+# Server/Model
 parser.add_argument("--server_type", default='nemo', action=ServerAction, choices=SERVER_TYPES)
 parser.add_argument("--server_host", type=str, default='127.0.0.1')
 parser.add_argument("--server_port", type=str, default='5000')
@@ -80,6 +81,8 @@ parser.add_argument("--ssh_server", type=str)
 parser.add_argument("--ssh_key_path", type=str)
 parser.add_argument("--model_name_or_path", type=str, default='gpt-3.5-turbo', 
                     help='supported models from OpenAI or HF (provide a key or a local path to the checkpoint)')
+parser.add_argument("--attn_implementation", type=str, default='sdpa', choices=["eager", "sdpa", "topk"])
+parser.add_argument("--topk", type=int, default=None, help='k value for topk attention')
 
 # Inference
 parser.add_argument("--temperature", type=float, default=1.0)
@@ -180,6 +183,7 @@ def get_llm(tokens_to_generate):
             top_p=args.top_p,
             stop=args.stop_words,
             max_new_tokens=tokens_to_generate,
+            attn_implementation=args.attn_implementation,
         )
     
     elif args.server_type == 'mamba':
@@ -214,6 +218,17 @@ def get_llm(tokens_to_generate):
 
     return llm
 
+def get_suffix_index(llm, text):
+    # Return the index of the first token after the string "[/INST]" in the prompt. This is used to split the prompt into prefix and suffix for topk attention.
+    # get the sequence of ids that makes up an instruction ending token. Tokenizers always start with a beginning token so strip that off.
+    inst_token_ids = llm.tokenizer(["[/INST]"], return_tensors="pt", padding=False).input_ids[0, 1:]
+    prompt_token_ids = llm.tokenizer(text, return_tensors="pt", padding=True).input_ids[0]
+    prompt_length = len(prompt_token_ids)
+    inst_token_length = len(inst_token_ids)
+    for i in range(prompt_length - inst_token_length + 1):
+        if torch.equal(prompt_token_ids[i:i+inst_token_length], inst_token_ids):
+            return i + inst_token_length
+    return -1
 
 def main():
     start_time = time.time()
@@ -237,7 +252,9 @@ def main():
     config.update(tasks_base[config['task']])
 
     task_file = args.data_dir / args.task / f'{args.subset}.jsonl'
-    task_dir = task_file.parent.resolve()
+    if args.save_kv_cache or args.attn_implementation == 'topk':
+        # Note that "kv_caches" in the cwd is used as a flag in vllm to know to save kv_cache to disk, so ensure it is in this path.
+        task_cache_dir = Path(f"/fs/cml-projects/llm-pretraining/topk/kv_caches/ruler/{args.num_tokens}/{args.task}")
     
     if args.chunk_amount > 1:
         pred_file = args.save_dir / f'{args.task}-{args.chunk_idx}.jsonl'
@@ -258,13 +275,13 @@ def main():
     # Load api
     llm = get_llm(config['tokens_to_generate'])
 
-    def get_output(outputs_parallel, idx_list, index_list, input_list, outputs_list, others_list, truncation_list, length_list):
+    def get_output(outputs_parallel, idx_list, index_list, input_list, outputs_list, others_list, truncation_list, length_list, faiss_cache=None, topk_k=None):
         nonlocal llm
 
         while True:
             # print("In processing loop")
             try:
-                pred_list = llm.process_batch(prompts=input_list)
+                pred_list = llm.process_batch(prompts=input_list, faiss_cache=faiss_cache, topk_k=topk_k)
                 break
             except Exception as e:
                 traceback.print_exc()
@@ -319,8 +336,7 @@ def main():
         print(f"Total batches: {len(batched_data)}")
         for batch_idx, batch in tqdm(enumerate(batched_data), total=len(batched_data)):
             # Make directory to store kv_caches for each example (We set batch size to 1 so there is only one example in each batch)
-            if args.save_kv_cache:
-                task_cache_dir = Path(f"/fs/cml-projects/llm-pretraining/topk/kv_caches/ruler/{args.num_tokens}/{args.task}")
+            if args.save_kv_cache or args.attn_implementation == 'topk':
                 example_cache_dir = task_cache_dir / f"example_{batch_idx}"
                 example_cache_dir.mkdir(exist_ok=True, parents=True)
                 os.chdir(example_cache_dir)
@@ -337,6 +353,25 @@ def main():
                     truncation_list=[data_point.get('truncation', -1) for data_point in batch],
                     length_list=[data_point.get('length', -1) for data_point in batch],
                 )
+            if args.attn_implementation == 'topk':
+                from transformers import DynamicFaissCache
+                text = batch[0]['input']
+                suffix_text_idx = text.find("[/INST]") + len("[/INST]")
+                suffix_token_idx = get_suffix_index(llm, text)
+                kv_cache = torch.load("kv_cache.pt")
+
+                assert len(batch) == 1, "Topk only works for batch size 1"
+                assert args.server_type == 'hf', "Topk only works for huggingface engine"
+                assert kv_cache.ndim == 5, "kv_cache should be 5D tensor: [2, L, H, N, D]"
+                assert suffix_text_idx != -1 and suffix_token_idx != 1, "Instruction token not found in prompt"
+
+                kv_cache_prefix = kv_cache[:, :, :, :suffix_token_idx, :]
+                text_suffix = text[suffix_text_idx:]
+                faiss_cache = DynamicFaissCache.load_cache_tensor(tensor=kv_cache_prefix)
+                kwargs['faiss_cache'] = faiss_cache
+                kwargs['input_list'] = [text_suffix]
+                kwargs['topk_k'] = args.topk
+
             outputs_parallel = get_output(outputs_parallel, **kwargs)
             # print("begin threading")
             # thread = threading.Threa
