@@ -62,31 +62,31 @@ class HuggingFaceModel:
 
     def process_batch(self, prompts: List[str], faiss_cache=None, topk_k=None, **kwargs) -> List[dict]:
         # kv_cache must be of type DynamicFaissCache
-        if self.pipeline is None:
-            inputs = self.tokenizer(prompts, return_tensors="pt", padding=True).to(self.model.device)
-            if faiss_cache is not None:
-                input_ids = inputs["input_ids"]
-                generated_ids = self.model.generate(
-                    input_ids,
-                    use_cache=True,
-                    past_key_values=faiss_cache,
-                    topk_k=topk_k,
-                    query_mode=True,
-                    **self.generation_kwargs
-                )
-            else: 
-                generated_ids = self.model.generate(
-                    **inputs,
-                    **self.generation_kwargs
-                )
-            generated_texts = self.tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
-        else:
-            output = self.pipeline(text_inputs=prompts, **self.generation_kwargs, )
-            assert len(output) == len(prompts)
-            # output in the form of a list of list of dictionaries
-            # outer list len = batch size
-            # inner list len = 1
-            generated_texts = [llm_result[0]["generated_text"] for llm_result in output]
+        # if self.pipeline is None:
+        inputs = self.tokenizer(prompts, return_tensors="pt", padding=True).to(self.model.device)
+        if faiss_cache is not None:
+            input_ids = inputs["input_ids"]
+            generated_ids = self.model.generate(
+                input_ids,
+                use_cache=True,
+                past_key_values=faiss_cache,
+                topk_k=topk_k,
+                query_mode=True,
+                **self.generation_kwargs
+            )
+        else: 
+            generated_ids = self.model.generate(
+                **inputs,
+                **self.generation_kwargs
+            )
+        generated_texts = self.tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
+        # else:
+        #     output = self.pipeline(text_inputs=prompts, **self.generation_kwargs, )
+        #     assert len(output) == len(prompts)
+        #     # output in the form of a list of list of dictionaries
+        #     # outer list len = batch size
+        #     # inner list len = 1
+        #     generated_texts = [llm_result[0]["generated_text"] for llm_result in output]
 
         results = []
 

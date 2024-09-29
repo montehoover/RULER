@@ -11,7 +11,7 @@ def parse_args():
     # Model choice stuff
     parser.add_argument("--model_name", default="gradientai/Llama-3-8B-Instruct-262k", type=str, help="Name of the model", choices=[
         "meta-llama/Meta-Llama-3-8B-Instruct",
-        "meta-llama/Meta-Llama-3.1-8B-Instruct", 
+        "meta-llama/Llama-3.1-8B-Instruct", 
         "meta-llama/Llama-2-7b-chat-hf", 
         "TinyLlama/TinyLlama-1.1B-Chat-v1.0", 
         "gradientai/Llama-3-8B-Instruct-262k",
@@ -83,7 +83,8 @@ def main():
                  f"TEMPERATURE: {args.temperature}\n"
                  f"BATCH_SIZE: {args.batch_size}\n"
                  f"NUM_SAMPLES: {args.num_samples}\n"
-                 f"args.num_tokens: {args.num_tokens}\n"
+                 f"NUM_TOKENS: {args.num_tokens}\n"
+                 f"TOPK: {args.topk}\n"
                  f"TASKS: {tasks}\n"
                  )
     print(print_str)

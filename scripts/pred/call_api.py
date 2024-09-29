@@ -278,15 +278,15 @@ def main():
     def get_output(outputs_parallel, idx_list, index_list, input_list, outputs_list, others_list, truncation_list, length_list, faiss_cache=None, topk_k=None):
         nonlocal llm
 
-        while True:
-            # print("In processing loop")
-            try:
-                pred_list = llm.process_batch(prompts=input_list, faiss_cache=faiss_cache, topk_k=topk_k)
-                break
-            except Exception as e:
-                traceback.print_exc()
+        # while True:
+        #     try:
+        #         pred_list = llm.process_batch(prompts=input_list, faiss_cache=faiss_cache, topk_k=topk_k)
+        #         break
+        #     except Exception as e:
+        #         traceback.print_exc()
+        
+        pred_list = llm.process_batch(prompts=input_list, faiss_cache=faiss_cache, topk_k=topk_k)
 
-        # print("exited processing loop")
         zipped_iter = zip(pred_list, idx_list, index_list, input_list,
                           outputs_list, others_list, truncation_list, length_list)
 
@@ -353,10 +353,13 @@ def main():
                     truncation_list=[data_point.get('truncation', -1) for data_point in batch],
                     length_list=[data_point.get('length', -1) for data_point in batch],
                 )
+            
+            ########################################
+            # Top-k gluing kv_cache to the suffix query
             if args.attn_implementation == 'topk':
                 from transformers import DynamicFaissCache
                 text = batch[0]['input']
-                suffix_text_idx = text.find("[/INST]") + len("[/INST]")
+                suffix_text_idx = text.rfind("[/INST]") + len("[/INST]")
                 suffix_token_idx = get_suffix_index(llm, text)
                 kv_cache = torch.load("kv_cache.pt")
 
@@ -371,6 +374,7 @@ def main():
                 kwargs['faiss_cache'] = faiss_cache
                 kwargs['input_list'] = [text_suffix]
                 kwargs['topk_k'] = args.topk
+            ########################################
 
             outputs_parallel = get_output(outputs_parallel, **kwargs)
             # print("begin threading")
