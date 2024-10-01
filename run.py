@@ -16,6 +16,11 @@ def parse_args():
         "TinyLlama/TinyLlama-1.1B-Chat-v1.0", 
         "gradientai/Llama-3-8B-Instruct-262k",
         "gradientai/Llama-3-8B-Instruct-Gradient-1048k",
+        "lmsys/vicuna-7b-v1.3",
+        "mistralai/Mistral-7B-Instruct-v0.3",
+        "meta-llama/Llama-3.2-1B-Instruct",
+        "meta-llama/Llama-3.2-3B-Instruct",
+        "meta-llama/Llama-3.2-11B-Vision-Instruct",
         ])
     parser.add_argument("--framework", default="hf", type=str, help="Framework of the model", choices=["hf", "local_vllm"])
     parser.add_argument("--tokenizer_type", default="hf", type=str, help="Type of the tokenizer")
@@ -36,6 +41,7 @@ def parse_args():
     parser.add_argument("--top_p", default=1.0, type=float, help="Top-p sampling")
     parser.add_argument("--top_k", default=1, type=int, help="Top-k sampling")
     parser.add_argument("--save_kv_cache", action="store_true", help="Save the key-value cache for the model")
+    parser.add_argument("--kv_cache_dir", default="/fs/cml-projects/llm-pretraining/topk/kv_caches/ruler", help="Directory where kv_cache is stored")
     parser.add_argument("--debug", action="store_true", help="Debug mode")
 
     args = parser.parse_args()
@@ -55,7 +61,7 @@ def main():
     if args.attn_implementation == 'topk':
         pred_dir = f"{results_dir}/pred/topk_{args.topk}"
     else:
-        pred_dir = f"{results_dir}/pred"
+        pred_dir = f"{results_dir}/pred/eager"
     
     os.makedirs(data_dir, exist_ok=True)
     os.makedirs(pred_dir, exist_ok=True)
@@ -91,6 +97,7 @@ def main():
 
     for task in tasks:
         print(f"Running task: {task}")
+
         subprocess.run([
             "python", "scripts/data/prepare.py",
             "--save_dir", data_dir,
@@ -117,6 +124,7 @@ def main():
             "--batch_size", str(args.batch_size),
             "--num_tokens", str(args.num_tokens),
             "--attn_implementation", args.attn_implementation,
+            "--kv_cache_dir", args.kv_cache_dir,
         ]
         if args.save_kv_cache:
             call_api.append("--save_kv_cache")

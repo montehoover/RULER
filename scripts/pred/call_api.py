@@ -93,7 +93,10 @@ parser.add_argument("--stop_words", type=str, default='')
 parser.add_argument("--sliding_window_size", type=int)
 parser.add_argument("--threads", type=int, default=4)
 parser.add_argument("--batch_size", type=int, default=1)
+
+# Cache
 parser.add_argument("--save_kv_cache", action="store_true", help="Save the key-value cache for the model")
+parser.add_argument("--kv_cache_dir", default="/fs/cml-projects/llm-pretraining/topk/kv_caches/ruler", help="Directory where kv_cache is stored")
 
 args = parser.parse_args()
 args.stop_words = list(filter(None, args.stop_words.split(',')))
@@ -218,10 +221,10 @@ def get_llm(tokens_to_generate):
 
     return llm
 
-def get_suffix_index(llm, text):
+def get_suffix_index(llm, text, query_delimiter="[/INST]"):
     # Return the index of the first token after the string "[/INST]" in the prompt. This is used to split the prompt into prefix and suffix for topk attention.
     # get the sequence of ids that makes up an instruction ending token. Tokenizers always start with a beginning token so strip that off.
-    inst_token_ids = llm.tokenizer(["[/INST]"], return_tensors="pt", padding=False).input_ids[0, 1:]
+    inst_token_ids = llm.tokenizer([query_delimiter], return_tensors="pt", padding=False).input_ids[0, 1:]
     prompt_token_ids = llm.tokenizer(text, return_tensors="pt", padding=True).input_ids[0]
     prompt_length = len(prompt_token_ids)
     inst_token_length = len(inst_token_ids)
@@ -254,7 +257,8 @@ def main():
     task_file = args.data_dir / args.task / f'{args.subset}.jsonl'
     if args.save_kv_cache or args.attn_implementation == 'topk':
         # Note that "kv_caches" in the cwd is used as a flag in vllm to know to save kv_cache to disk, so ensure it is in this path.
-        task_cache_dir = Path(f"/fs/cml-projects/llm-pretraining/topk/kv_caches/ruler/{args.num_tokens}/{args.task}")
+        model = args.model_name_or_path.split("/")[-1]
+        task_cache_dir = Path(f"{args.kv_cache_dir}/{model}/{args.num_tokens}/{args.task}")
     
     if args.chunk_amount > 1:
         pred_file = args.save_dir / f'{args.task}-{args.chunk_idx}.jsonl'
@@ -358,18 +362,30 @@ def main():
             # Top-k gluing kv_cache to the suffix query
             if args.attn_implementation == 'topk':
                 from transformers import DynamicFaissCache
-                text = batch[0]['input']
-                suffix_text_idx = text.rfind("[/INST]") + len("[/INST]")
-                suffix_token_idx = get_suffix_index(llm, text)
-                kv_cache = torch.load("kv_cache.pt")
-
                 assert len(batch) == 1, "Topk only works for batch size 1"
                 assert args.server_type == 'hf', "Topk only works for huggingface engine"
-                assert kv_cache.ndim == 5, "kv_cache should be 5D tensor: [2, L, H, N, D]"
-                assert suffix_text_idx != -1 and suffix_token_idx != 1, "Instruction token not found in prompt"
 
+                # Load kv_cache from disk
+                try:
+                    kv_cache = torch.load("kv_cache.pt")
+                except FileNotFoundError as e:
+                    msg = f"Could not find {os.getcwd()}/kv_cache.pt."
+                    raise FileNotFoundError(msg) from e
+                assert kv_cache.ndim == 5, "kv_cache should be 5D tensor: [2, L, H, N, D]"
+                
+                # Split cache and text into prefix and suffix (the question)
+                text = batch[0]['input']
+                if args.task in ["qa_1", "qa_2"]:
+                    query_delimiter = "\n\nQuestion:"
+                else:
+                    query_delimiter = "[/INST]"
+                suffix_text_idx = text.rfind(query_delimiter) + len(query_delimiter)
+                suffix_token_idx = get_suffix_index(llm, text, query_delimiter)
+                assert suffix_text_idx != -1 and suffix_token_idx != 1, "Instruction token not found in prompt"
                 kv_cache_prefix = kv_cache[:, :, :, :suffix_token_idx, :]
                 text_suffix = text[suffix_text_idx:]
+                
+                # Prepare the arguments for the call to get_output()
                 faiss_cache = DynamicFaissCache.load_cache_tensor(tensor=kv_cache_prefix)
                 kwargs['faiss_cache'] = faiss_cache
                 kwargs['input_list'] = [text_suffix]
