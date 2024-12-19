@@ -284,7 +284,6 @@ dependencies:
       - tqdm==4.66.5
       - traitlets==5.14.3
       - trampoline==0.1.2
-      - transformers==4.44.1
       - trimesh==4.4.6
       - typed-ast==1.5.5
       - typeguard==4.3.0
@@ -304,3 +303,4 @@ dependencies:
       - youtokentome==1.0.6
       - zarr==2.18.2
       - zipp==3.20.0
+      - -e ../transformers  #transformers==4.40
