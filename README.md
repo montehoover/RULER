@@ -1,7 +1,13 @@
 # Monte's fork of RULER for Nexus
 
 ## Getting started
-1. Create conda environment for RULER:
+1. Clone this repo and the top-k fork of Huggingface Transformers in the same folder:
+   ```
+   git clone https://github.com/montehoover/RULER.git
+   git clone ttps://github.com/montehoover/transformers.git
+   ```
+
+1. Create conda environment for RULER. The yaml file does an editable install of the local version of transfomers, expecting both repos to be in the same folder.
     ```
     conda env create -f conda_ruler.yml
     conda activate ruler
