@@ -99,41 +99,40 @@ def main():
     for task in tasks:
         print(f"Running task: {task}")
 
-        subprocess.run([
-            "python", "scripts/data/prepare.py",
-            "--save_dir", data_dir,
-            "--benchmark", args.benchmark,
-            "--task", task,
-            "--tokenizer_path", args.model_name,
-            "--tokenizer_type", args.tokenizer_type,
-            "--max_seq_length", str(args.num_tokens),
-            "--model_template_type", args.model_template_type,
-            "--num_samples", str(args.num_samples)
-        ])
+        # subprocess.run([
+        #     "python", "scripts/data/prepare.py",
+        #     "--save_dir", data_dir,
+        #     "--benchmark", args.benchmark,
+        #     "--task", task,
+        #     "--tokenizer_path", args.model_name,
+        #     "--tokenizer_type", args.tokenizer_type,
+        #     "--max_seq_length", str(args.num_tokens),
+        #     "--model_template_type", args.model_template_type,
+        #     "--num_samples", str(args.num_samples)
+        # ])
 
-        call_api = [
-            "python", "scripts/pred/call_api.py",
-            "--data_dir", data_dir,
-            "--save_dir", pred_dir,
-            "--benchmark", args.benchmark,
-            "--task", task,
-            "--server_type", args.framework,
-            "--model_name_or_path", args.model_name,
-            "--temperature", str(args.temperature),
-            "--top_k", str(args.top_k),
-            "--top_p", str(args.top_p),
-            "--batch_size", str(args.batch_size),
-            "--num_tokens", str(args.num_tokens),
-            "--attn_implementation", args.attn_implementation,
-            "--kv_cache_dir", args.kv_cache_dir,
-            "--topk_adaptive", str(args.topk_adaptive),
-        ]
-        if args.save_kv_cache:
-            call_api.append("--save_kv_cache")
-        if args.topk is not None:
-            call_api.append("--topk")
-            call_api.append(str(args.topk))
-        subprocess.run(call_api)
+        # call_api = [
+        #     "python", "scripts/pred/call_api.py",
+        #     "--data_dir", data_dir,
+        #     "--save_dir", pred_dir,
+        #     "--benchmark", args.benchmark,
+        #     "--task", task,
+        #     "--server_type", args.framework,
+        #     "--model_name_or_path", args.model_name,
+        #     "--temperature", str(args.temperature),
+        #     "--top_k", str(args.top_k),
+        #     "--top_p", str(args.top_p),
+        #     "--batch_size", str(args.batch_size),
+        #     "--num_tokens", str(args.num_tokens),
+        #     "--attn_implementation", args.attn_implementation,
+        #     "--kv_cache_dir", args.kv_cache_dir,
+        # ]
+        # if args.save_kv_cache:
+        #     call_api.append("--save_kv_cache")
+        # if args.topk is not None:
+        #     call_api.append("--topk")
+        #     call_api.append(str(args.topk))
+        # subprocess.run(call_api)
 
     subprocess.run([
         "python", "scripts/eval/evaluate.py",

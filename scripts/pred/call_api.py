@@ -83,6 +83,8 @@ parser.add_argument("--model_name_or_path", type=str, default='gpt-3.5-turbo',
                     help='supported models from OpenAI or HF (provide a key or a local path to the checkpoint)')
 parser.add_argument("--attn_implementation", type=str, default='sdpa', choices=["eager", "sdpa", "topk"])
 parser.add_argument("--topk", type=int, default=None, help='k value for topk attention')
+parser.add_argument("--topk_adaptive", default=-1, type=int, help="Value to use for k for the first layer only.")
+
 
 # Inference
 parser.add_argument("--temperature", type=float, default=1.0)
@@ -187,6 +189,8 @@ def get_llm(tokens_to_generate):
             stop=args.stop_words,
             max_new_tokens=tokens_to_generate,
             attn_implementation=args.attn_implementation,
+            topk=args.topk,
+            topk_adaptive=args.topk_adaptive,
         )
     
     elif args.server_type == 'mamba':
@@ -343,6 +347,8 @@ def main():
             if args.save_kv_cache or args.attn_implementation == 'topk':
                 example_cache_dir = task_cache_dir / f"example_{batch_idx}"
                 example_cache_dir.mkdir(exist_ok=True, parents=True)
+                # Here we use the fact that "kv_cache" is in the cwd is used as a flag in vllm to know to save kv_cache to disk
+                # TODO: Fix this so we use a global variable instead of using part of the cwd as a pseudo global variable.
                 os.chdir(example_cache_dir)
 
             idx_list = [data_point['idx'] for data_point in batch]
@@ -360,6 +366,7 @@ def main():
             
             ########################################
             # Top-k gluing kv_cache to the suffix query
+            # If topk_adaptive is set, we are using "naive topk" so don't do anything of this kv_cache gluing
             if args.attn_implementation == 'topk':
                 from transformers import DynamicFaissCache
                 assert len(batch) == 1, "Topk only works for batch size 1"

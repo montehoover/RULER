@@ -20,7 +20,7 @@ from typing import Dict, List, Optional
 
 
 class HuggingFaceModel:
-    def __init__(self, name_or_path: str, attn_implementation: str = "sdpa", topk: int = None, **generation_kwargs) -> None:
+    def __init__(self, name_or_path: str, attn_implementation: str = "sdpa", topk: int = None, topk_adaptive: int = None, **generation_kwargs) -> None:
         from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 
         self.tokenizer = AutoTokenizer.from_pretrained(name_or_path, trust_remote_code=True)
@@ -32,6 +32,9 @@ class HuggingFaceModel:
             if topk is not None:
                 model_kwargs["topk"] = topk
                 self.topk = topk
+            if topk_adaptive is not None:
+                model_kwargs["topk_adaptive"] = topk_adaptive
+                self.topk_adaptive = topk_adaptive
         
         # try:
         #     self.pipeline = pipeline(

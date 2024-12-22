@@ -6,3 +6,6 @@ __pycache__/
 outputs/
 datasets/
 meta-llama/
+log
+wandb
+outputs*
