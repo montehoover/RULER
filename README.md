@@ -15,7 +15,7 @@
 2. Confirm environment works by running a tiny Needle In A Haystack task with a single example:
     ```
     srun --pty --gres=gpu:rtxa5000:1 bash
-    python run.py --tasks niah_single_1 --num_samples 1 --num_tokens 4096
+    python run.py --tasks niah_single_1 --num_samples 1 --num_tokens 4096 --debug
     ```
 
 ## Running entire benchmark
