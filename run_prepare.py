@@ -50,6 +50,7 @@ def parse_args():
 
 
 def main():
+    print("Beginning data preparation..")
     # Parse command-line arguments
     args = parse_args()
     # if not args.debug:

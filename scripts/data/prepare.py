@@ -111,6 +111,8 @@ def main():
 
     if not file_exists:
         try:
+            print(f"Preparing {args.task} with {args.num_samples} examples to {save_file}")
+
             script = os.path.join(curr_folder, args.benchmark, f"{config['task']}.py")
             additional_args = " ".join([f"--{k} {v}" for k, v in config['args'].items()])
             command = f"""python {script} \
