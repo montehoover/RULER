@@ -1,4 +1,4 @@
-nemo-toolkit[all]
+nemo-toolkit[all]  #Requires Cython on ARM64
 # flask
 # flask_restful
 # sshtunnel_requests
@@ -16,3 +16,11 @@ huggingface_hub<0.24
 # mamba-ssm
 html2text
 # google-generativeai
+
+# Monte's additions
+nltk
+hydra-core
+lightning
+pandas
+wandb
+Cython #Only required on ARM64
