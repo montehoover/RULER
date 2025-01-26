@@ -1,7 +1,6 @@
 import os
 import subprocess
 import argparse
-import wandb
 import pandas as pd
 
 
@@ -50,7 +49,7 @@ def parse_args():
 
 
 def main():
-    print("Beginning data preparation..")
+    print("Beginning data preparation...")
     # Parse command-line arguments
     args = parse_args()
     # if not args.debug:

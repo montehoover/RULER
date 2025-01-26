@@ -366,7 +366,6 @@ def main():
             
             ########################################
             # Top-k gluing kv_cache to the suffix query
-            # If topk_adaptive is set, we are using "naive topk" so don't do anything of this kv_cache gluing
             if args.attn_implementation == 'topk':
                 from transformers import DynamicFaissCache
                 assert len(batch) == 1, "Topk only works for batch size 1"
