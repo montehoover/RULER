@@ -226,7 +226,6 @@ dependencies:
       - textdistance==4.6.3
       - texterrors==0.5.1
       - threadpoolctl==3.5.0
-      - tokenizers==0.13.3
       - toml==0.10.2
       - torch==2.5.1
       - torchmetrics==1.6.1
@@ -251,4 +250,6 @@ dependencies:
       - yarl==1.18.3
       - youtokentome==1.0.6
       - zarr==2.18.2
+      - -e ../transformers 
+      # - transformers==4.44
 prefix: /home/ubuntu/miniforge3/envs/conda_ruler_arm
