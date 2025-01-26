@@ -24,6 +24,7 @@
     cd scripts/data/synthetic/json/
     python download_paulgraham_essay.py
     bash download_qa_dataset.sh
+    cd ../../../..
     ```
 2. Run all tasks
     ```
