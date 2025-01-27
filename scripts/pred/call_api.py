@@ -100,7 +100,11 @@ parser.add_argument("--batch_size", type=int, default=1)
 parser.add_argument("--save_kv_cache", action="store_true", help="Save the key-value cache for the model")
 parser.add_argument("--kv_cache_dir", default="/fs/cml-projects/llm-pretraining/topk/kv_caches/ruler", help="Directory where kv_cache is stored")
 
+# Layer Drop Experiment
+parser.add_argument("--range", default=None, type=str, help="list of lists dictatin the [start, end, topkvalue] for each layer, defaults to topk")
+
 args = parser.parse_args()
+print(f'TESTING IF RANGE IS IN HERE: {args.range}')
 args.stop_words = list(filter(None, args.stop_words.split(',')))
 if args.server_type == 'hf' or args.server_type == 'gemini':
     args.threads = 1
@@ -179,19 +183,35 @@ def get_llm(tokens_to_generate):
         
     elif args.server_type == 'hf':
         from model_wrappers import HuggingFaceModel
-        llm = HuggingFaceModel(
-            name_or_path=args.model_name_or_path,
-            do_sample=args.temperature > 0,
-            repetition_penalty=1,
-            temperature=args.temperature,
-            top_k=args.top_k,
-            top_p=args.top_p,
-            stop=args.stop_words,
-            max_new_tokens=tokens_to_generate,
-            attn_implementation=args.attn_implementation,
-            topk=args.topk,
-            topk_adaptive=args.topk_adaptive,
-        )
+        if args.range:
+            llm = HuggingFaceModel(
+                name_or_path=args.model_name_or_path,
+                do_sample=args.temperature > 0,
+                repetition_penalty=1,
+                temperature=args.temperature,
+                top_k=args.top_k,
+                top_p=args.top_p,
+                stop=args.stop_words,
+                max_new_tokens=tokens_to_generate,
+                attn_implementation=args.attn_implementation,
+                topk=args.topk,
+                topk_adaptive=args.topk_adaptive,
+                ranges=args.range,
+            )
+        else:
+            llm = HuggingFaceModel(
+                name_or_path=args.model_name_or_path,
+                do_sample=args.temperature > 0,
+                repetition_penalty=1,
+                temperature=args.temperature,
+                top_k=args.top_k,
+                top_p=args.top_p,
+                stop=args.stop_words,
+                max_new_tokens=tokens_to_generate,
+                attn_implementation=args.attn_implementation,
+                topk=args.topk,
+                topk_adaptive=args.topk_adaptive,
+            )
     
     elif args.server_type == 'mamba':
         from model_wrappers import MambaModel
