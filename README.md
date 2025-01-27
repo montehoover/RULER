@@ -60,7 +60,9 @@ vLLM allows us to do inference on context lengths that cause us to run out of GP
 ## Arm64 stuff
 ```
 sudo apt-get install libopencc-dev
-conda env create -f conda_ruler_arm.yml
+conda create -n ruler_arm python=3.11
+pip install Cython
+pip install -r requirements_arm.txt
 ```
 
 
