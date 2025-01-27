@@ -64,9 +64,9 @@ def main():
     # Start client (prepare data / call model API / obtain final metrics)
     if args.range is not None:
         if args.end_dir is None:
-            results_dir = f"{args.root_dir}/{args.model_name}/{args.benchmark}/{args.num_tokens}/range_exp{args.range}"
+            results_dir = f"{args.root_dir}/{args.model_name}/{args.benchmark}/{args.num_tokens}/range_exp{args.exp_number}"
         else:
-            results_dir = f"{args.root_dir}/{args.model_name}/{args.benchmark}/{args.num_tokens}/range_exp{args.range}/{args.end_dir}"
+            results_dir = f"{args.root_dir}/{args.model_name}/{args.benchmark}/{args.num_tokens}/range_exp{args.exp_number}/{args.end_dir}"
     else:
         results_dir = f"{args.root_dir}/{args.model_name}/{args.benchmark}/{args.num_tokens}"
     data_dir = f"{results_dir}/data"
@@ -80,10 +80,6 @@ def main():
     
     if args.tasks == "all":
         tasks = [
-            "niah_single_1",
-            "niah_single_2",
-            "niah_single_3",
-            "niah_multikey_1",
             "niah_multikey_2",
             "niah_multikey_3",
             "niah_multivalue",
@@ -174,6 +170,7 @@ def main():
 
     # Get average score, log it to wandb and update summary.csv 
     summary_filepath = f"{pred_dir}/summary.csv"
+    print(f'THIS IS WHERE THE SUMMARY SHOULD BE: {summary_filepath}')
     df = pd.read_csv(summary_filepath)
     avg_col = df.columns[df.iloc[0] == "avg"]
     if avg_col.empty:
