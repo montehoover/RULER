@@ -45,6 +45,9 @@ def parse_args():
     parser.add_argument("--kv_cache_dir", default="/fs/cml-projects/llm-pretraining/topk/kv_caches/ruler", help="Directory where kv_cache is stored")
     parser.add_argument("--debug", action="store_true", help="Debug mode")
 
+    # Attention Head LayerDrop Experiment
+    parser.add_argument("--topk_attn_head_lst", default=None, type=str, help="List of top-k values for each attention head in every layer, meant to be [[layer, [topk_val for each head]]]")
+
     args = parser.parse_args()
     return args
 
@@ -111,23 +114,42 @@ def main():
             "--num_samples", str(args.num_samples)
         ])
 
-        call_api = [
-            "python", "scripts/pred/call_api.py",
-            "--data_dir", data_dir,
-            "--save_dir", pred_dir,
-            "--benchmark", args.benchmark,
-            "--task", task,
-            "--server_type", args.framework,
-            "--model_name_or_path", args.model_name,
-            "--temperature", str(args.temperature),
-            "--top_k", str(args.top_k),
-            "--top_p", str(args.top_p),
-            "--batch_size", str(args.batch_size),
-            "--num_tokens", str(args.num_tokens),
-            "--attn_implementation", args.attn_implementation,
-            "--kv_cache_dir", args.kv_cache_dir,
-            "--topk_adaptive", str(args.topk_adaptive),
-        ]
+        if args.topk_attn_head_lst is not None:
+            call_api = [
+                "python", "scripts/pred/call_api.py",
+                "--data_dir", data_dir,
+                "--save_dir", pred_dir,
+                "--benchmark", args.benchmark,
+                "--task", task,
+                "--server_type", args.framework,
+                "--model_name_or_path", args.model_name,
+                "--temperature", str(args.temperature),
+                "--top_k", str(args.top_k),
+                "--top_p", str(args.top_p),
+                "--batch_size", str(args.batch_size),
+                "--num_tokens", str(args.num_tokens),
+                "--attn_implementation", args.attn_implementation,
+                "--kv_cache_dir", args.kv_cache_dir,
+                "--topk_adaptive", str(args.topk_adaptive),
+            ]
+        else:
+            call_api = [
+                "python", "scripts/pred/call_api.py",
+                "--data_dir", data_dir,
+                "--save_dir", pred_dir,
+                "--benchmark", args.benchmark,
+                "--task", task,
+                "--server_type", args.framework,
+                "--model_name_or_path", args.model_name,
+                "--temperature", str(args.temperature),
+                "--top_k", str(args.top_k),
+                "--top_p", str(args.top_p),
+                "--batch_size", str(args.batch_size),
+                "--num_tokens", str(args.num_tokens),
+                "--attn_implementation", args.attn_implementation,
+                "--kv_cache_dir", args.kv_cache_dir,
+                "--topk_adaptive", str(args.topk_adaptive),
+            ]
         if args.save_kv_cache:
             call_api.append("--save_kv_cache")
         if args.topk is not None:
