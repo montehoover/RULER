@@ -228,13 +228,12 @@ dependencies:
       - textdistance==4.6.3
       - texterrors==0.5.1
       - threadpoolctl==3.5.0
-      - tokenizers==0.20.3
+      - tokenizers
       - toml==0.10.2
       - torch==2.5.1
       - torchmetrics==1.6.1
       - tqdm==4.67.1
       - traitlets==5.14.3
-      - transformers==4.46.0.dev0
       - typed-ast==1.5.5
       - typeguard==4.4.1
       - typer==0.15.1
@@ -253,4 +252,7 @@ dependencies:
       - yarl==1.18.3
       - youtokentome==1.0.6
       - zarr==2.18.2
+      - -e ../transformers
+      # - transformers==4.44
+
 prefix: /home/ubuntu/miniforge3/envs/ruler_arm
