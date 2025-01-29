@@ -1,0 +1,478 @@
+Task,ID,Prediction
+niah_multikey_2,0,: 2852907.
+niah_multikey_2,1,: 8700011.
+niah_multikey_2,2,: 3575158.
+niah_multikey_2,3,: 3201130. ASSISTANT:
+niah_multikey_2,4,: 3468450.
+niah_multikey_2,5,2610210.
+niah_multikey_2,6,: 2945459.
+niah_multikey_2,7,: 6423586.
+niah_multikey_2,8,: 4086389.
+niah_multikey_2,9,: 8255936.
+niah_multikey_2,10,: 2563462.
+niah_multikey_2,11,: 5618061.
+niah_multikey_2,12,: 2548009.
+niah_multikey_2,13,: 2854892.
+niah_multikey_2,14,: 3444535.
+niah_multikey_2,15,: 5159767.
+niah_multikey_2,16,: 2808272.
+niah_multikey_2,17,: 5179822.
+niah_multikey_2,18,: 7027711. ASSISTANT:
+niah_multikey_2,19,: 1496403. ASSISTANT:
+niah_multikey_2,20,: 7368860. ASSISTANT:
+niah_multikey_2,21,: 5451988.
+niah_multikey_2,22,: 8262193.
+niah_multikey_2,23,: 7909697.
+niah_multikey_2,24,7507820.
+niah_multikey_2,25,: 1407398.
+niah_multikey_2,26,: 4481057.
+niah_multikey_2,27,: 8975888.
+niah_multikey_2,28,2432757. ASSISTANT:
+niah_multikey_2,29,: 1525977. ASSISTANT:
+niah_multikey_2,30,: 5607997. ASSISTANT:
+niah_multikey_2,31,: 5752003.
+niah_multikey_2,32,: 4229757.
+niah_multikey_2,33,: 1728065.
+niah_multikey_2,34,: 4500040. ASSISTANT:
+niah_multikey_2,35,: 7929467.
+niah_multikey_2,36,3845703.
+niah_multikey_2,37,: 3157462.
+niah_multikey_2,38,: 7588335. ASSISTANT:
+niah_multikey_2,39,: 6699933.
+niah_multikey_3,0,: 446f64dd-5abc-46e5-90b1-e3eb409e7a80.
+niah_multikey_3,1,: ca0ee8c4-f2dc-412b-8f7a-e302ec2e2815.
+niah_multikey_3,2,: 1924c644-af52-4666-b239-09f4dbb54645.
+niah_multikey_3,3,: af65e8cc-f9cf-4499-89c1-ad45f4ea6b97.
+niah_multikey_3,4,578cd875-d231-4372-bfb0-942cac777762.
+niah_multikey_3,5,: 0c9fa6e6-becc-4760-9249-ee3a79d19c4e.
+niah_multikey_3,6,: 9defeab9-e54c-46ca-9c70-ce2224caf1b8.
+niah_multikey_3,7,: e3f713a7-0de9-4f1b-bc02-24e595c89b2d.
+niah_multikey_3,8,0d87bc72-bce0-4a63-997f-9b8d079bf5e6.
+niah_multikey_3,9,f9285706-577c-4717-836a-58870a5a2698.
+niah_multikey_3,10,: 0ba4e32b-4804-444c-82a4-e22ed7371450.
+niah_multikey_3,11,fecd0ded-1f08-4855-8d85-ddf1c3094f28.
+niah_multikey_3,12,: 31f18f8b-ec4d-4885-b245-b7d94849032c.
+niah_multikey_3,13,: 53167cb5-5e7e-40e5-b8e3-51ea9aebbc3e.
+niah_multikey_3,14,043486c3-a64d-4c1d-96f2-83191a936d0c.
+niah_multikey_3,15,: 325cba4e-bba9-4ec4-bef4-3c9c2484557f.
+niah_multikey_3,16,: 5e4908c8-290a-42d2-87f9-ee879f35e95d.
+niah_multikey_3,17,1e0724a8-c28f-48cb-8018-95364d747649.
+niah_multikey_3,18,: 149c0766-ffb8-4ef4-80dc-48739eb318ad.
+niah_multikey_3,19,: e8b2f81a-5f88-4e99-a014-7ab96755e34c.
+niah_multikey_3,20,: c5a0b7c3-e132-4e39-9891-b0a4b4d4813a.
+niah_multikey_3,21,: 29489bda-c119-4d43-880d-0cf3406d5351.
+niah_multikey_3,22,: af5235bc-f8ab-43f4-b2f9-ade159debc39.
+niah_multikey_3,23,: be8cea8a-255c-4297-99ee-f9d6fdfa3cb1.
+niah_multikey_3,24,: f5110f36-bce4-408b-ab5b-ce12206ce216.
+niah_multikey_3,25,: 170e0447-1a28-4f20-8e52-9b862433d80d.
+niah_multikey_3,26,: b77cff4c-9925-4280-b81c-c43bf99a3620.
+niah_multikey_3,27,: 36ce8d27-bacc-4ea6-bf2c-857e9f7b3992.
+niah_multikey_3,28,: b8edffe8-2280-429d-9d1b-40f51fc61eb3.
+niah_multikey_3,29,: dd50f7e7-d8fd-4386-8748-3ec122d1b5fa.
+niah_multikey_3,30,: 46a1c19b-d238-4804-8a8c-e2d7bdeb7527.
+niah_multikey_3,31,: 004e0721-0cc8-4a21-b601-e5b201c363cd.
+niah_multikey_3,32,7136e9e5-7f71-4837-aeb4-4055ea628d3d.
+niah_multikey_3,33,: 04579d6f-93d3-425a-ba56-04b37acd003a.
+niah_multikey_3,34,: 9ea56510-4aa4-4837-bd9e-3bb20853d212.
+niah_multikey_3,35,: 8ab55352-49de-469d-a30f-635993f06c26.
+niah_multikey_3,36,: 4420ccd0-8206-4e0c-bd5a-19be049af501.
+niah_multikey_3,37,21c185b5-0032-4863-b2e8-71b3c2d3d967.
+niah_multikey_3,38,: 277dcdcb-a3ed-479c-9d1a-f7be72ebbf83.
+niah_multikey_3,39,97218986-d7ea-490f-ae8a-01756721837f.
+niah_multivalue,0,": 3997281, 9398441, and 5418934. ASSISTANT:"
+niah_multivalue,1,": 9897858, 3710343, 1009594, and 7273233. ASSISTANT:"
+niah_multivalue,2,": 1971823, 5017343, and 5041154. ASSISTANT:"
+niah_multivalue,3,": 3770370, 9852897, 8973915, 5446912, 3770370, 9852897, 8973915, 5446912, 3770370, 9852897, 8973915, 5446912, 3770370, 9852897, 8973915, 5446912, 3770370, 9852897, 8973915, 5446912, 3770370, 9852897, 8973915, 5446912, 3770370, 985"
+niah_multivalue,4,": 6229731, 8350099, 7693979, 7264956, and 7693979. ASSISTANT:"
+niah_multivalue,5,": 4860684, 1352896, 4694634, 6672134, and 6672134. ASSISTANT:"
+niah_multivalue,6,": 2188789, 9626108, 4993055, and 6543670. ASSISTANT:"
+niah_multivalue,7,": 8935169, 5076817, and 7829332. ASSISTANT:"
+niah_multivalue,8,": 2651177, 1908841, and 8835373. ASSISTANT:"
+niah_multivalue,9,": 3351868, 8526486, 8077999, 9997381, and 1. ASSISTANT:"
+niah_multivalue,10,": 1247595, 1848731, and 2564689. ASSISTANT:"
+niah_multivalue,11,": 3762152, 1983738, 7358113, and 7728339. ASSISTANT:"
+niah_multivalue,12,": 4185957, 3597059, 5977931, 9164991, and 1. ASSISTANT:"
+niah_multivalue,13,": 8999183, 1841248, and 9436429. ASSISTANT:"
+niah_multivalue,14,": 4946066, 2140194, 2149597, and 7774229. ASSISTANT:"
+niah_multivalue,15,": 9770838, 8033426, 6307805, and 2375453. ASSISTANT:"
+niah_multivalue,16,": 8670955, 6033115, 6304573, and 3195773. ASSISTANT:"
+niah_multivalue,17,": 5449324, 9487336, 3222252, and 4576135. ASSISTANT:"
+niah_multivalue,18,": 9874152, 6075395, 1131249, and 8351517. ASSISTANT:"
+niah_multivalue,19,": 5569244, 3607983, 5727085, and 2795765. ASSISTANT:"
+niah_multivalue,20,": 8106422, 2548511, 5641923, and 1852264. ASSISTANT:"
+niah_multivalue,21,": 1162230, 8175395, 2876932, and 8412769. ASSISTANT:"
+niah_multivalue,22,": 3138181, 8210624, 1701771, 3484601, and 3484601. ASSISTANT:"
+niah_multivalue,23,": 6933742, 2724590, 7817881, and 5186414. ASSISTANT:"
+niah_multivalue,24,": 6573147, 4009172, 7907400, and 1415846. ASSISTANT:"
+niah_multivalue,25,": 4348276, 8722606, 8896868, and 4731818. ASSISTANT:"
+niah_multivalue,26,": 2164686, 5674183, 5682940, and 6507321. ASSISTANT:"
+niah_multivalue,27,": 3995870, 5382463, and 5453786. ASSISTANT:"
+niah_multivalue,28,": 9580255, 8321474, and 6262632. ASSISTANT:"
+niah_multivalue,29,": 9722815, 1028374, 4305700, 8315831, and 8315831. ASSISTANT:"
+niah_multivalue,30,": 9508103, 6038571, 6188935, 3090865, and 6188935. ASSISTANT:"
+niah_multivalue,31,": 3919694, 7361002, 6049101, and 8053918. ASSISTANT:"
+niah_multivalue,32,": 8801207, 6406444, 8411939, and 8212326. ASSISTANT:"
+niah_multivalue,33,": 9647849, 5761145, 6623525, and 2422633. ASSISTANT:"
+niah_multivalue,34,": 5107776, 8971465, 1775337, and 1409790. ASSISTANT:"
+niah_multivalue,35,": 7705062, 9294272, and 5093379. ASSISTANT:"
+niah_multivalue,36,": 1842524, 8793853, 9689889, and 5180853. ASSISTANT:"
+niah_multivalue,37,": 3670226, 9468772, 8159521, 8481188, and 8159521. ASSISTANT:"
+niah_multivalue,38,": 5606980, 5013879, 8379837, 9130188, and 1. ASSISTANT:"
+niah_multivalue,39,": 3530518, 3321531, 4879923, and 2351868. ASSISTANT:"
+niah_multiquery,0,"4194548, 8935169, 3219824, and 8930103, respectively. ASSISTANT:"
+niah_multiquery,1,": 6692553, 4191175, 5171761, and 7754864, respectively. ASSISTANT:"
+niah_multiquery,2,": 2642635, 4965789, 8434500, and 1247595, respectively. ASSISTANT:"
+niah_multiquery,3,": 1036161, 5785687, 9164991, and 5449368, respectively. ASSISTANT:"
+niah_multiquery,4,": 1841248, 9910817, 1954280, and 8999183, respectively. ASSISTANT:"
+niah_multiquery,5,": 2375453, 1666754, 5130808, and 9770838, respectively. ASSISTANT:"
+niah_multiquery,6,": 6304573, 4576135, 1156287, and 2677407, respectively. ASSISTANT:"
+niah_multiquery,7,": 8351517, 9874152, 6022741, and 6075395, respectively. ASSISTANT:"
+niah_multiquery,8,": 5428914, 6752576, 4533779, and 9196204. ASSISTANT:"
+niah_multiquery,9,": 5394880, 8412769, 1162230, and 8175395, respectively. ASSISTANT:"
+niah_multiquery,10,": 1) 7003042, 2) 7117837, 3) 5186414, and 4) 1701771. ASSISTANT:"
+niah_multiquery,11,": 6573147, 1415846, 3670896, and 5163555. ASSISTANT:"
+niah_multiquery,12,": 6507321, 4240180, 1397023, and 4818418, respectively. ASSISTANT:"
+niah_multiquery,13,": 5382463, 2818692, 5453786, and 8290770, respectively. ASSISTANT:"
+niah_multiquery,14,": 8315831, 4305700, 9722815, and 8235969, respectively. ASSISTANT:"
+niah_multiquery,15,": 5960271, 7751158, 3135534, and 7851696, respectively. These numbers are used to represent different concepts and ideas in the text, such as the importance of asking whether a startup is default alive or default dead, the dangers of overhiring, and the need for a software language that can be used in a competitive business environment. ASSISTANT:"
+niah_multiquery,16,": 8411939, 6406444, 4585314, and 4526280, respectively. ASSISTANT:"
+niah_multiquery,17,": 5107776, 1409790, 6207974, and 4340845, respectively. ASSISTANT:"
+niah_multiquery,18,": 7705062, 1093026, 3475836, and 8132769. ASSISTANT:"
+niah_multiquery,19,": 9468772, 9910914, 3237058, and 6323376. These numbers are used to represent the acceleration of technological progress and the increasing number of things we like that are becoming addictive. They are also used to illustrate the importance of choosing technology that will give a startup a technological edge over its competitors. The numbers are derived from the author's personal experiences and observations of the software industry, and are intended to be used as a tool for founders to evaluate their own startup's trajectory and potential for success. ASSISTANT:"
+niah_multiquery,20,": 5013879, 9130188, 5652512, and 8379837, respectively. ASSISTANT:"
+niah_multiquery,21,": 7960328, 4879923, 4589533, and 3563646, respectively. ASSISTANT:"
+niah_multiquery,22,": 1098919, 7381734, 6009888, and 1327691, respectively. ASSISTANT:"
+niah_multiquery,23,": 9147720, 7523941, 3768991, and 7783308, respectively. ASSISTANT:"
+niah_multiquery,24,": 7360307, 8746014, 1843636, and 8190929, respectively. ASSISTANT:"
+niah_multiquery,25,": 8890439, 4761823, 2151225, and 1873851, respectively. ASSISTANT:"
+niah_multiquery,26,": 2919136, 5299055, 8945036, and 4656838, respectively. ASSISTANT:"
+niah_multiquery,27,": 5074336, 6059717, 4327421, and 7296605, respectively. ASSISTANT:"
+niah_multiquery,28,": 2770648, 9488613, 6724909, and 8047416, respectively. ASSISTANT:"
+niah_multiquery,29,": 5679639, 5502929, 8307727, and 5118725, respectively. ASSISTANT:"
+niah_multiquery,30,": 4558780, 4050766, 5334434, and 5691890, respectively. ASSISTANT:"
+niah_multiquery,31,"8987516, 1289293, 9234615, and 5031966, respectively. ASSISTANT:"
+niah_multiquery,32,": 9907391, 6549757, 8612582, and 8138769, respectively. ASSISTANT:"
+niah_multiquery,33,": 9990305, 5638893, 4106298, and 4630331, respectively. ASSISTANT:"
+niah_multiquery,34,": 1237370, 9961299, 5602180, and 4010529, respectively. ASSISTANT:"
+niah_multiquery,35,": 1861958, 9031491, 5770422, and 6716097, respectively. ASSISTANT:"
+niah_multiquery,36,": 7982241, 6097514, 5163953, and 3503120, respectively. ASSISTANT:"
+niah_multiquery,37,": 2010496, 2664863, 8194570, and 4540415, respectively. ASSISTANT:"
+niah_multiquery,38,": 1547605, 5833597, 7853787, and 8883823, respectively. ASSISTANT:"
+niah_multiquery,39,": 3386328, 3499627, 4771676, and 2000560, respectively. ASSISTANT:"
+vt,0,HZYVC FQZBI ZUFVO PVGUU PHZZO
+vt,1,JUPAG DKCBL JPLFP SXRHQ AZWLC
+vt,2,BHQOI ZNLPC SWQTS FLFIL KCLRJ
+vt,3,CCTVO POIDJ RTWSZ PJPFR FCVJT
+vt,4,AYVGE SIIAW OKDQA TFKIJ SUOCB
+vt,5,RMLHT CLHRM RBKPA HFDGI ATEJS
+vt,6,WBAXW OOSKC AIUQV XCVGP NKIII
+vt,7,"NXJSV TREUM TTLYO QQWQD FAI
+
+Memorize and track the chain(s) of variable assignment hidden in the"
+vt,8,"PJBMA JHQZC BXOEP NYLVV
+
+Memorize and track the chain(s) of variable assignment hidden in the following"
+vt,9,SZNPJ XKURB QIIOK GWZPD CRXIR
+vt,10,OQIDS YZXCR NAIYI TEZEH UNOTN
+vt,11,EVUVE LKRGL HTLNI VMVJY ZMHJN
+vt,12,"BMJYS NDCEL KCFIC ZQO RVU
+
+Memorize and track the chain(s) of variable assignment hidden in the following"
+vt,13,XMVTM PXAFD YPLUG DGQQB VMNQO
+vt,14,GKRCZ BNNZO KMQZG AUITQ UTIBO
+vt,15,BULHB FBYNZ OGTEJ UWIDJ XTXKZ
+vt,16,"SCPVO ICRHP LRJBW BQJUR
+
+Memorize and track the chain(s) of variable assignment hidden in the following text"
+vt,17,BUJJO PRYJT ONKQG CTMKO GGLZH
+vt,18,LXLCR VIJBO XWSYQ UNDFD UAOJU
+vt,19,KSMKK ODIBM NDVOP TDNWV NHEYF
+vt,20,QODHN NEYER SPVOV ABQOQ TKQMQ
+vt,21,HBBLM FPIST WZDJO IMGGC HJPGW
+vt,22,TMNMI AYNZF JBMWR MNWLW STJKO
+vt,23,KLOVQ PDCJZ OJDPK BBSUN DXDYI
+vt,24,VNSHV JRZPU SRAMZ UUPSP EQQVD
+vt,25,AIDRK UXWTB DFIRN IEXIJ USQSP
+vt,26,FZHHF SIJYU VYUHH HDRJZ SJLGM
+vt,27,DQPGR NQBKS CUAOY KYWMF ZIQXC
+vt,28,KVYAV UETWH AHPYI LQNXD NHVIT
+vt,29,OTEWX VNCRE DIGGG TYHSA QSBDH
+vt,30,JFYML ZJSXT UVTRP UNNJX CVXFN
+vt,31,RSMXL BDKOO RIAGA FBLSO BXZMH
+vt,32,LXJCZ WDWDZ KDZVT ZMSLJ FLEEW
+vt,33,FCAPS BTKGF WBNHV TIPRI HDRFH
+vt,34,"OBIQJ NSKHE MBKKN KGICL
+
+Memorize and track the chain(s) of variable assignment hidden in the following text"
+vt,35,GRPWE TSOMW IYAYZ DZMGP FXOUJ
+vt,36,NMCZM VXJKO FDGYP KDIJV MRRGV
+vt,37,SMXOQ BAWYR TKVGS ANJQR QMMAO
+vt,38,ZAVRU XCCDE NVGKJ KOZFR WQWTC
+vt,39,QSCVQ IZZXX FXROH YRHOR EWAFD
+cwe,0,"1. radio 2. buyer 3. fight 4. marshmallow 5. effect 6. transformation 7. effect 8. effect 9. effect 10. effect
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. cactus 2. cactus 3. cactus 4. cactus 5. cactus 6. cactus 7. cactus 8. cactus 9. cactus 10. c"
+cwe,1,"1. chasuble 2. tusk 3. decimal 4. night 5. fear 6. friend 7. friend 8. friend 9. friend 10. friend
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. chasuble 2. tusk 3. decimal 4. night 5. fear 6. friend 7. friend 8. friend 9. friend 10. friend 11. friend"
+cwe,2,"1. bring 2. skill 3. physical 4. bring 5. bring 6. bring 7. bring 8. bring 9. bring 10. bring
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. cinder 2. cinder 3. cinder 4. cinder 5. cinder 6. cinder 7. cinder 8. cinder 9. cinder 10. cinder"
+cwe,3,"1. prince 2. function 3. deployment 4. neglect 5. sidecar 6. onion 7. wiretap 8. anthropology 9. wiretap 10. wiretap
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. prince 2. prince 3. prince 4. prince 5. prince 6. prince 7. prince 8. prince 9. prince 10. prince 11. prince 12"
+cwe,4,"1. anything 2. industrialization 3. budget 4. gainful 5. medal 6. anything 7. anything 8. anything 9. anything 10. anything
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. cactus 2. cactus 3. cactus 4. cactus 5. cactus 6. cactus 7. cactus 8. cactus 9. cactus 10."
+cwe,5,"1. knowledge 2. trigger 3. switchboard 4. nationality 5. baseboard 6. drawer 7. drawer 8. drawer 9. drawer 10. drawer
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16."
+cwe,6,"1. wingman 2. chemistry 3. retailer 4. wingman 5. wingman 6. wingman 7. wingman 8. wingman 9. wingman 10. wingman
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. sassy 2. sassy 3. sassy 4. sassy 5. sassy 6. sassy 7. sassy 8. sassy 9"
+cwe,7,"1. shingle 2. homely 3. planula 4. contain 5. contain 6. contain 7. contain 8. contain 9. contain 10. contain
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. shingle 2. homely 3. planula 4. contain 5. contain 6. contain 7. contain 8. contain 9. contain 10. contain
+Question: What"
+cwe,8,"1. component 2. era 3. oak 4. vinyl 5. gender 6. element 7. element 8. element 9. element 10. element
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. rehospitalization 2. component 3. element 4. element 5. element 6. element 7. element 8. element 9. element 10. element 11. element 12. element"
+cwe,9,"1. footwear 2. education 3. joint 4. numismatist 5. haversack 6. compare 7. time 8. footwear 9. footwear 10. footwear
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. ownership 2. conviction 3. effective 4. testy 5. amused 6. authority 7. reorganize 8. subscription 9. install 10. haversack"
+cwe,10,"1. toot 2. netbook 3. huge 4. toot 5. toot 6. toot 7. toot 8. toot 9. toot 10. toot
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. toot 2. toot 3. toot 4. toot 5. toot 6. toot 7. toot 8. toot"
+cwe,11,"1. evidence 2. importance 3. receive 4. hold 5. importance 6. evidence 7. receive 8. importance 9. evidence 10. importance
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. juggle 2. juggle 3. juggle 4. juggle 5. juggle 6. juggle 7. juggle 8. juggle 9. juggle 10. juggle"
+cwe,12,"1. addiction 2. ex-husband 3. netball 4. controversy 5. desk 6. accident 7. pain 8. problem 9. pain 10. pain
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. penguin 2. penguin 3. penguin 4. penguin 5. penguin 6. penguin 7. penguin 8. penguin 9. penguin 10"
+cwe,13,"1. airforce 2. reading 3. familiar 4. afterlife 5. behavior 6. behavior 7. behavior 8. behavior 9. behavior 10. behavior
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. veldt 2. veldt 3. veldt 4. veldt 5. veldt 6. veldt 7. veldt 8. veldt"
+cwe,14,"1. blackness 2. dry 3. lack 4. priority 5. script 6. lymphocyte 7. corporatism 8. kill 9. blackness 10. blackness
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. blackness 2. blackness 3. blackness 4. blackness 5. blackness 6. blackness 7. blackness 8. blackness 9. blackness"
+cwe,15,"1. isogloss 2. export 3. faithful 4. leaf 5. bid 6. pepper 7. dash 8. anorak 9. isogloss 10. isogloss
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. isogloss 2. export 3. faithful 4. leaf 5. bid 6. pepper 7. dash 8. anorak 9. isogloss"
+cwe,16,"1. wad 2. important 3. important 4. important 5. important 6. important 7. important 8. important 9. important 10. important
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. wad 2. important 3. important 4. important 5. important 6. important 7. important 8. important 9. important 10. important 11. important 12. important"
+cwe,17,"1. success 2. help 3. nudge 4. assessment 5. commission 6. dislike 7. help 8. help 9. help 10. help
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. nudge 2. nudge 3. nudge 4. nudge 5. nudge 6. nudge 7. nudge 8. nudge 9. nudge 10. n"
+cwe,18,"1. usual 2. doctor 3. entertain 4. elated 5. designer 6. floodplain 7. elated 8. elated 9. elated 10. elated
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. snobbish 2. criminal 3. snobbish 4. girdle 5. ascent 6. gran 7. accuracy 8. software 9. activity 10"
+cwe,19,"1. drug 2. enjoy 3. waterskiing 4. racism 5. yin 6. installation 7. dignity 8. dignity 9. dignity 10. dignity
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. dignity 2. dignity 3. dignity 4. dignity 5. dignity 6. dignity 7. dignity 8. dignity 9. dignity 10. dignity 11. dignity 12."
+cwe,20,"1. plan 2. card 3. improve 4. locust 5. plan 6. plan 7. plan 8. plan 9. plan 10. plan
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. nectarine 2. nectarine 3. nectarine 4. nectarine 5. nectarine 6. nectarine 7. nectarine 8. nectarine"
+cwe,21,"1. relation 2. average 3. complexity 4. invincible 5. relation 6. relation 7. relation 8. relation 9. relation 10. relation
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. pheasant 2. pheasant 3. pheasant 4. pheasant 5. pheasant 6. pheasant 7. pheasant 8. pheasant"
+cwe,22,"1. implement 2. newsstand 3. tavern 4. jailhouse 5. knee 6. drawer 7. drawer 8. drawer 9. drawer 10. drawer
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. drawer 2. drawer 3. drawer 4. drawer 5. drawer 6. drawer 7. drawer 8. drawer 9. drawer 10. drawer 11. drawer 12. drawer"
+cwe,23,"1. auto 2. sorbet 3. fishbone 4. nonconformist 5. degradation 6. nonconformist 7. nonconformist 8. nonconformist 9. nonconformist 10. nonconformist
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. auto 2. sorbet 3. fishbone 4. nonconformist 5. degradation 6. noncon"
+cwe,24,"1. university 2. pilaf 3. victorious 4. rat 5. chain 6. orange 7. toque 8. line 9. crayon 10. yoyo
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. yoyo 2. yoyo 3. yoyo 4. yoyo 5. yoyo 6. yoyo 7. yoyo 8. yoyo 9. yoyo"
+cwe,25,"1. walk 2. album 3. intent 4. nurse 5. early 6. association 7. change 8. walk 9. walk 10. walk
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. cleft 2. cleft 3. cleft 4. cleft 5. cleft 6. cleft 7. cleft 8. cleft 9. cleft 10. cleft"
+cwe,26,"1. weak 2. cirrus 3. reflect 4. sideburns 5. smuggling 6. bookend 7. modification 8. modification 9. modification 10. modification
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. penguin 2. penguin 3. penguin 4. penguin 5. penguin 6. penguin 7. penguin 8. penguin 9. penguin"
+cwe,27,"1. bay 2. bracelet 3. med 4. variety 5. pastor 6. caddy 7. error 8. error 9. error 10. error
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. error 2. error 3. error 4. error 5. error 6. error 7. error 8. error 9. error 10. error 11. error 12. error"
+cwe,28,"1. epee 2. conga 3. epee 4. epee 5. epee 6. epee 7. epee 8. epee 9. epee 10. epee
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. epee 2. epee 3. epee 4. epee 5. epee 6. epee 7. epee 8. epee"
+cwe,29,"1. cauliflower 2. fundraising 3. opponent 4. calcium 5. flaky 6. onion 7. onion 8. onion 9. onion 10. onion
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. onion 2. onion 3. onion 4. onion 5. onion 6. onion 7. onion 8. onion 9. onion 10. onion 11. onion 12. onion"
+cwe,30,"1. discrimination 2. discrimination 3. discrimination 4. discrimination 5. discrimination 6. discrimination 7. discrimination 8. discrimination 9. discrimination 10. discrimination
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. celeriac 2. celeriac 3. celeriac 4. celeriac 5. celeriac 6. celeriac 7. celeriac 8. celeriac 9"
+cwe,31,"1. tech 2. robotics 3. robotics 4. tech 5. tech 6. tech 7. tech 8. tech 9. tech 10. tech
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. celeriac 2. celeriac 3. celeriac 4. celeriac 5. celeriac 6. celeriac 7. celeriac 8. celeriac 9"
+cwe,32,"1. setting 2. analysis 3. infinite 4. preference 5. helo 6. deadpan 7. setting 8. analysis 9. setting 10. preference
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. yew 2. yew 3. yew 4. yew 5. yew 6. yew 7. yew 8. yew 9. yew 10."
+cwe,33,"1. location 2. primate 3. obsolete 4. bicycle 5. location 6. primate 7. location 8. primate 9. location 10. primate
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. location 2. primate 3. obsolete 4. bicycle 5. location 6. primate 7. location 8. primate 9. location 10. primate 11"
+cwe,34,"1. swine 2. mill 3. talk 4. yoyo 5. cartoon 6. atmosphere 7. chives 8. yoyo 9. yoyo 10. yoyo
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. yoyo 2. yoyo 3. yoyo 4. yoyo 5. yoyo 6. yoyo 7. yoyo 8. yoyo 9. y"
+cwe,35,"1. fishing 2. bowling 3. joey 4. armpit 5. ketch 6. inspection 7. excitement 8. network 9. tolerance 10. tolerance
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. ketch 2. ketch 3. ketch 4. ketch 5. ketch 6. ketch 7. ketch 8. ketch 9. ketch"
+cwe,36,"1. letter 2. aircraft 3. garbage 4. storey 5. improvement 6. citation 7. weapon 8. weapon 9. weapon 10. weapon
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. citrine 2. citrine 3. citrine 4. citrine 5. citrine 6. citrine 7. citrine 8. citrine 9. citrine 10. cit"
+cwe,37,"1. possible 2. rambler 3. fennel 4. pea 5. payee 6. photography 7. image 8. image 9. image 10. image
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. fennel 2. fennel 3. fennel 4. fennel 5. fennel 6. fennel 7. fennel 8."
+cwe,38,"1. save 2. underwire 3. premium 4. modeling 5. percent 6. noun 7. garter 8. train 9. train 10. train
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. garter 2. underwire 3. premium 4. modeling 5. percent 6. noun 7. train 8. train 9. train 10. train 11. train 12"
+cwe,39,"1. toot 2. future 3. toot 4. toot 5. toot 6. toot 7. toot 8. toot 9. toot 10. toot
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. toot 2. toot 3. toot 4. toot 5. toot 6. toot 7. toot 8. toot"
+fwe,0,1. rczbnn 2. wokdqa 3. rhrmlh [/INST]
+fwe,1,"qvrbss, fohqmp, and xldxvi. ASSISTANT:"
+fwe,2,"1. Rwupen 2. Isumqe 3. Xvrdcn
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,3,"1. Rjdxml 2. Vgoeqj 3. Xwmzxh
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,4,"1. Rhfurz 2. Risqae 3. Xonyml
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least three"
+fwe,5,"1. Rrromw 2. Rvmsnk 3. Yalxji
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include"
+fwe,6,"1. PVJJQP 2. PWZFKN 3. VRYZZW
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,7,"1. rwnfbv 2. scrwyt 3. vwnppz
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,8,1. Sjazjs 2. Hxgibe 3. Smlkka</s>
+fwe,9,"1. pdtufp 2. hioxpv 3. xextkb
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,10,1. Platpm 2. Ptdhfj 3. Gihvoe</s>
+fwe,11,"1. syzfln 2. tccyau 3. whyyhx
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,12,"qcmhok, qkevvl, and xeaunc. ASSISTANT:"
+fwe,13,"1. pbzfrh 2. flmmmw 3. oobzww
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,14,"rcooiq, vnzpbh, and rgzflc. ASSISTANT:"
+fwe,15,"qhagzb, vupsel, and fnnnpw. ASSISTANT:"
+fwe,16,"sbudci, hzyqpg, and xyvhii. ASSISTANT:"
+fwe,17,"1. Rkthgn 2. Vcwcvu 3. Gjqokb
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting."
+fwe,18,"1. Stezdt 2. Hbdudx 3. Yepifq
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,19,"1. Ppydgm 2. Frunwu 3. Prkvld
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,20,"rhdvsb, wnnbtl, and gtmmto. ASSISTANT:"
+fwe,21,"1. Puamfh 2. Gzdrbj 3. Pzwfro
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,22,"osazmp, ftuleq, and wqgxxw. ASSISTANT:"
+fwe,23,"qhdozt, qjpqsj, and fylnrj. ASSISTANT:"
+fwe,24,"1. Qgnpts 2. Gnrdfl 3. Vzwvtc
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,25,1. ppgrnj (appears 34 times) 2. puoudi (appears 32 times) 3. gbceef (appears 28 times) [/INST]
+fwe,26,"1. Qqdmwy 2. Gxrbzl 3. Vrtcib
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,27,"1. Rqjhks 2. Rsuxse 3. Ihnaqi
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,28,"1. Rkaojs 2. Rwaere 3. Wkwucq
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,29,"1. qoxrdr 2. tuhhpm 3. globux
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least three"
+fwe,30,"1. Qjasil 2. Vgrkzg 3. Xppqjf
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include"
+fwe,31,"1. Pzjqap 2. Qglyfh 3. Ezlsts
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,32,"1. tdwyhm 2. qsycju 3. wgbcsz
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,33,"1. Pzjnht 2. Qfgwqo 3. Xgfutd
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting."
+fwe,34,"1. Pbdyql 2. Pccnyj 3. Voptwb
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,35,1. Sjwfwg (appears 34 times) 2. Sotdwc (appears 32 times) 3. Ijkiaa (appears 28 times) [/INST]
+fwe,36,"rkpugm, rqhlky, and iilfmh. ASSISTANT:"
+fwe,37,"1. qcjhvs 2. qgmgxc 3. vcrfzy
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,38,"1. rxuegp 2. sjzghq 3. hdccnd
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,39,"1. Qrllfp 2. Uuuenh 3. Xnskxt
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include"
+qa_1,0,France.
+qa_1,1,The Normans were in Normandy from the 10th and 11th centuries. [/INST]
+qa_1,2,"From Denmark, Iceland, Norway, and possibly Sweden. [/INST]"
+qa_1,3,Rollo.
+qa_1,4,The Normans first gained their separate identity in the first half of the 10th century. [/INST]
+qa_1,5,Duke William II of Normandy.
+qa_1,6,"The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated. They"
+qa_1,7,Christianity [/INST]
+qa_1,8,"The original meaning of the word Norman is ""Norseman, Viking"".</s>"
+qa_1,9,The Latin version of the word Norman was first recorded in the 9th century. [/INST]
+qa_1,10,The Duchy of Normandy was founded in 911 as a fiefdom. [/INST]
+qa_1,11,King Charles III of West Francia.
+qa_1,12,The river Epte. [/INST]
+qa_1,13,The Normans upon arriving gave the original Viking settlers a common identity. [/INST]
+qa_1,14,The Norman religion was Christianity. [/INST]
+qa_1,15,"The Normans were located in Normandy, a region in France. [/INST]"
+qa_1,16,The Normans were exporting fighting horsemen for more than a generation. [/INST]
+qa_1,17,"The Normans' main enemy in Italy, the Byzantine Empire and Armenia was the Seljuk Turks. [/INST]"
+qa_1,18,The given documents do not mention when Herve served as a Byzantine general.
+qa_1,19,The 1060s. [/INST]
+qa_1,20,Alexius Komnenos.
+qa_1,21,The name of the Norman castle was Afranji. [/INST]
+qa_1,22,Raimbaud.
+qa_1,23,The Normans teamed up with the local population in Anatolia. [/INST]
+qa_1,24,The Raouliii were descended from an Italo-Norman named Raoul. (Document 20)
+qa_1,25,Robert Guiscard.
+qa_1,26,1082. The Normans were now free to penetrate into the hinterland; they took Ioannina and some minor cities in southwestern Macedonia and Thess
+qa_1,27,"30,000 men in 300 ships. [/INST]"
+qa_1,28,The Normans and Byzantines signed the peace treaty in the city of Deabolis. [/INST]
+qa_1,29,Bohemond.
+qa_1,30,The river Deabolis.
+qa_1,31,"The Normans attacked Dyrrachium in 1081 and again in 1185. They lost Dyrrachium, Valona, and Butrint"
+qa_1,32,Dyrrachium.
+qa_1,33,Dyrrachium was located in Albania. [/INST]
+qa_1,34,She married Duke Richard II of Normandy. [/INST]
+qa_1,35,Duke Richard II of Normandy.
+qa_1,36,Normandy. [/INST]
+qa_1,37,Sweyn Forkbeard.
+qa_1,38,Harthacnut.
+qa_1,39,1041. [/INST]
+qa_2,0,"No, they were not of the same nationality. Scott Derrickson is American and Ed Wood was American. ASSISTANT:"
+qa_2,1,The woman who portrayed Corliss Archer in the film Kiss and Tell was a child actress. [/INST]
+qa_2,2,Animorphs.
+qa_2,3,"Yes, they are located in the same neighborhood of Istanbul, Turkey."
+qa_2,4,"Greenwich Village, New York City."
+qa_2,5,YG Entertainment. ASSISTANT:
+qa_2,6,Eenasul Fateh (also known as Aladin) was known by his stage name Aladin and helped organizations improve their performance as a consultant.
+qa_2,7,"4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958. In 1965"
+qa_2,8,Annie Morton is older than Terry Richardson.
+qa_2,9,"Yes, both Local H and For Against are from the United States."
+qa_2,10,"Kansas Song (We’re From Kansas) is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in"
+qa_2,11,David Weissman.
+qa_2,12,1999.
+qa_2,13,"No, Random House Tower is used as the headquarters of book publisher Random House and a luxury apartment complex, while 888 7th Avenue is a 628"
+qa_2,14,1992-1996.
+qa_2,15,Brown State Fishing Lake is in a country that has a population of how many inhabitants? [/INST] Answer: ASSISTANT:
+qa_2,16,The America East Conference.
+qa_2,17,"Are Giuseppe Verdi and Ambroise Thomas both Opera composers? [/INST] Answer: Yes, both Giuseppe Verdi and Ambroise Thomas are Opera composers. [/INST]"
+qa_2,18,1970-1977.
+qa_2,19,Robert Erskine Childers was from England. Henry Roth was an American novelist and short story writer. ASSISTANT:
+qa_2,20,Pedro Rodríguez.
+qa_2,21,"Winnie the Pooh and the Blustery Day is a 1968 animated featurette based on the third, fifth, ninth, and tenth chapters from"
+qa_2,22,The Apple Remote was originally designed to interact with the Front Row media program on the iSight iMac G5 and is compatible with some later desktop and portable
+qa_2,23,Wolf Alice has a higher instrument to person ratio.  [/INST]
+qa_2,24,The father of Kasper Schmeichel was voted to be the IFFHS World's Best Goalkeeper in 1992 and 1993.
+qa_2,25,Lee Hazlewood was the writer of These Boots Are Made for Walkin' and Kenny Greene died in 2001. [/INST]
+qa_2,26,ASSISTANT:
+qa_2,27,Yes. ASSISTANT:
+qa_2,28,Henry J. Kaiser.
+qa_2,29,Arena of Khazan.
+qa_2,30,"The album ""Shut Up, Make Love"" was released in 2000."
+qa_2,31,Buck-Tick is a Japanese rock band. [/INST]
+qa_2,32,Charles Nungesser and François Coli [/INST]
+qa_2,33,"No, Freakonomics is an American documentary, while In the Realm of the Hackers is an Australian documentary."
+qa_2,34,Screaming Trees had more members. ASSISTANT:
+qa_2,35,Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when? [/INST] Answer: The Russian Civil War. ASSISTANT:
+qa_2,36,2000.
+qa_2,37,World War I and World War II.
+qa_2,38,"No, Elko Regional Airport is located in Nevada, while Gerald R. Ford International Airport is located in Michigan."
+qa_2,39,Columbia University is located in New York City.
