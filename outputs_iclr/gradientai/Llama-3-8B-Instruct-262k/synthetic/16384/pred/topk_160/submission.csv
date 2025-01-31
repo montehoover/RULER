@@ -1,0 +1,104 @@
+Task,ID,Prediction
+niah_single_1,0,7700828.
+niah_single_2,0,7700828. ASSISTANT:
+niah_single_3,0,1ca35cfb-04fc-4d82-bd15-438552fbe43b. ASSISTANT:
+niah_multikey_1,0,: 6596150. ASSISTANT:
+niah_multikey_1,1,: 1604451. ASSISTANT:
+niah_multikey_1,2,7117837. ASSISTANT:
+niah_multikey_1,3,: 7907400. ASSISTANT:
+niah_multikey_1,4,6866294. ASSISTANT:
+niah_multikey_1,5,: 6891254. ASSISTANT:
+niah_multikey_1,6,: 6262632. ASSISTANT:
+niah_multikey_1,7,: 4188992. ASSISTANT:
+niah_multikey_1,8,: 6038571. ASSISTANT:
+niah_multikey_1,9,: 7361002. ASSISTANT:
+niah_multikey_2,0,: 3957166.
+niah_multikey_2,1,: 2264611. ASSISTANT:
+niah_multikey_2,2,: 7990186. ASSISTANT:
+niah_multikey_2,3,9568846.
+niah_multikey_2,4,: 7667408.
+niah_multikey_2,5,1080160. The special magic number for abaft-shower mentioned in the provided text is 1080160. The special magic number for
+niah_multikey_2,6,: 5382810.
+niah_multikey_2,7,: 2683290. ASSISTANT:
+niah_multikey_2,8,3552021.
+niah_multikey_2,9,4774838.
+niah_multikey_3,0,: 3c7ed208-3451-4f94-ae8b-46d3cb946541.
+niah_multikey_3,1,: e0f3ee66-59a7-46e4-a341-89c5405df186.
+niah_multikey_3,2,b2a12a55-51a0-4d7c-847d-30b8e49a3cd9.
+niah_multikey_3,3,: 05fe16de-c3d3-4e5c-beee-71386a5731f7.
+niah_multikey_3,4,b3c3c428-9338-435d-9020-8d2386ff96f2.
+niah_multikey_3,5,: c7d77fbb-520b-4950-9ee4-254b0afc13fb.
+niah_multikey_3,6,: 01f39146-60ca-40ea-b946-5f6628b8bcc2.
+niah_multikey_3,7,: 1ef540d6-f5d9-4936-b085-770fb7e1cb21. ASSISTANT:
+niah_multikey_3,8,: 05fbd075-6086-45f3-a594-2c30745830d6.
+niah_multikey_3,9,: 6b775489-16ca-4742-b0e5-2458e2832379.
+niah_multivalue,0,": 4946066, 2140194, 7774229, and 2149597. ASSISTANT:"
+niah_multivalue,1,": 9770838, 8033426, and 6307805. ASSISTANT:"
+niah_multivalue,2,": 8670955, 6033115, 6304573, and 3195773. ASSISTANT:"
+niah_multivalue,3,": 5449324, 9487336, 3222252, 4576135, and 3222252. ASSISTANT"
+niah_multivalue,4,": 9874152, 6075395, 1131249, 8351517, and 8351517. ASSISTANT"
+niah_multivalue,5,": 5569244, 3607983, 2795765, and 5727085. ASSISTANT:"
+niah_multivalue,6,": 8106422, 2548511, and 5641923. ASSISTANT:"
+niah_multivalue,7,": 1162230, 2876932, 8175395, and 8412769. ASSISTANT:"
+niah_multivalue,8,": 3138181, 8210624, 1701771, 3484601, and 3484601. ASSISTANT"
+niah_multivalue,9,": 6933742, 2724590, 7817881, and 5186414. ASSISTANT:"
+niah_multiquery,0,": 8315831, 9722815, 8235969, and 4305700, respectively. ASSISTANT:"
+niah_multiquery,1,": 5960271, 7751158, 7851696, and 3135534, respectively. ASSISTANT:"
+niah_multiquery,2,": 8411939, 6406444, 4585314, and 4526280, respectively. ASSISTANT:"
+niah_multiquery,3,"5107776, 1409790, 6207974, and 4340845, respectively. ASSISTANT:"
+niah_multiquery,4,": 7705062, 1093026, 3475836, and 8132769, respectively. ASSISTANT:"
+niah_multiquery,5,": 9468772, 9910914, 6323376, and 3237058, respectively. ASSISTANT:"
+niah_multiquery,6,": 5013879, 9130188, 5652512, and 8379837, respectively. ASSISTANT:"
+niah_multiquery,7,": 7960328, 4879923, 4589533, and 3563646, respectively. ASSISTANT:"
+niah_multiquery,8,": 1098919, 7381734, 1327691, and 6009888, respectively. ASSISTANT:"
+niah_multiquery,9,": 9147720, 7523941, 3768991, and 7783308, respectively. ASSISTANT:"
+vt,0,ENGFW DMBKK NKGIC LJNVB JPBBU
+vt,1,WIYAY ZDZMG PFXOU JNJGN MCZMV
+vt,2,OFDGY PKDIJ VMRRG VZQME UESMX
+vt,3,VBVBA DQBDF LBQYX RANKA SNHNS
+vt,4,DENVG KJKOZ FRWQW TCJOB AEMLU
+vt,5,FWXMB BYXOA YIYPT SKCEG VKXIT
+vt,6,CGBPP PZIQU LFOJE PJUHG BGJUE
+vt,7,AIJHD ELOKA JCPIK ZOEJD HKCXX
+vt,8,EHHUJ YSMQL DAKVJ WLLVQ PHPSM
+vt,9,MOGJV KCOPO ROYMS LHSVU KMQGR
+cwe,0,1. fur 2. whiskey 3. position 4. attempt 5. circle 6. consciousness 7. growth 8.
+cwe,1,1. hardhat 2. tattoo 3. hunt 4. brassiere 5. cathedral 6. picture 7. siege
+cwe,2,1. recognize 2. research 3. willing 4. atom 5. verify 6. recognize 7. recognize 8.
+cwe,3,1. rough 2. systemize 3. psychology 4. ruddy 5. experiment 6. snobbish 7.
+cwe,4,1. timpani 2. piety 3. gopher 4. chafe 5. split 6. tender 7
+cwe,5,1. official 2. represent 3. relish 4. model 5. word 6. insect 7. official 8
+cwe,6,1. cloudy 2. welfare 3. hardhat 4. e-reader 5. eaves 6. eavesdropper
+cwe,7,1. psychopath 2. psychopath 3. psychopath 4. psychopath 5. psychopath 6. psychopath
+cwe,8,1. everyone 2. spade 3. taste 4. undress 5. confirmation 6. leap 7. diseng
+cwe,9,1. sip 2. caviar 3. technology 4. circumstance 5. ketch 6. noisy 7. ch
+fwe,0,"mmlsih, nfryjb, and lrjbnf. ASSISTANT:"
+fwe,1,"1. MQXNIU (appears 56 times), 2. NKKQOZ (appears 54 times), and 3. LKDSQZ (appears 52 times). ASSISTANT:"
+fwe,2,"lsshpv, kostde, and mrwzpm. ASSISTANT:"
+fwe,3,1. Moleie (appears 67 times) 2. Nwsqlk (appears 64 times) 3. Lqjgxh (appears 56 times)</s> Answer: According to the coded
+fwe,4,"lhlwtq, lyuivr, and mptiez. ASSISTANT:"
+fwe,5,"minqgg, ndzunm, and lbttlc. ASSISTANT:"
+fwe,6,"ktcnvf, lvxslj, and mlorcx. ASSISTANT:"
+fwe,7,1. Lpnexr (appears 56 times) 2. Nbmktw (appears 46 times) 3. Kejvyy (appears 44 times)</s> Answer: According to the coded
+fwe,8,"mggbxv, nhybef, and ktjdcc. ASSISTANT:"
+fwe,9,"ktizia, ljlbdg, and jtnjuy. ASSISTANT:"
+qa_1,0,France. What is the name of the river that flows through Normandy? [/INST] Answer: The Rhine. What is the name of the river that
+qa_1,1,The Normans were in Normandy from the 10th and 11th centuries.
+qa_1,2,"The Norse originated from Denmark, Iceland, and Norway."
+qa_1,3,Rollo. Who was the Norse leader? [/INST] Answer: Rollo. Who was the Norse leader? [/INST] Answer: Rollo. Who
+qa_1,4,The Normans first gained their separate identity in the first half of the 10th century.
+qa_1,5,William II of Normandy.
+qa_1,6,William the Conqueror [/INST]
+qa_1,7,"The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated. They"
+qa_1,8,"The original meaning of the word Norman is ""Norseman, Viking"". [/INST] What is the original meaning of the word Norman? [/INST] Answer"
+qa_1,9,The Latinized version of the word Norman was recorded in Medieval Latin in the 9th century.
+qa_2,0,No. Scott Derrickson is American and Ed Wood was American. ASSISTANT:
+qa_2,1,"The woman who portrayed Corliss Archer in the film Kiss and Tell was Janet Waldo, who was a radio and voice actress. She is best known in"
+qa_2,2,"The Animorphs series, with companion books such as ""The Hork-Bajir Chronicles"" and ""The Ellimist Chronicles"".</s>"
+qa_2,3,"No, they are not located in the same neighborhood. The Laleli Mosque is located in Laleli, Fatih, Istanbul, while the Esma"
+qa_2,4,"Greenwich Village, New York City."
+qa_2,5,YG Entertainment. ASSISTANT:
+qa_2,6,"Eenasul Fateh, also known as Aladin, was a Bangladeshi-British cultural practitioner, magician, live artist, and former international"
+qa_2,7,"The arena where the Lewiston Maineiacs played their home games can seat up to 1,400 people."
+qa_2,8,Terry Richardson is older than Annie Morton. ASSISTANT:
+qa_2,9,"Yes, both Local H and For Against are from the United States. ASSISTANT:"

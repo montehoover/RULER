@@ -1,0 +1,419 @@
+Task,ID,Prediction
+niah_single_1,0,1348050.
+niah_single_1,1,8893693.
+niah_single_1,2,4044882. ASSISTANT:
+niah_single_1,3,9249789.
+niah_single_1,4,7850944.
+niah_single_1,5,2754894. ASSISTANT:
+niah_single_1,6,9312590.
+niah_single_1,7,1615675. ASSISTANT:
+niah_single_1,8,5234550.
+niah_single_1,9,9633492.
+niah_single_2,0,8893693. ASSISTANT:
+niah_single_2,1,4044882. ASSISTANT:
+niah_single_2,2,9249789. ASSISTANT:
+niah_single_2,3,7850944. ASSISTANT:
+niah_single_2,4,2754894. ASSISTANT:
+niah_single_2,5,9312590. ASSISTANT:
+niah_single_2,6,1615675. ASSISTANT:
+niah_single_2,7,5234550. ASSISTANT:
+niah_single_2,8,"9633492. July 2010What hard liquor, cigarettes, heroin, and crack have in common is that they're all more concentrated forms"
+niah_single_2,9,1909393. ASSISTANT:
+niah_single_3,0,: 0986bbeb-f23e-423d-8b9b-d93423c86d30. ASSISTANT:
+niah_single_3,1,: 899ca782-e323-4d1a-bc1b-dacc18e19331. ASSISTANT:
+niah_single_3,2,": be3e6e57-f30a-4e32-aba4-fc035efa9c5b.
+What is the main"
+niah_single_3,3,e2aa7a5d-278e-400d-ba02-66efbe055787. ASSISTANT:
+niah_single_3,4,f396ea37-f065-4817-a87a-48509d9b6231. ASSISTANT:
+niah_single_3,5,: 71d79665-7181-4dcf-b79e-fc6e5edb0d3c.</s>
+niah_single_3,6,8b621d41-5e09-49ee-af88-bdecfb1e143b.</s>
+niah_single_3,7,1f45dbfd-f7dc-47e0-b097-4b2b46a02a9b.</s>
+niah_single_3,8,98de8ebb-a3b5-4ece-a446-be72364c911a. ASSISTANT:
+niah_single_3,9,c9776598-203c-4c25-bd23-5def3e5a87e3. ASSISTANT:
+niah_multikey_1,0,: 1176962. ASSISTANT:
+niah_multikey_1,1,6787592. ASSISTANT:
+niah_multikey_1,2,8639213. ASSISTANT:
+niah_multikey_1,3,8590804. ASSISTANT:
+niah_multikey_1,4,3686631. ASSISTANT:
+niah_multikey_1,5,1074659. ASSISTANT:
+niah_multikey_1,6,9212178. ASSISTANT:
+niah_multikey_1,7,: 3894531. ASSISTANT:
+niah_multikey_1,8,2962077. ASSISTANT:
+niah_multikey_1,9,: 3906397. ASSISTANT:
+niah_multikey_2,0,: 8629740. ASSISTANT:
+niah_multikey_2,1,: 8023913. ASSISTANT:
+niah_multikey_2,2,: 8975966. ASSISTANT:
+niah_multikey_2,3,: 3860771. ASSISTANT:
+niah_multikey_2,4,: 8048445. ASSISTANT:
+niah_multikey_2,5,: 9600193. ASSISTANT:
+niah_multikey_2,6,: 2360148. ASSISTANT:
+niah_multikey_2,7,: 2739246. ASSISTANT:
+niah_multikey_2,8,: 6570638. ASSISTANT:
+niah_multikey_2,9,: 1114954. ASSISTANT:
+niah_multikey_3,0,: 2d35809b-407e-45cf-b3f6-aee4e89b125d.
+niah_multikey_3,1,: 9b15cd90-e334-490f-8ed5-e5e199c3f773.
+niah_multikey_3,2,: 0e3b7ba5-3fc1-49b4-994e-e0a25a33ed6c. ASSISTANT:
+niah_multikey_3,3,: 0b5efdc4-8c7a-4556-b65d-2e15551a08ee. ASSISTANT:
+niah_multikey_3,4,: 0b5e3c03-6d4c-4f06-ab30-d69d3ccf4175.
+niah_multikey_3,5,: 0f49eccf-7471-49ac-8234-cf6fa3c1d21a.
+niah_multikey_3,6,: 0b8aed9f-0341-4b0f-97a2-f563cee7ea55. ASSISTANT:
+niah_multikey_3,7,: 4f0145b1-44e4-4aaf-95b5-16dd6891eb09.
+niah_multikey_3,8,: 0c1c0b1d-0b9d-4d1d-9455-0b8f1d2d0a28. ASSISTANT:
+niah_multikey_3,9,: 0e2f8e6c-5d4f-4889-917f-6c31bd6f457f. ASSISTANT:
+niah_multikey_3,10,: 0a6b6f2d-0b5d-4d0e-8b4c-8d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d
+niah_multikey_3,11,: 2c9a320f-362c-4092-a860-ace243e700cc. ASSISTANT:
+niah_multikey_3,12,: 0a4f6f6-0b2d-4f5f-ad43-8d5d4d4d4d4d. ASSISTANT:
+niah_multikey_3,13,: 0c7225a4-85c0-4a28-a757-3177fc152fb2.
+niah_multikey_3,14,: 0c166fac-4e7c-42bf-9cf2-cfb32cb53938.
+niah_multikey_3,15,: 6d7f1d9f-68e2-425d-88c2-3dd0e86d769d.
+niah_multikey_3,16,: 7b2f6f2d-4d5a-4d2d-bd5d-0b0d0d0d0d0d.
+niah_multikey_3,17,: 2f47aa37-0676-4225-a12c-441c111fdc6a.
+niah_multikey_3,18,: 0a43b104-a8e0-451b-87e0-781701765980.
+niah_multikey_3,19,: 4bbaee72-fdf9-4ea3-808a-05a0920a0916.
+niah_multikey_3,20,: 4a95c436-4e2c-478d-b09f-ed59edd6cb93.
+niah_multikey_3,21,0a44f642-0ccd-4c2e-947d-d72c14850766.
+niah_multikey_3,22,: 0e88b02e-a7bf-4f01-abc3-7719d60feef6. ASSISTANT:
+niah_multikey_3,23,: 0c0c0c0-0c0c-0c0c-0c0c-0c0c0c0c0c. ASSISTANT:
+niah_multikey_3,24,: 0a6f4b2d-5f5c-4f5c-a2d7-e5d63dfc2400.
+niah_multikey_3,25,: 1d367a17-6c4d-4204-a48b-786352db84ea.
+niah_multikey_3,26,: 0b6d3f7a-fb8e-41ab-b813-5e7b2ccda361. ASSISTANT:
+niah_multikey_3,27,: 2d35809b-407e-45cf-b3f6-aee4e89b125d.
+niah_multikey_3,28,: 9b15cd90-e334-490f-8ed5-e5e199c3f773.
+niah_multikey_3,29,: 0e381016-aaaf-4cd6-8acd-ffd7021c7196. ASSISTANT:
+niah_multikey_3,30,: 0b3c034b-816e-49b3-bf00-424185861bc5. ASSISTANT:
+niah_multikey_3,31,: 0b5e3c03-6d4c-4f06-ab30-d69d3ccf4175.
+niah_multikey_3,32,: 0f49eccf-7471-49ac-8234-cf6fa3c1d21a.
+niah_multikey_3,33,: 6aa917fd-e4b7-4d30-80cb-2b69e7a015ca.
+niah_multikey_3,34,: 4f0145b1-44e4-4aaf-95b5-16dd6891eb09.
+niah_multikey_3,35,: 4b3f9a397beb.
+niah_multikey_3,36,: 0e2f8e6c-5d4f-4893-a1e3-4f92d2a7c121. ASSISTANT:
+niah_multikey_3,37,: 0a6b6f5d-0b2b-4b4a-8d1c-0a6b6f5d0b2b. ASSISTANT:
+niah_multikey_3,38,: 6b948491-d025-4a2f-a7fd-2e5f1eb1ec1d.
+niah_multikey_3,39,: 0a3e0037-f34d-4487-bfa0-49d1d4b4726e. ASSISTANT:
+niah_multivalue,0,": 8899184, 8633275, 7268384, 7976731, 10, 100, 128, 20, 50, 1000, 2000, 2500, 5000, 6000, 7000, 8000, 9000, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 200000, 300000, 400000, 500000, 600000,"
+niah_multivalue,1,": 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 231"
+niah_multivalue,2,": 6504900, 3514105, 9729882, and 3514105. ASSISTANT:"
+niah_multivalue,3,": 9562677, 8473959, 8607331, and 1933413. ASSISTANT:"
+niah_multivalue,4,": 1365247, 7642917, 8757420, 6170227, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 7642917, 764"
+niah_multivalue,5,": 2069713, 6780235, 8108462, and 2010921. ASSISTANT:"
+niah_multivalue,6,": 3272119, 7416943, 8052503, and 7282411. ASSISTANT:"
+niah_multivalue,7,": 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42,"
+niah_multivalue,8,": 7363203, 8767916, 9924365, and 8115687. ASSISTANT:"
+niah_multivalue,9,": 1540516, 2893218, 8033690, and 4162177. ASSISTANT:"
+niah_multivalue,10,": 1816653, 5105957, 1563316, and 8490038. ASSISTANT:"
+niah_multivalue,11,": 4928578, 3351084, 9453969, 5853035, 10, 20, 100, 128, 72, 72, 4, 5, 6, 7, 8, 9, 10, 20, 100, 128, 72, 72, 4, 5, 6, 7, 8, 9, 10, 20, 100, 128, 72, 72, 4, 5, 6, 7, 8, 9"
+niah_multivalue,12,": 6041569, 9745141, 7938388, 4708481, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36"
+niah_multivalue,13,": 1786584, 6778321, 8167236, and 9315137. ASSISTANT:"
+niah_multivalue,14,": 6031294, 8944327, 7315953, 4084977, and 6031294. ASSISTANT:"
+niah_multivalue,15,": 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 3249703, 324"
+niah_multivalue,16,": 2326581, 2326582, and 2326583. ASSISTANT:"
+niah_multivalue,17,": 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42,"
+niah_multivalue,18,": 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42,"
+niah_multivalue,19,": 7386444, 7027375, 9953163, 8822384, 1.5, 4, 6, 8, 10, 20, 50, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000,"
+niah_multivalue,20,": 2654371, 4407913, 6372622, 8876742, and 10,000. ASSISTANT:"
+niah_multivalue,21,": 5375063, 5952504, and 1272124. ASSISTANT:"
+niah_multivalue,22,": 9376888, 5122665, and 6663388. ASSISTANT:"
+niah_multivalue,23,": 1985360, 4087809, 9192588, 9790328, and 1. ASSISTANT:"
+niah_multivalue,24,": 4882808, 1153368, 2140312, and 3533857. ASSISTANT:"
+niah_multivalue,25,": 1263935, 9184838, 1110936, and 9106820. ASSISTANT:"
+niah_multivalue,26,": 9988193, 1287605, 5609384, and 1287605. ASSISTANT:"
+niah_multivalue,27,": 4220085, 9832465, 3498085, and 5042786. ASSISTANT:"
+niah_multivalue,28,": 5080351, 8700704, 4789255, 7812009, and 7812009. ASSISTANT:"
+niah_multivalue,29,": 3875339, 8986040, 1158547, 1941452, 3875339, 8986040, 1158547, 1941452, 3875339, 8986040, 1158547, 1941452, 3875339, 8986040, 1158547, 1941452, 3875339, 8986040, 1158547, 1941452, 3875339, 8986040, 1158547, 1941452, 3875339, 898"
+niah_multivalue,30,": 4546989, 1713900, 8977571, and 4854842. ASSISTANT:"
+niah_multivalue,31,: 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42.
+niah_multivalue,32,": 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42,"
+niah_multivalue,33,": 6714198, 2275374, 4894730, 7655572, and 10,000. ASSISTANT:"
+niah_multivalue,34,": 4116163, 7298619, 6969521, 8245206, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000, 1000000000"
+niah_multivalue,35,": 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000"
+niah_multivalue,36,": 8899184, 8633275, 7268384, 7976731, 10, 100, 128, 20, 50, 1000, 2000, 2500, 5000, 6000, 7000, 8000, 9000, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 200000, 300000, 400000, 500000, 600000,"
+niah_multivalue,37,": 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 2310346, 231"
+niah_multivalue,38,": 3514105, 3514105, 3514105, and 3514105. ASSISTANT:"
+niah_multivalue,39,": 9562677, 8473959, 8607331, and 1933413. ASSISTANT:"
+niah_multiquery,0,": 2514267, 6185050, 6185050, and 6185050, respectively. ASSISTANT:"
+niah_multiquery,1,": 4902772, 6185050, 2514267, and 9228157, respectively. ASSISTANT:"
+niah_multiquery,2,": 1999183, 6716988, 3478196, and 3977282, respectively. ASSISTANT:"
+niah_multiquery,3,": 3289279, 2695038, 8329435, and 6062779, respectively. ASSISTANT:"
+niah_multiquery,4,": 1030163, 7569981, 5941179, and 3981450, respectively. ASSISTANT:"
+niah_multiquery,5,": 6818508, 3359604, 3816683, and 2305378, respectively. ASSISTANT:"
+niah_multiquery,6,": 7474950, 8040612, 1021494, and 5306005, respectively. ASSISTANT:"
+niah_multiquery,7,": 1560573, 4784650, 8571346, and 1336852, respectively. ASSISTANT:"
+niah_multiquery,8,": 2258331, 2562037, 1519979, and 9098979, respectively. ASSISTANT:"
+niah_multiquery,9,": 5723173, 1832744, 5450404, and 4985398, respectively. ASSISTANT:"
+vt,0,ARZDJ SEJ ZQO RVU FAI BTMVR MNWLR SSWRJ
+vt,1,UXUVB OUILJ WYWOY CUQEY FAI</s>
+vt,2,"FHWNB VXOZC RMPCK QTDEW YYKTD
+
+Question: Find all variables that are assigned the value 64886"
+vt,3,JCXBQ SEJ ZQO RVU FAI
+vt,4,"HURQD IARZD ZQO RVU FAI
+
+Question: Find all variables that are assigned the value 64886 in the"
+vt,5,VUFLD EYOOK TEDMB DPMOH FAI</s>
+vt,6,SZLWA FDHQX IGWVR QFSHG DQXKM
+vt,7,QJPUJ HVYGV DVMAB UTKFL BDUDF
+vt,8,NONVR SMFBL WJNHH GMFCB FAI</s>
+vt,9,ALJWR SEJ ZQO RVU FAI</s>
+vt,10,ARZDJ SEJ ZQO RVU FAI BTMVR MNWLR SSWRJ Answer: According to the chain(s)
+vt,11,"QPE SEJ ZQO RVU FAI</s> Answer: According to the chain(s) of variable assignment in the text above,"
+vt,12,"QPE SEJ ZQO RVU FAI
+
+Memorize and track the chain(s) of variable assignment hidden in the following text."
+vt,13,"QPE SEJ ZQO RVU FAI
+
+Memorize and track the chain(s) of variable assignment hidden in the following text."
+vt,14,"QPE SEJ ZQO RVU FAI
+
+Memorize and track the chain(s) of variable assignment hidden in the following text."
+vt,15,"QPE SEJ ZQO RVU FAI</s> Answer: According to the chain(s) of variable assignment in the text above,"
+vt,16,"QPE SEJ ZQO RVU FAI
+
+Memorize and track the chain(s) of variable assignment hidden in the following text."
+vt,17,"QPE SEJ ZQO RVU FAI
+
+Question: Find all variables that are assigned the value 64886 in the text above."
+vt,18,"QPE SEJ ZQO RVU FAI</s> Answer: According to the chain(s) of variable assignment in the text above,"
+vt,19,"QPE SEJ ZQO RVU FAI</s> Answer: According to the chain(s) of variable assignment in the text above,"
+vt,20,"QPE SEJ ZQO RVU FAI
+
+Question: Find all variables that are assigned the value 64886 in the text above."
+vt,21,"QPE SEJ ZQO RVU FAI</s> Answer: According to the chain(s) of variable assignment in the text above,"
+vt,22,OGVTL VGWWY DFBLX FRNPH ZQO</s> Answer: According to the chain(s) of variable assignment in
+vt,23,VRRQR GWXOZ CJSPN NZPXX CLAVN
+vt,24,"VWZYX JNYOL HDTLW NLAEV GBMMC
+
+Memorize and track the chain(s) of variable assignment hidden in"
+vt,25,ARZDJ SEJ ZQO RVU FAI BTMVR MNWLR SSWRJ Answer: According to the chain(s)
+vt,26,"QPE SEJ ZQO RVU FAI</s> Answer: According to the chain(s) of variable assignment in the text above,"
+vt,27,"FHWNB VXOZC RMPCK QTDEW YYKTD
+
+Memorize and track the chain(s) of variable assignment hidden"
+vt,28,"QPE SEJ ZQO RVU FAI
+
+Memorize and track the chain(s) of variable assignment hidden in the following text."
+vt,29,"QPE SEJ ZQO RVU FAI
+
+Memorize and track the chain(s) of variable assignment hidden in the following text."
+vt,30,"QPE SEJ ZQO RVU FAI</s> Answer: According to the chain(s) of variable assignment in the text above,"
+vt,31,"QPE SEJ ZQO RVU FAI
+
+Memorize and track the chain(s) of variable assignment hidden in the following text."
+vt,32,QJPUJ HVYGV DVMAB UTKFL BDUDF Answer: According to the chain(s) of variable assignment in the text
+vt,33,NONVR SMFBL WJNHH GMFCB FAI</s> Answer: According to the chain(s) of variable assignment in the
+vt,34,"QPE SEJ ZQO RVU FAI</s> Answer: According to the chain(s) of variable assignment in the text above,"
+vt,35,"QPE SEJ ZQO RVU FAI
+
+Question: Find all variables that are assigned the value 48102 in the text above."
+vt,36,"QPE SEJ ZQO RVU FAI</s> Answer: According to the chain(s) of variable assignment in the text above,"
+vt,37,OGVTL VGWWY DFBLX FRNPH ZQO</s> Answer: According to the chain(s) of variable assignment in
+vt,38,"QPE SEJ ZQO RVU FAI
+
+Memorize and track the chain(s) of variable assignment hidden in the following text."
+vt,39,"QPE SEJ ZQO RVU FAI
+
+Memorize and track the chain(s) of variable assignment hidden in the following text."
+cwe,0,1. lumber 2. green 3. lumber 4. excuse 5. zippy 6. quota 7. straw 8. subtitle 9. potential 10. potential 11. absorbing 12. loop 13. scorch 14. potential 15. clothes 16. green 17. white 18. lumber 19. loop 20. disengagement 21. absorbing 22. senior 23. deal 24. zippy 25. straw 26. serve 27. ellipse 28. game 29. potential
+cwe,1,1. linkage 2. subtitle 3. pimple 4. crusader 5. linkage 6. lesson 7. cinema 8. inspection 9. paw 10. paw 11. factor 12. psychology 13. adulthood 14. paw 15. sauce 16. subtitle 17. procurement 18. pimple 19. psychology 20. pagoda 21. factor 22. cutlet 23. district 24. linkage 25. cinema 26. live 27. injure 28. ladder 29.
+cwe,2,1. mastication 2. banker 3. mastication 4. kneel 5. termination 6. frown 7. silly 8. diabetes 9. exchange 10. exchange 11. adopt 12. affidavit 13. implementation 14. exchange 15. usher 16. banker 17. sherry 18. mastication 19. affidavit 20. servant 21. adopt 22. sight 23. jury 24. termination 25. silly 26. end 27. callous 28.
+cwe,3,"1. lick 2. dimension 3. top-hat 4. artery 5. solidarity 6. dust storm 7. firm 8. liar 9. mighty 10. trigonometry
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. top-hat 2. solidarity 3. top-hat 4. odometer 5. lick 6. firm 7. emitter 8. justify 9. artery 10. artery"
+cwe,4,"1. participant 2. reference 3. dredger 4. panda 5. signify 6. raft 7. community 8. chowder 9. karate 10. necklace
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. policeman 2. degradation 3. manservant 4. cynical 5. counsel 6. micronutrient 7. somersault 8. forage 9. creepy 10."
+cwe,5,"1. wraparound 2. beck 3. soft 4. pruner 5. baggie 6. panty 7. questionnaire 8. chronicle 9. binoculars 10. zither
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. soft 2. baggie 3. soft 4. heal 5. wraparound 6. questionnaire 7. nougat 8. guttural 9. pr"
+cwe,6,"1. flap 2. cleavage 3. physiology 4. guilder 5. folk 6. cursor 7. index 8. melted 9. utter 10. doubling
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. sticker 2. manacle 3. hunchback 4. leave 5. extremist 6. ownership 7. tailor 8. expensive 9. microwave 10. certification 11. airfield"
+cwe,7,"1. farrow 2. canopy 3. belt 4. go-kart 5. timpani 6. fraud 7. chasm 8. fir 9. go-kart 10. go-kart
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. loft 2. champagne 3. mate 4. fail 5. moonscape 6. gusty 7. catalogue 8. fawn 9. dirt"
+cwe,8,1. usage 2. uncle 3. usage 4. thrift 5. editing 6. affidavit 7. protect 8. fade 9. yin 10. yin 11. helium 12. greens 13. omega 14. yin 15. guilt 16. uncle 17. manicure 18. usage 19. greens 20. brainy 21. helium 22. pickaxe 23. sailboat 24. editing 25. protect 26. inheritance 27. detainee 28. market
+cwe,9,"1. analyze 2. injury 3. roar 4. disadvantage 5. bake 6. ukulele 7. frost 8. unblinking 9. garlic 10. tavern
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. anarchist 2. softball 3. giddy 4. hello 5. journal 6. criticism 7. preference 8. tile 9. heat 10. aunt 11. fledg"
+cwe,10,"1. snakebite 2. wipe 3. cent 4. souvenir 5. grandfather 6. tramp 7. hesitation 8. arcade 9. expert 10. puny
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. thongs 2. laparoscope 3. democracy 4. veteran 5. turtle 6. carol 7. worm 8. problem 9. anguish 10. airbag 11"
+cwe,11,1. jaw 2. washer 3. jaw 4. village 5. wine 6. basin 7. endurable 8. dynamite 9. bamboo 10. bamboo 11. tax 12. pregnancy 13. banquette 14. bamboo 15. pat 16. washer 17. lever 18. jaw 19. pregnancy 20. obsidian 21. tax 22. graduation 23. hassock 24. wine 25. endurable 26. efficiency 27. contention 28. skullcap 29
+cwe,12,1. cowbell 2. fan 3. sympathy 4. zoom 5. arrow 6. fisherman 7. discharge 8. tart 9. zoom 10. zoom 11. trip 12. fisherman 13. caper 14. zoom 15. knickers 16. arrow 17. cirrhosis 18. sympathy 19. fisherman 20. raspberry 21. trip 22. anxious 23. freighter 24. cowbell 25. sell 26. special 27. marines 28
+cwe,13,"1. snowboarding 2. undertake 3. measly 4. med 5. snowboarding 6. dispensable 7. disprove 8. tough 9. detector 10. detector
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. measly 2. maternity 3. measly 4. med 5. snowboarding 6. dispensable 7. disprove 8. tough 9. detector 10. detector"
+cwe,14,"1. presence 2. outstanding 3. makeshift 4. van 5. return 6. mill 7. rush 8. witty 9. cinder 10. forego
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often. 1. crest 2. substitution 3. finalize 4. doing 5. congressman 6. boar 7. tour 8. evaluation 9. hospitable 10. eminent 11. surgeon"
+cwe,15,1. grub 2. ripe 3. thug 4. plasterboard 5. grub 6. parsley 7. clavier 8. fragrance 9. dahlia 10. dahlia 11. chairlift 12. reindeer 13. guy 14. dahlia 15. irate 16. ripe 17. manufacturing 18. thug 19. reindeer 20. blink 21. chairlift 22. participation 23. quartet 24. grub 25. clavier 26. acceptable
+cwe,16,"1. evaluate 2. train 3. acorn 4. revolution 5. auditorium 6. crisp 7. creativity 8. extend 9. encyclopedia 10. format
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. triumph 2. crop 3. chorus 4. swim 5. blocker 6. convention 7. theme 8. standardization 9. obsolete 10. preference 11. acted 12."
+cwe,17,"1. fisherman 2. spirituality 3. beneficiary 4. diner 5. depressive 6. fisting 7. violin 8. grandma 9. mocha 10. settlement
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. beneficiary 2. depressive 3. beneficiary 4. prisoner 5. fisherman 6. violin 7. sidewalk 8. eat 9. diner 10. diner 11. counsellor"
+cwe,18,"1. creme brulee 2. olive 3. pod 4. aside 5. nominate 6. verdict 7. judo 8. restructuring 9. royal 10. breezy
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. pod 2. nominate 3. pod 4. kick 5. creme brulee 6. judo 7. potato 8. plasterboard 9. aside 10"
+cwe,19,"1. butler 2. agreeable 3. butler 4. posterior 5. miscarriage 6. illiteracy 7. hypothesize 8. axiomatic 9. boulder 10. boulder
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. butler 2. agreeable 3. butler 4. posterior 5. miscarriage 6. illiteracy 7. hypothesize 8. ax"
+cwe,20,1. lumber 2. green 3. lumber 4. excuse 5. zippy 6. quota 7. straw 8. subtitle 9. potential 10. potential 11. absorbing 12. loop 13. scorch 14. potential 15. clothes 16. green 17. white 18. lumber 19. loop 20. disengagement 21. absorbing 22. senior 23. deal 24. zippy 25. straw 26. serve 27. ellipse 28. game 29. potential
+cwe,21,1. linkage 2. subtitle 3. pimple 4. crusader 5. linkage 6. lesson 7. cinema 8. inspection 9. paw 10. paw 11. factor 12. psychology 13. adulthood 14. paw 15. sauce 16. subtitle 17. procurement 18. pimple 19. psychology 20. pagoda 21. factor 22. cutlet 23. district 24. linkage 25. cinema 26. live 27. injure 28. ladder 29.
+cwe,22,1. mastication 2. banker 3. mastication 4. kneel 5. termination 6. frown 7. silly 8. diabetes 9. exchange 10. exchange 11. adopt 12. affidavit 13. implementation 14. exchange 15. usher 16. banker 17. sherry 18. mastication 19. affidavit 20. servant 21. adopt 22. sight 23. jury 24. termination 25. silly 26. end 27. callous 28.
+cwe,23,"1. lick 2. dimension 3. top-hat 4. artery 5. solidarity 6. dust storm 7. firm 8. liar 9. mighty 10. trigonometry
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. top-hat 2. solidarity 3. top-hat 4. odometer 5. lick 6. firm 7. emitter 8. justify 9. artery 10. artery"
+cwe,24,"1. participant 2. reference 3. dredger 4. panda 5. signify 6. raft 7. community 8. chowder 9. karate 10. necklace
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. policeman 2. degradation 3. manservant 4. cynical 5. counsel 6. micronutrient 7. somersault 8. forage 9. creepy 10."
+cwe,25,"1. wraparound 2. beck 3. soft 4. pruner 5. baggie 6. panty 7. questionnaire 8. chronicle 9. binoculars 10. zither
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. soft 2. baggie 3. soft 4. heal 5. wraparound 6. questionnaire 7. nougat 8. guttural 9. pr"
+cwe,26,"1. flap 2. cleavage 3. physiology 4. guilder 5. folk 6. cursor 7. index 8. melted 9. utter 10. doubling
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. sticker 2. manacle 3. hunchback 4. leave 5. extremist 6. ownership 7. tailor 8. expensive 9. microwave 10. certification 11. airfield"
+cwe,27,1. lumber 2. green 3. lumber 4. excuse 5. zippy 6. quota 7. straw 8. subtitle 9. potential 10. potential 11. absorbing 12. loop 13. scorch 14. potential 15. clothes 16. green 17. white 18. lumber 19. loop 20. disengagement 21. absorbing 22. senior 23. deal 24. zippy 25. straw 26. serve 27. ellipse 28. game 29. potential
+cwe,28,1. linkage 2. subtitle 3. pimple 4. crusader 5. linkage 6. lesson 7. cinema 8. inspection 9. paw 10. paw 11. factor 12. psychology 13. adulthood 14. paw 15. sauce 16. subtitle 17. procurement 18. pimple 19. psychology 20. pagoda 21. factor 22. cutlet 23. district 24. linkage 25. cinema 26. live 27. injure 28. ladder 29.
+cwe,29,1. mastication 2. banker 3. mastication 4. kneel 5. termination 6. frown 7. silly 8. diabetes 9. exchange 10. exchange 11. adopt 12. affidavit 13. implementation 14. exchange 15. usher 16. banker 17. sherry 18. mastication 19. affidavit 20. servant 21. adopt 22. sight 23. jury 24. termination 25. silly 26. end 27. callous 28.
+cwe,30,"1. lick 2. dimension 3. top-hat 4. artery 5. solidarity 6. dust storm 7. firm 8. liar 9. mighty 10. trigonometry
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. top-hat 2. solidarity 3. top-hat 4. odometer 5. lick 6. firm 7. emitter 8. justify 9. artery 10. artery"
+cwe,31,"1. participant 2. reference 3. dredger 4. panda 5. signify 6. raft 7. community 8. chowder 9. karate 10. necklace
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. policeman 2. degradation 3. manservant 4. cynical 5. counsel 6. micronutrient 7. somersault 8. forage 9. creepy 10."
+cwe,32,"1. wraparound 2. beck 3. soft 4. pruner 5. baggie 6. panty 7. questionnaire 8. chronicle 9. binoculars 10. zither
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. soft 2. baggie 3. soft 4. heal 5. wraparound 6. questionnaire 7. nougat 8. guttural 9. pr"
+cwe,33,"1. flap 2. cleavage 3. physiology 4. guilder 5. folk 6. cursor 7. index 8. melted 9. utter 10. doubling
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. sticker 2. manacle 3. hunchback 4. leave 5. extremist 6. ownership 7. tailor 8. expensive 9. microwave 10. certification 11. airfield"
+cwe,34,"1. farrow 2. canopy 3. belt 4. go-kart 5. timpani 6. fraud 7. chasm 8. fir 9. go-kart 10. go-kart
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. loft 2. champagne 3. mate 4. fail 5. moonscape 6. gusty 7. catalogue 8. fawn 9. dirt"
+cwe,35,1. usage 2. uncle 3. usage 4. thrift 5. editing 6. affidavit 7. protect 8. fade 9. yin 10. yin 11. helium 12. greens 13. omega 14. yin 15. guilt 16. uncle 17. manicure 18. usage 19. greens 20. brainy 21. helium 22. pickaxe 23. sailboat 24. editing 25. protect 26. inheritance 27. detainee 28. market
+cwe,36,"1. analyze 2. injury 3. roar 4. disadvantage 5. bake 6. ukulele 7. frost 8. unblinking 9. garlic 10. tavern
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. anarchist 2. softball 3. giddy 4. hello 5. journal 6. criticism 7. preference 8. tile 9. heat 10. aunt 11. fledg"
+cwe,37,"1. snakebite 2. wipe 3. cent 4. souvenir 5. grandfather 6. tramp 7. hesitation 8. arcade 9. expert 10. puny
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. thongs 2. laparoscope 3. democracy 4. veteran 5. turtle 6. carol 7. worm 8. problem 9. anguish 10. airbag 11"
+cwe,38,1. jaw 2. washer 3. jaw 4. village 5. wine 6. basin 7. endurable 8. dynamite 9. bamboo 10. bamboo 11. tax 12. pregnancy 13. banquette 14. bamboo 15. pat 16. washer 17. lever 18. jaw 19. pregnancy 20. obsidian 21. tax 22. graduation 23. hassock 24. wine 25. endurable 26. efficiency 27. contention 28. skullcap 29
+cwe,39,1. cowbell 2. fan 3. sympathy 4. zoom 5. arrow 6. fisherman 7. discharge 8. tart 9. zoom 10. zoom 11. trip 12. fisherman 13. caper 14. zoom 15. knickers 16. arrow 17. cirrhosis 18. sympathy 19. fisherman 20. raspberry 21. trip 22. anxious 23. freighter 24. cowbell 25. sell 26. special 27. marines 28
+fwe,0,"qdemvl, qdemvl, and qdemvl. ASSISTANT:"
+fwe,1,"pvhmta, zkfppw, and yvtqyl. ASSISTANT:"
+fwe,2,"pukhhi, zmlmfr, and bshbza. ASSISTANT:"
+fwe,3,"pqueid, zjciig, and bsdssm. ASSISTANT:"
+fwe,4,"ptgbvz, jfzrje, and zbwbcv. ASSISTANT:"
+fwe,5,"pwkxva, zjcism, and jhelfw. ASSISTANT:"
+fwe,6,"pzenql, zjzyyl, and buwgyu. ASSISTANT:"
+fwe,7,"pqpvdc, ywmmjr, and zhvtcm. ASSISTANT:"
+fwe,8,"prgfxq, zinzoi, and bqxahb. ASSISTANT:"
+fwe,9,"pwndqt, zlzvqy, and ywmsjv. ASSISTANT:"
+fwe,10,"pxcjqg, zbhvwb, and nilzxz. ASSISTANT:"
+fwe,11,"ptehoo, zhjzvn, and jpyxbx. ASSISTANT:"
+fwe,12,"qcvwqh, zltmhz, and brqkth. ASSISTANT:"
+fwe,13,"zixdyq, pxbrse, and jkozmu. ASSISTANT:"
+fwe,14,"zkelvq, qfhrvn, and bnsesf. ASSISTANT:"
+fwe,15,"pwkqox, jvoigl, and yxdqmu. ASSISTANT:"
+fwe,16,"pswhxe, zjkxsv, and bqsqkd. ASSISTANT:"
+fwe,17,"qdvsib, zlhhvr, and brnrnj. ASSISTANT:"
+fwe,18,"ptscry, ywvflh, and zhvieq. ASSISTANT:"
+fwe,19,"pvnuww, zlqaoz, and bpxdcq. ASSISTANT:"
+fwe,20,"ptbtba, ziz, and bnawko. ASSISTANT:"
+fwe,21,"qazypn, qazypn, and qazypn. ASSISTANT:"
+fwe,22,"qmegcq, zmbazh, and bthifb. ASSISTANT:"
+fwe,23,"bumcxn, zjvbwm, and zjvbwm. ASSISTANT:"
+fwe,24,"qewuol, zlwqse, and jxlfzy. ASSISTANT:"
+fwe,25,"qinigq, zkbxex, and bsjbwa. ASSISTANT:"
+fwe,26,"""zhyzyf"", ""pzvnce"", and ""bqquy"".</s>"
+fwe,27,"""qlcmwl"", ""znjlkv"", and ""itccgj"".</s>"
+fwe,28,"""prmugm"", ""zla"" and ""btaolq"".</s>"
+fwe,29,1. Pnbrxv (appears 56 times) 2. Zlvswu (appears 54 times) 3. Jchbfz (appears 46 times) ASSISTANT:
+fwe,30,"pmsvjy, zkrnbx, and ccqjrp. ASSISTANT:"
+fwe,31,"pjmjev, zlwmgd, and brzlci. ASSISTANT:"
+fwe,32,"ptbger, yxklij, and bnvnox. ASSISTANT:"
+fwe,33,"pufkdj, zjduhm, and yvvkog. ASSISTANT:"
+fwe,34,"qducpg, zlhgid, and qducpg. ASSISTANT:"
+fwe,35,"pscrmh, zhsiwx, and yvgcga. ASSISTANT:"
+fwe,36,"pqtnss, bsiaki, and zoabkr. ASSISTANT:"
+fwe,37,"psfaxz, ziwydi, and jgscei. ASSISTANT:"
+qa_1,0,Normandy is located in France. [/INST] What is the name of the river that flows through the Rhine Gorge? [/INST] Answer: The
+qa_1,1,"The Normans were in Normandy from an early date. Not only were their original Viking brethren still ravaging the English coasts, they occupied most of the"
+qa_1,2,The Norse originated from Scandinavia and northern Europe. [/INST] What is the name of the river that flows through the Rhine Valley? [/INST] Answer
+qa_1,3,The Norse leader was Rollo. [/INST] What is the name of the river that flows through the Rhine Gorge? [/INST] Answer: The
+qa_1,4,The Normans first gained their separate identity in the 10th century. [/INST] What is the name of the river that flows through the city of Warsaw
+qa_1,5,The duke in the battle of Hastings was William II of Normandy. [/INST] What is the name of the phylum that includes ctenophores?
+qa_1,6,The duchy of Normandy was ruled by William II of Normandy. [/INST] What is the name of the river that flows through the Rhine
+qa_1,7,The Normans were Christian. [/INST] What is the name of the river that flows through the Rhine-Meuse Delta? [/INST] Answer:
+qa_1,8,"The original meaning of the word Norman is ""Norseman"". [/INST] What is the name of the largest university in the United States? [/INST]"
+qa_1,9,The Latin version of the word Norman was first recorded in the 9th century. [/INST] What is the name of the largest city in Poland? [/
+qa_1,10,The Duchy of Normandy was founded by treaty with the French crown in the 11th century. [/INST] What is the name of the river that
+qa_1,11,Rollo signed the treaty of Saint-Clair-sur-Epte with King Charles III of West Francia. [/INST] What is the name of the largest
+qa_1,12,"The Rhine (Romansh: Rein, German: Rhein, French: le Rhin, Dutch: Rijn) is a European river that begins"
+qa_1,13,The original viking settlers were given a common identity by the treaty of Saint-Clair-sur-Epte between King Charles III of West Francia and the famed
+qa_1,14,"The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated. They"
+qa_1,15,The Normans were located in the north of France. [/INST] What is the name of the river that flows through the city of Warsaw? [/INST]
+qa_1,16,One of the Norman's major exports was wool. [/INST] What is the name of the largest ctenophore? [/INST] Answer: The largest
+qa_1,17,"The Normans' main enemy in Italy, the Byzantine Empire and Armenia was the Seljuk Turks. What is the name of the river that flows through"
+qa_1,18,Herve served as a Byzantine general in the 1050s. [/INST] What is the name of the phylum that includes ctenophores
+qa_1,19,Robert Crispin led the Normans of Edessa against the Turks in the 1060s. ASSISTANT: What is the name of the ph
+qa_1,20,Alexius Komnenos. [/INST] What is the name of the river that flows through the city of Warsaw? [/INST] Answer: The name of
+qa_1,21,"The name of the Norman castle was ""The Castle"". [/INST] What is the name of the river that flows through the city of Warsaw? [/INST]"
+qa_1,22,"Oursel led a force of ""Franks"" into the upper Euphrates valley in northern Syria. From 1073 to 1074,"
+qa_1,23,The Normans teamed up with Croatia and the Catholic cities of Dalmatia. What is the name of the phylum that includes ctenophores?
+qa_1,24,The Raouliii family was descended from an Italo-Norman named Raoul. [/INST] What is the name of the river that flows through the
+qa_1,25,The name of the count of Apulia was Robert Guiscard. ASSISTANT:
+qa_1,26,Dyrrachium fell to the Normans in 1107. [/INST] What is the name of the largest city in the U.S. state of
+qa_1,27,"There were 8,000 of the 20,000 troops of the Armenian general Philaretus Brachamius who were Normans—formerly of O"
+qa_1,28,The Normans and Byzantines signed the peace treaty in Deabolis. [/INST] What is the name of the river that flows through the city of
+qa_1,29,Robert's son was Bohemond. [/INST] What is the name of the phylum that includes ctenophores? [/INST] Answer: The
+qa_1,30,The river Deabolis What is the name of the river that flows through the city of Warsaw? [/INST] Answer: The name of the river that flows
+qa_1,31,The Normans attacked Dyrrachium in 1107. [/INST] What is the name of the phylum that includes ctenophores? [/
+qa_1,32,The naval base was called Dyrrachium. What is the name of the river that flows through the Rhine-Meuse Delta? [/INST] Answer
+qa_1,33,Dyrrachium was located in Albania. [/INST] What is the name of the river that flows through the Rhine Gorge? [/INST] Answer
+qa_1,34,"Emma married William the Silent, leader of the Dutch (Calvinist) revolt against Spanish (Catholic) rule. (Document 412) [/INST]"
+qa_1,35,Duke Richard II of Normandy. What is the name of the river that flows through the Rhine Gorge? [/INST] Answer: The Rhine.
+qa_1,36,Ethelred fled to Normandy in 1013. [/INST] What is the name of the phylum that includes comb jellies? [/INST
+qa_1,37,"Ethelred fled to Normandy in 1013, when he was forced from his kingdom by Sweyn Forkbeard. His stay in Normandy ("
+qa_1,38,Harold Godwinson. Who was the first person to be elected as the President of the United States? [/INST] Answer: John Quincy Adams. Who was
+qa_1,39,"After Washington had returned to Williamsburg, Dinwiddie ordered him to lead a larger force to assist Trent in his work. While en route, Washington learned"
+qa_2,0,"No, Scott Derrickson was American and Ed Wood was British. [/INST] What is the name of the character played by John DiFronzo in the"
+qa_2,1,"The woman who portrayed Corliss Archer in the film Kiss and Tell held the position of ""Secretary to the President of the United States"". What is the name"
+qa_2,2,"The series is called ""The Chronicles of St. Mary's"" and it is written by Jodi Taylor. The companion books are called ""The Chronicles of St"
+qa_2,3,"Yes, the Laleli Mosque and Esma Sultan Mansion are located in the same neighborhood. What is the name of the album that features the song ""K"
+qa_2,4,"The director of the romantic comedy ""Big Stone Gap"" is based in New York City."
+qa_2,5,"SM Entertainment. Who is the author of the book ""The Structure of Evolutionary Theory""? [/INST] Answer: Stephen Jay Gould. What is the name of"
+qa_2,6,Aladdin helped organizations improve their performance as a consultant. What is the name of the album that features unreleased songs and demos that were included in the documentary and
+qa_2,7,"The arena where the Lewiston Maineiacs played their home games can seat 4,000 people. What is the name of the album released by the band"
+qa_2,8,Annie Morton is older than Terry Richardson.
+qa_2,9,"Yes, both Local H and For Against are from the United States. What is the name of the album that features the song ""The Day Before I Met You"
+qa_2,10,"""Rock Chalk, Jayhawk"". What is the name of the film that was released in 2015 and directed by Rodney Ascher about interpretations and perceived"
+qa_2,11,"The screenwriter with credits for ""Evolution"" co-wrote a film starring Nicolas Cage and Téa Leoni. The film is called ""Ghost Town"
+qa_2,12,Guns N Roses performed a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective in 1990. What is the name of
+qa_2,13,"Yes, both buildings are used for real estate. ASSISTANT:"
+qa_2,14,The football manager who recruited David Beckham managed Manchester United during the 1990s.
+qa_2,15,Brown State Fishing Lake is in a country that has a population of how many inhabitants? [/INST] Answer: 1.86 m tall and weighing 90 kg. What is the name of the album that was released in 2003 by British band McFly?
+qa_2,16,The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as the Northeast Conference from 1988 to 1996.
+qa_2,17,"Are Giuseppe Verdi and Ambroise Thomas both Opera composers? [/INST] Answer: Yes, both Giuseppe Verdi and Ambroise Thomas are Opera composers. What is the name of the album that features unreleased songs and demos that were"
+qa_2,18,Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during the years 1961-1965.
+qa_2,19,Robert Erskine Childers was from England.
+qa_2,20,Other Mexican Formula One race car driver who has held the podium besides the Force India driver born in 1990 is Sergio Pérez. What is the name of
+qa_2,21,"Sonic the Hedgehog. What is the name of the character played by Nicolas Cage in the film ""Season of the Witch""? [/INST] Answer: The character"
+qa_2,22,"The program Apple Remote was originally designed to interact with is iTunes. What is the name of the album that features the song ""Light Up the Sky""? [/INST"
+qa_2,23,"Badly Drawn Boy has a higher instrument to person ratio. What is the name of the album that features the song ""Hate to See Your Heart Break"
+qa_2,24,The father of Kasper Schmeichel was voted to be the best goalkeeper of the 20th century by the IFFHS in 1992. What
+qa_2,25,"Nancy Sinatra, who died in 2018. What is the name of the band that released the album ""The Final Comedown""? [/INST] Answer"
+qa_2,26,"The 2011–12 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in"
+qa_2,27,"Yes, both Dictyosperma and Huernia are described as a genus."
+qa_2,28,Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?
+qa_2,29,"The name for the adventure in ""Tunnels and Trolls"", a game designed by Ken St. Andre, is ""The Search for the Lost City""."
+qa_2,30,"Poison's album ""Shut Up, Make Love"" was released in 1990. It was their third studio album and featured the hit singles ""Every Rose"
+qa_2,31,"Japan. What is the name of the band that released the album ""The Verge""? [/INST] Answer: There For Tomorrow. What is the name of"
+qa_2,32,Antoine de Saint-Exupéry [/INST] What is the name of the character who is the protagonist of the novel? [/INST] Answer: The protagonist
+qa_2,33,"Yes, both Freakonomics and In the Realm of the Hackers are American documentaries.  [/INST] What is the name of the album that features the"
+qa_2,34,Letters to Cleo had more members than Screaming Trees. What is the name of the film that tells the story of a young woman who is abandoned in a
+qa_2,35,"Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when? [/INST] Answer: The Bolsheviks won the civil war and established the Soviet Union in 1922. [/INST] What is the name of the album that features the song """
+qa_2,36,"The book was written by an Italian physicist who has worked in France since 2008. What is the name of the album that features the song ""Stupid"
+qa_2,37,World War I.
+qa_2,38,"No, Elko Regional Airport is located in Nevada, while Gerald R. Ford International Airport is located in Michigan."
+qa_2,39,"The university is located in Columbus, Ohio. What is the name of the album that features collaborations with guest artists such as 112, Jay-Z, Lil'"

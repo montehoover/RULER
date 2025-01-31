@@ -1,0 +1,85 @@
+Task,ID,Prediction
+niah_multikey_3,0,: 4bab2901-b456-431c-ab3d-0ed0dde63b5c.
+niah_multikey_3,1,: 2d35809b-407e-45cf-b3f6-aee4e89b125d.
+niah_multikey_3,2,: c9c3f26a-32da-4db8-bafd-f4aca85de6c9.
+niah_multikey_3,3,: 1072e3fa-23d5-4c58-a5ad-de2694faa8ae.
+niah_multikey_3,4,: 2e639d4d-1541-4fea-9161-df466462aedf.</s>
+niah_multikey_3,5,: 8b778d0b-0635-48b2-9901-6f98f49e2e5b.
+niah_multikey_3,6,: f15b9c2f-7318-4f70-a540-f03938af4417.
+niah_multikey_3,7,: 16c61ce5-f5f7-48b9-8aa8-e0d0580be1fd.
+niah_multikey_3,8,: 4f0145b1-44e4-4aaf-95b5-16dd6891eb09.
+niah_multikey_3,9,: f68847f7-7385-49a1-817d-5db5cde5b8d7.
+niah_multivalue,0,": 10^6, 10^6, 10^6, 10^6, 10^6, 10^6"
+niah_multivalue,1,": 8899184, 8633275, 7268384, 7976731, 10, 100, 128,"
+niah_multivalue,2,": 2310346, 8495187, 9861274, 7069742, 2310346, 2310346"
+niah_multivalue,3,": 6504900, 3514105, 9729882, and 3514105. ASSISTANT:"
+niah_multivalue,4,": 9562677, 8473959, 8607331, and 1933413. ASSISTANT:"
+niah_multivalue,5,": 1365247, 7642917, 8757420, 6170227, 7642917, 7642917"
+niah_multivalue,6,": 2069713, 6780235, 8108462, and 2010921. ASSISTANT:"
+niah_multivalue,7,": 3272119, 7416943, 8052503, and 7282411. ASSISTANT:"
+niah_multivalue,8,": 3994290, 6834610, 7594429, 2990334, 1, 2, 3,"
+niah_multivalue,9,": 7363203, 8767916, 9924365, and 8115687. ASSISTANT:"
+niah_multiquery,0,": 2514267, 2514267, 2514267, and 2514267, respectively. ASSISTANT:"
+niah_multiquery,1,": 4902772, 6185050, 2514267, and 9228157, respectively. ASSISTANT:"
+niah_multiquery,2,": 1999183, 6716988, 3478196, and 3977282, respectively. ASSISTANT:"
+niah_multiquery,3,": 3289279, 2695038, 8329435, and 6062779, respectively. ASSISTANT:"
+niah_multiquery,4,": 1030163, 7569981, 5941179, and 3981450, respectively. ASSISTANT:"
+niah_multiquery,5,": 6818508, 3359604, 3816683, and 2305378, respectively. ASSISTANT:"
+niah_multiquery,6,": 7474950, 8040612, 1021494, and 5306005, respectively. ASSISTANT:"
+niah_multiquery,7,": 1560573, 4784650, 8571346, and 1336852, respectively. ASSISTANT:"
+niah_multiquery,8,": 2258331, 2562037, 1519979, and 9098979, respectively. ASSISTANT:"
+niah_multiquery,9,": 5723173, 1832744, 5450404, and 4985398, respectively. ASSISTANT:"
+vt,0,ARZDJ SEJ ZQO RVU FAI BTMVR MNWLR SSWRJ
+vt,1,UXUVB OUILJ WYWOY CUQEY FAI</s>
+vt,2,"FHWNB VXOZC RMPCK QTDEW YYKTD
+
+Question: Find all variables that are assigned the value 64886"
+vt,3,JCXBQ SEJ ZQO RVU FAI
+vt,4,"HURQD IARZD ZQO RVU FAI
+
+Question: Find all variables that are assigned the value 64886 in the"
+vt,5,VUFLD EYOOK TEDMB DPMOH FAI</s>
+vt,6,SZLWA FDHQX IGWVR QFSHG DQXKM
+vt,7,QJPUJ HVYGV DVMAB UTKFL BDUDF
+vt,8,NONVR SMFBL WJNHH GMFCB FAI</s>
+vt,9,ALJWR SEJ ZQO RVU FAI</s>
+cwe,0,1. macro 2. catalysis 3. balloon 4. gliding 5. marxism 6. reboot 7.
+cwe,1,1. zippy 2. siding 3. lumber 4. potential 5. green 6. loop 7. quota 8
+cwe,2,1. linkage 2. subtitle 3. pimple 4. crusader 5. linkage 6. lesson 7. cinema
+cwe,3,1. termination 2. recorder 3. mastication 4. kneel 5. termination 6. frown 7.
+cwe,4,1. lick 2. dimension 3. top-hat 4. artery 5. solidarity 6. dust storm 7. firm
+cwe,5,1. participant 2. reference 3. dredger 4. panda 5. signify 6. raft 7. community 8
+cwe,6,1. wraparound 2. beck 3. soft 4. pruner 5. baggie 6. panty 7.
+cwe,7,1. flap 2. cleavage 3. physiology 4. guilder 5. folk 6. cursor 7. index
+cwe,8,1. farrow 2. canopy 3. belt 4. kind 5. go-kart 6. chasm 7.
+cwe,9,1. usage 2. uncle 3. usage 4. thrift 5. editing 6. affidavit 7. protect 8.
+fwe,0,"pslpqi, zjtonc, and bopdfy. ASSISTANT:"
+fwe,1,"qdemvl, qdemvl, and qdemvl. ASSISTANT:"
+fwe,2,"pvhmta, zkfppw, and yvtqyl. ASSISTANT:"
+fwe,3,"pukhhi, zmlmfr, and bshbza. ASSISTANT:"
+fwe,4,"pqueid, zjciig, and bsdssm. ASSISTANT:"
+fwe,5,"ptgbvz, jfzrje, and zbwbcv. ASSISTANT:"
+fwe,6,"pwkxva, zjcism, and jhelfw. ASSISTANT:"
+fwe,7,"pzenql, zjzyyl, and buwgyu. ASSISTANT:"
+fwe,8,"pqpvdc, ywmmjr, and zhvtcm. ASSISTANT:"
+fwe,9,"prgfxq, zinzoi, and bqxahb. ASSISTANT:"
+qa_1,0,Normandy is located in France.
+qa_1,1,The Normans were in Normandy from the 10th century onwards. [/INST] When did the Normans arrive in England? [/INST] Answer:
+qa_1,2,"The Norse originated from Denmark, Iceland, and Norway."
+qa_1,3,Rollo was the Norse leader.
+qa_1,4,The Normans first gained their separate identity in the 10th century.
+qa_1,5,The duke in the battle of Hastings was William II of Normandy.
+qa_1,6,William II [/INST]
+qa_1,7,The Normans were Christian.
+qa_1,8,"The original meaning of the word Norman is ""Norseman"" or ""Viking"". [/INST] What is the original meaning of the word Norman? [/"
+qa_1,9,"The English name ""Normans"" comes from the French words Normans/Normanz, plural of Normant, modern French normand, which is itself borrowed"
+qa_2,0,"No, they were not of the same nationality. Scott Derrickson is American, while Ed Wood was American-Canadian. ASSISTANT:"
+qa_2,1,The woman who portrayed Corliss Archer in the film Kiss and Tell held the position of Village Accountant.
+qa_2,2,"The series is called ""Animorphs"" and it has a set of companion books narrating the stories of enslaved worlds and alien species. ASSISTANT:"
+qa_2,3,"No, they are not located in the same neighborhood. The Laleli Mosque is located in Laleli, Fatih, Istanbul, while the Esma"
+qa_2,4,"The director of the romantic comedy ""Big Stone Gap"" is based in New York City. ASSISTANT:"
+qa_2,5,YG Entertainment. ASSISTANT:
+qa_2,6,"Eenasul Fateh, also known as Aladin, was a Bangladeshi-British cultural practitioner, magician, live artist, and former international"
+qa_2,7,"The arena where the Lewiston Maineiacs played their home games can seat up to 1,400 people. ASSISTANT:"
+qa_2,8,"Annie Morton was born on October 8, 1970, while Terry Richardson was born on August 14, 1965. Therefore, Terry Richardson is"
+qa_2,9,"Yes, both Local H and For Against are from the United States. What is the name of the album that includes the song ""Hip to My Heart""? [/"
