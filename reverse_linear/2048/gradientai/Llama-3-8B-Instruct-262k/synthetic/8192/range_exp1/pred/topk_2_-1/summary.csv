@@ -1,0 +1,4 @@
+0,1,2,3,4,5,6,7,8,9,10
+Tasks,niah_multikey_2,niah_multikey_3,niah_multivalue,niah_multiquery,vt,cwe,fwe,qa_1,qa_2,avg
+Score,100.0,100.0,93.75,100.0,97.0,33.75,70.0,70.0,60.0,80.5
+Nulls,0/40,0/40,0/40,0/40,0/40,0/40,0/40,0/40,0/40,
