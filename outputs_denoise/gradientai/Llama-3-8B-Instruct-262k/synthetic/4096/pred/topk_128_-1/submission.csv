@@ -1,0 +1,447 @@
+Task,ID,Prediction
+niah_single_1,0,8090293.
+niah_single_1,1,4612365.
+niah_single_1,2,7374122.
+niah_single_1,3,5437923.
+niah_single_1,4,3094235.
+niah_single_1,5,5918715.
+niah_single_1,6,2166941.
+niah_single_1,7,2338687.
+niah_single_1,8,5663623.
+niah_single_1,9,7210606.
+niah_single_2,0,3678638. ASSISTANT:
+niah_single_2,1,3608513. ASSISTANT:
+niah_single_2,2,"2556017. It is mentioned in the context of hiring too fast being the biggest killer of startups that raise money. Founders often overestimate the need to hire in order to grow, and this can lead to the fatal pinch, which is default dead + slow growth + not enough time to fix it. The fatal pinch can be avoided by addressing the fundamental problem of the product being only moderately appealing, rather than hiring more people. The article suggests that founders should ask themselves whether they are default alive or default dead, and if they are default dead, they should have a plan B to survive if they cannot raise more money. The"
+niah_single_2,3,6770619. ASSISTANT:
+niah_single_2,4,8707870. ASSISTANT:
+niah_single_2,5,2322047. ASSISTANT:
+niah_single_2,6,7067228. ASSISTANT:
+niah_single_2,7,2166941. ASSISTANT:
+niah_single_2,8,2338687. ASSISTANT:
+niah_single_2,9,5663623.
+niah_single_3,0,1ff49b78-8946-4e85-b59c-de66bacfb3d0. ASSISTANT:
+niah_single_3,1,: 9e574f7a-a0ee-49ae-9453-dd324b0dbb41. ASSISTANT:
+niah_single_3,2,: 3a578a8e-a948-4d99-8bbb-259911ce5dd2. ASSISTANT:
+niah_single_3,3,47294739-614f-43d7-99db-3ad0ddd1dfb2. ASSISTANT:
+niah_single_3,4,ab9099a4-35a2-40ae-9af3-05535ec42e08. ASSISTANT:
+niah_single_3,5,baa80dd4-88bd-4407-abcf-be01a28defe3. ASSISTANT:
+niah_single_3,6,ece66fa2-fd51-46e6-851b-4cf36123fdf7. ASSISTANT:
+niah_single_3,7,c6a7ee39-c4b0-42cc-97c5-24a55304317f. ASSISTANT:
+niah_single_3,8,: 448aaa9e-66b2-4c5b-90c1-87fcce177b4e. ASSISTANT:
+niah_single_3,9,: 366eb16f-508e-4ad7-b7c9-3acfe059a0ee. ASSISTANT:
+niah_multikey_1,0,: 9375710. ASSISTANT:
+niah_multikey_1,1,: 7700828. ASSISTANT:
+niah_multikey_1,2,: 3684052. ASSISTANT:
+niah_multikey_1,3,"6707197. July 2010. What is the reason for the author's concern about the App Store approval process? The author is concerned about the App Store approval process because it has harmed Apple's reputation with programmers more than anything else they've ever done. How does the App Store approval process affect Apple's reputation with programmers? The App Store approval process has caused a lot of programmers to see Apple as evil. What is the author's opinion on the App Store approval process? The author believes that Apple doesn't understand software and is trying to be a software publisher, which doesn't work for software. What is the author's"
+niah_multikey_1,4,: 2785277. ASSISTANT:
+niah_multikey_1,5,9897858. ASSISTANT:
+niah_multikey_1,6,8973915. ASSISTANT:
+niah_multikey_1,7,: 4374754. ASSISTANT:
+niah_multikey_1,8,: 4694634. ASSISTANT:
+niah_multikey_1,9,: 5672073.
+niah_multikey_2,0,: 5774152. ASSISTANT:
+niah_multikey_2,1,: 4475536.
+niah_multikey_2,2,: 3128830.
+niah_multikey_2,3,: 3917016.
+niah_multikey_2,4,: 7992286. ASSISTANT:
+niah_multikey_2,5,: 6675742.
+niah_multikey_2,6,2647562.
+niah_multikey_2,7,: 5418274.
+niah_multikey_2,8,: 9184645.
+niah_multikey_2,9,: 4394202.
+niah_multikey_3,0,: 1ee34dc4-3b04-4a8b-805b-fdc94e7ed827.
+niah_multikey_3,1,: 54fd9ad3-9716-408e-b721-69bb80962718.
+niah_multikey_3,2,: 03cde2e3-21bd-4b41-8699-8731ddcf8766.
+niah_multikey_3,3,: 46510367-cbdc-4318-8d85-a3d2a1a27485.
+niah_multikey_3,4,a1b970d0-7a81-44de-b205-07bbfb16f757.
+niah_multikey_3,5,ef0a573d-53d2-456d-9040-158728e213bc.
+niah_multikey_3,6,915a1c30-4b86-45a1-8a6f-bff8564cfbd2.
+niah_multikey_3,7,: 61730c48-4876-4153-8688-13fe52555c75.
+niah_multikey_3,8,f966d59f-a6aa-49e5-9c08-bf29d2d33488.
+niah_multikey_3,9,23a4e70e-9dbc-45c0-aa7d-c57c6d9c5b50.
+niah_multikey_3,10,: b88416d2-d28f-4f68-8871-d7b38468b74d.
+niah_multikey_3,11,0effd5bd-47eb-440d-874e-48ffcf89569d.
+niah_multikey_3,12,: 2acb4fbd-fbff-4a7d-b2f5-b1762c41cbd3.
+niah_multikey_3,13,: 61b512ed-ae42-4568-9e14-553b1eac41d9.
+niah_multikey_3,14,0ce3c8c8-4735-4e4f-b85b-6d0a54b58635.
+niah_multikey_3,15,: 37ec07a6-4b27-4079-9c5d-3f1b54c0c6c2. ASSISTANT:
+niah_multikey_3,16,: 7463835e-eafb-4f20-b83c-91eb635a11f2.
+niah_multikey_3,17,f69a0539-58f4-4098-991c-c524953b0f1f.
+niah_multikey_3,18,: 219b606d-205c-4491-a061-09db7172f636.
+niah_multikey_3,19,: 869c3a8e-7d6a-47c2-a86d-8706637b3648.
+niah_multikey_3,20,457498ca-a90e-419d-a37e-3f94110c8d92.
+niah_multikey_3,21,: 0178de26-ceb5-47ac-8b22-e4457fa70485. ASSISTANT:
+niah_multikey_3,22,: 6d2cdbf9-160b-4ed4-8dc5-d42e6233960a.
+niah_multikey_3,23,: 496cc03a-06fd-41e6-9fd3-3d40bcc4f0db.
+niah_multikey_3,24,: 94500024-bdb5-4d06-a621-d32d895c167f.
+niah_multikey_3,25,: 8add06f9-9ccc-419f-b233-5074b2b3bb39.
+niah_multikey_3,26,: 95d03545-d5a7-4023-8d4f-6814d3850240.
+niah_multikey_3,27,: 7c0a5867-fcce-4213-a789-9d92f33c4c36.
+niah_multikey_3,28,ce830e27-c5ef-4670-9f4d-88ce998de3d8.
+niah_multikey_3,29,: da6069f3-8e40-4294-a6b9-4955f33685da.
+niah_multikey_3,30,: 9c8af485-b980-40a6-974e-598d836b47c3.
+niah_multikey_3,31,: ac249f30-92a0-4677-b700-b3c5d0a90840.
+niah_multikey_3,32,ae9e2bbf-e249-4790-917c-5deccd539417.
+niah_multikey_3,33,: 998a05a8-77a7-4ed0-bb5f-5290b11c7dff.
+niah_multikey_3,34,: 62ed5403-88d4-4ff4-904f-3fc56400bb0e.
+niah_multikey_3,35,: 9dc906df-056e-4d78-bb8c-0f8403671560.
+niah_multikey_3,36,fca54576-8523-43d7-9a5d-376e602ba256.
+niah_multikey_3,37,f96277e5-5b07-4b11-9896-95870e6bbde0.
+niah_multikey_3,38,: f2ca2002-f650-4852-82bc-e2e0dfd5988e.
+niah_multikey_3,39,b8845902-8897-4a4a-b3b6-36dcc2d01c42.
+niah_multivalue,0,": 8755439, 3741438, 7366205, and 5107245. ASSISTANT:"
+niah_multivalue,1,": 7730428, 6292423, 5491946, and 1538552. ASSISTANT:"
+niah_multivalue,2,": 8698256, 7637601, and 3396987. ASSISTANT:"
+niah_multivalue,3,": 7073292, 7700828, and 4679591. ASSISTANT:"
+niah_multivalue,4,": 8082668, 3684052, and 2065818. These numbers are used to represent the importance of addressing the fundamental problem of a startup's product being only moderately appealing, rather than hiring more people to boost growth. They also represent the need to avoid hiring too fast and to focus on growth in other ways, such as evolving the product or redesigning it. Additionally, they highlight the importance of not overestimating the need to hire in order to grow, and the need to address the fundamental problem of the product's appeal rather than relying solely on hiring more people. Overall, these special magic numbers emphasize the"
+niah_multivalue,5,": 5476583, 2921859, and 6707197. ASSISTANT:"
+niah_multivalue,6,": 3997281, 9398441, 9517485, and 5418934. ASSISTANT:"
+niah_multivalue,7,": 9897858, 3710343, and 7273233. ASSISTANT:"
+niah_multivalue,8,": 1971823, 5017343, 6159230, and 5041154. ASSISTANT:"
+niah_multivalue,9,": 5446912, 3770370, and 9852897. ASSISTANT:"
+niah_multivalue,10,": 7264956, 7693979, and 8350099. ASSISTANT:"
+niah_multivalue,11,": 4860684, 1352896, 4694634, and 6672134. ASSISTANT:"
+niah_multivalue,12,": 9626108, 2188789, 4993055, and 6543670. ASSISTANT:"
+niah_multivalue,13,": 8935169, 5076817, 7829332, and 8930103. ASSISTANT:"
+niah_multivalue,14,": 2651177, 1908841, and 2016911. ASSISTANT:"
+niah_multivalue,15,": 3351868, 8526486, 8077999, and 9997381. ASSISTANT:"
+niah_multivalue,16,": 1247595, 1848731, and 2564689. ASSISTANT:"
+niah_multivalue,17,": 3762152, 1983738, 7358113, and 7728339. ASSISTANT:"
+niah_multivalue,18,": 4185957, 3597059, and 5977931. ASSISTANT:"
+niah_multivalue,19,": 8999183, 1841248, and 9436429. ASSISTANT:"
+niah_multivalue,20,": 4946066, 2140194, 7774229, and 2149597. ASSISTANT:"
+niah_multivalue,21,": 9770838, 8033426, 6307805, and 2375453. ASSISTANT:"
+niah_multivalue,22,": 8670955, 6033115, 6304573, and 3195773. ASSISTANT:"
+niah_multivalue,23,": 5449324, 9487336, and 3222252. ASSISTANT:"
+niah_multivalue,24,": 9874152, 6075395, and 1131249. ASSISTANT:"
+niah_multivalue,25,": 5569244, 3607983, and 5727085. ASSISTANT:"
+niah_multivalue,26,": 8106422, 2548511, 5641923, and 1852264. ASSISTANT:"
+niah_multivalue,27,": 1162230, 8175395, 2876932, and 8412769. ASSISTANT:"
+niah_multivalue,28,": 3138181, 8210624, 1701771, 3484601, and 3484601. ASSISTANT:"
+niah_multivalue,29,": 6933742, 2724590, 7817881, and 5186414. ASSISTANT:"
+niah_multivalue,30,": 6573147, 4009172, 1415846, and 7907400. ASSISTANT:"
+niah_multivalue,31,": 4348276, 4731818, 8722606, and 8896868. ASSISTANT:"
+niah_multivalue,32,": 2164686, 5674183, 5682940, and 6507321. ASSISTANT:"
+niah_multivalue,33,": 3995870, 5382463, and 5453786. ASSISTANT:"
+niah_multivalue,34,": 9580255, 8321474, and 6262632. ASSISTANT:"
+niah_multivalue,35,": 9722815, 1028374, 4305700, 8315831. ASSISTANT:"
+niah_multivalue,36,": 9508103, 6038571, 6188935, 3090865. ASSISTANT:"
+niah_multivalue,37,": 3919694, 7361002, 6049101, and 8053918. ASSISTANT:"
+niah_multivalue,38,": 8801207, 6406444, 8411939, and 8212326. ASSISTANT:"
+niah_multivalue,39,": 9647849, 5761145, and 6623525. ASSISTANT:"
+niah_multiquery,0,": 8082668, 2065818, 2839607, and 3684052, respectively. These numbers are used to represent different aspects of the startup world, such as hiring too fast, overestimating the need for hiring, and the importance of addressing fundamental problems with the product. They are also used to illustrate the fatal pinch and the need for founders to have a plan B in case they can't raise more money. Overall, these numbers are meant to help founders avoid common pitfalls and make better decisions for their startups.</s>"
+niah_multiquery,1,"6707197, 5924115, 5476583, and 3653446, respectively. ASSISTANT:"
+niah_multiquery,2,": 9517169, 9897858, 7273233, and 4337174. ASSISTANT:"
+niah_multiquery,3,": 9153566, 2321324, 9937326, and 1971823, respectively. ASSISTANT:"
+niah_multiquery,4,": 4374754, 6229731, 9683481, and 7264956, respectively. ASSISTANT:"
+niah_multiquery,5,": 2191066, 2130789, 4694634, and 1987737, respectively. ASSISTANT:"
+niah_multiquery,6,": 4194548, 8935169, 3219824, and 8930103, respectively. ASSISTANT:"
+niah_multiquery,7,": 6692553, 4191175, 5171761, and 7754864, respectively. ASSISTANT:"
+niah_multiquery,8,": 2642635, 4965789, 8434500, and 1247595, respectively. ASSISTANT:"
+niah_multiquery,9,": 1036161, 5785687, 9164991, and 5449368, respectively. ASSISTANT:"
+vt,0,FITJT VGCAO ZJQUQ TYFAD DROFS
+vt,1,CAIRY KSBRQ CUWPD ZUJLJ NIWVC
+vt,2,TZHVN MLTGW VCWGM PJAWE FUIWS
+vt,3,GKOGM SLAHK GRJOI ZOJLH FSITY
+vt,4,SZNHC FFEAN HZOSD WMWOM LEBYM
+vt,5,DVYCG OKPQU JXHPL OBYCT QGCGO
+vt,6,HGSSL RYUQR YLOQX VBEHT OHDRS
+vt,7,CBLIG CZVOY ZRHBT MQXEP QMCJI
+vt,8,HYVOL IIZKN ZROKE JTQTF OYLSD
+vt,9,CZXLD VMSNH VZGOJ XNWWH UKYNV
+vt,10,OIOOL IESOG UBTSV KRVZM ANPWW
+vt,11,SKREM ZISQW WWJIS TWABQ XZTLC
+vt,12,BUHJD NOUEC WQGXD LGGAU XRELI
+vt,13,FKMGO OZHZR HORTB PMXHU PJQQR
+vt,14,AJDXI KFUWJ NHEXY ZHWUM BTFRR
+vt,15,NLRRP VYCGA WOXFB VXHKD YHMCX
+vt,16,KTEKC MKYAJ LYWCR OZJKE DWLRQ
+vt,17,"UFVOP VGUUP HZZOU CWDJU PAGDK
+
+Memorize and track the chain(s) of variable assignment hidden"
+vt,18,NCNYB UWNLZ BMKRM XBCPB HQOIZ
+vt,19,CSWQT SFLFI LKCLR JDXBV CCTVO
+vt,20,WSZPJ PFRFC VJTOU AYVGE VZVPQ
+vt,21,WOKDQ ATFKI JSUOC BEQRH RMLHT
+vt,22,RPNIF ZBFYT THDML DNFOR JKTLL
+vt,23,HKZEY LRJLC LKCWT FUBQN FUJYQ
+vt,24,EDTBY QMOPR WQZIZ ILMQU PJBMA
+vt,25,JPYTB XOEPN YLVVZ CQBSZ NPJXK
+vt,26,CRHSR XWIPD JZSKP YIJUV RVTRN
+vt,27,EFYMF DCVCU VWAIT DJEVU VELKR
+vt,28,NIVMV JYZMH JNZVU DGQWO CVWHT
+vt,29,CXVXY KKJKC FICSI DAXMV TMPXA
+vt,30,UGDGQ QBVMN QOSHA JOERN JYOUN
+vt,31,GAUIT QUTIB OVEUM SQVBU LHBFB
+vt,32,GTEJU WIDJX TXKZM MYNUS CPVOI
+vt,33,PLRJB WJZHZ YBQJU RYDPU ABUJJ
+vt,34,LBDJI HYAEN XDUSF PSZFD BESZV
+vt,35,XWSYQ UNDFD UAOJU OPCIZ SNTVB
+vt,36,IWUQE ZLXBD DEISI YXVGQ ODHNN
+vt,37,CYUGF OQAXO QHGUK LREKM IDWIZ
+vt,38,OIMGG CHJPG WEIPI TMNMI AYNZF
+vt,39,"HACDG JKBBO JHKLO VQPDC ZOJD
+
+Memorize and track the chain(s) of variable assignment hidden in"
+cwe,0,"1. arthur 2. kilt 3. fire 4. meter 5. activity 6. authenticity 7. forest 8. behalf 9. appliance 10. ferret
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. kilt 2. kilt 3. kilt 4. kilt 5. kilt 6. kilt 7. kilt 8. kilt 9. kilt 10"
+cwe,1,"1. alcohol 2. evolution 3. jailhouse 4. egg 5. skywalk 6. reminiscent 7. diner 8. embossing 9. primate 10. candelabra
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. cactus 2. cactus 3. cactus 4. cactus 5. cactus 6. cactus 7. cactus 8. cactus 9."
+cwe,2,"1. dollar 2. path 3. hockey 4. locket 5. caper 6. eat 7. strait 8. week 9. strait 10. strait
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. bronchitis 2. functional 3. animal 4. widow 5. sideboard 6. caper 7. frustration 8. gauge 9. strait 10. lo"
+cwe,3,"1. go 2. mailer 3. ruddy 4. elongation 5. humour 6. go 7. go 8. go 9. go 10. go
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. evanescent 2. convenience 3. misogyny 4. roar 5. lyre 6. go 7. represent 8. symbol 9. rebellion 10. rationale 11."
+cwe,4,"1. poor 2. sum 3. selection 4. stare 5. expansion 6. swear 7. momentous 8. everybody 9. everybody 10. everybody
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. cleft 2. cleft 3. cleft 4. cleft 5. cleft 6. cleft 7. cleft 8. cleft 9. cleft 10. c"
+cwe,5,"1. operation 2. array 3. kite 4. barley 5. private 6. monument 7. captor 8. tearful 9. unlock 10. everybody
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. cactus 2. cactus 3. cactus 4. cactus 5. cactus 6. cactus 7. cactus 8. cactus 9. cactus 10."
+cwe,6,"1. determine 2. obligation 3. migration 4. vanadyl 5. cruise 6. breadfruit 7. rocket 8. rocket 9. rocket 10. rocket
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. abhorrent 2. abhorrent 3. abhorrent 4. abhorrent 5. abhorrent 6. abhorrent 7. abhorrent 8. abhor"
+cwe,7,"1. cash 2. gale 3. sibling 4. brother-in-law 5. index 6. juicy 7. politics 8. hardcover 9. index 10. politician
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. rhubarb 2. succeed 3. squeegee 4. abiding 5. divalent 6. politician 7. paw 8. shack 9. juicy 10. index"
+cwe,8,"1. fava 2. resort 3. pacemaker 4. bourgeoisie 5. outback 6. lecture 7. guestbook 8. fava 9. fava 10. fava
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. fava 2. fava 3. fava 4. fava 5. fava 6. fava 7. fava 8. fava 9."
+cwe,9,"1. weeder 2. decoration 3. quilt 4. e-book 5. snuggle 6. morbid 7. tuna 8. charity 9. eel 10. fob
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. cactus 2. cactus 3. cactus 4. cactus 5. cactus 6. cactus 7. cactus 8. cactus 9. c"
+cwe,10,"1. code 2. colleague 3. finisher 4. salmon 5. frigate 6. proctor 7. disagree 8. code 9. colleague 10. finisher
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. cataract 2. cataract 3. cataract 4. cataract 5. cataract 6. cataract 7. cataract 8. c"
+cwe,11,"1. might 2. recipe 3. design 4. restored 5. assessment 6. shipping 7. pasture 8. gorgeous 9. technician 10. design
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. cactus 2. cactus 3. cactus 4. cactus 5. cactus 6. cactus 7. cactus 8. cactus 9. cactus 10. cactus"
+cwe,12,"1. excess 2. documentation 3. mill 4. blue-eyed 5. highfalutin 6. educated 7. elite 8. elite 9. elite 10. elite
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. penguin 2. penguin 3. penguin 4. penguin 5. penguin 6. penguin 7. penguin 8. penguin 9. penguin 10"
+cwe,13,"1. everybody 2. appear 3. kit 4. disaster 5. alight 6. abandoned 7. tail 8. guava 9. lesson 10. lesson
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. glee 2. sprag 3. rancher 4. grief 5. lesson 6. kit 7. competence 8. fire 9. appear 10. everybody 11. debris"
+cwe,14,"1. thinking 2. junior 3. papaya 4. lantern 5. guilty 6. drawbridge 7. flag 8. chateau 9. effect 10. effect
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. a 2. a 3. a 4. a 5. a 6. a 7. a 8. a 9. a 10. a 11. a 12."
+cwe,15,"1. offset 2. eddy 3. female 4. sailboat 5. employ 6. offset 7. offset 8. offset 9. offset 10. offset
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. cactus 2. cactus 3. cactus 4. cactus 5. cactus 6. cactus 7. cactus 8. cactus 9. cactus 10."
+cwe,16,"1. go 2. king 3. measurement 4. theology 5. zippy 6. smoggy 7. eagle 8. fair 9. king 10. theology
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. cactus 2. cactus 3. cactus 4. cactus 5. cactus 6. cactus 7. cactus 8. cactus 9. cactus 10"
+cwe,17,"1. salmon 2. hill 3. designation 4. apse 5. trailpatrol 6. verse 7. nothing 8. rowboat 9. orient 10. delightful
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. gondola 2. apse 3. trailpatrol 4. rowboat 5. salmon 6. apse 7. trailpatrol 8. rowboat 9. ap"
+cwe,18,"1. division 2. stepson 3. bite 4. tick 5. ceramics 6. eyelash 7. stepson 8. scream 9. uninterested 10. stepson
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. braid 2. braid 3. braid 4. braid 5. braid 6. braid 7. braid 8. braid 9. braid"
+cwe,19,"1. caramel 2. drapes 3. antiquity 4. samurai 5. distributor 6. enforce 7. whisper 8. e-mail 9. drapes 10. drapes
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. pelt 2. pelt 3. pelt 4. pelt 5. pelt 6. pelt 7. pelt 8. pelt 9. p"
+cwe,20,"1. well 2. lynx 3. switch 4. sneakers 5. counseling 6. precipitation 7. timing 8. evolution 9. well 10. lynx
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. eat 2. poison 3. shoat 4. latter 5. insurance 6. orator 7. timing 8. sneakers 9. educate 10. councilor 11. sneakers"
+cwe,21,"1. knowing 2. knowing 3. knowing 4. knowing 5. knowing 6. knowing 7. knowing 8. knowing 9. knowing 10. knowing
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. sector 2. withdrawal 3. topsail 4. conclude 5. outrun 6. carp 7. bind 8. being 9. cotton 10. cinder 11. adhesive 12."
+cwe,22,"1. kilt 2. gator 3. souvenir 4. drinking 5. apricot 6. puritan 7. ounce 8. jumpsuit 9. common 10. carbohydrate
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. kilt 2. gator 3. souvenir 4. drinking 5. apricot 6. puritan 7. ounce 8. jumpsuit 9. common 10. carbohydrate"
+cwe,23,"1. zebra 2. everybody 3. geology 4. consistency 5. arrival 6. cygnet 7. cygnet 8. cygnet 9. cygnet 10. cygnet
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. zebra 2. zebra 3. zebra 4. zebra 5. zebra 6. zebra 7. zebra 8."
+cwe,24,"1. idea 2. minute 3. legume 4. convection 5. fuzzy 6. bakery 7. yam 8. pin 9. point 10. idea
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. braid 2. braid 3. braid 4. braid 5. braid 6. braid 7. braid 8. braid 9. braid 10"
+cwe,25,"1. solution 2. red 3. cod 4. plane 5. send 6. whole 7. integrity 8. culture 9. solution 10. solution
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. gull 2. gull 3. gull 4. gull 5. gull 6. gull 7. gull 8. gull 9. gull 10. gull"
+cwe,26,"1. leader 2. beyond 3. punch 4. semantics 5. crazy 6. technician 7. nanoparticle 8. lyre 9. angora 10. jute
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. jute 2. emery 3. doctorate 4. forte 5. glow 6. terrible 7. complete 8. pump 9. nanoparticle 10. unequ"
+cwe,27,"1. polarisation 2. percent 3. tissue 4. attract 5. mandate 6. alpenhorn 7. percent 8. percent 9. percent 10. percent
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. pelt 2. pelt 3. pelt 4. pelt 5. pelt 6. pelt 7. pelt 8. pelt 9. pelt 10"
+cwe,28,"1. raise 2. beyond 3. cynical 4. relate 5. initialize 6. carp 7. size 8. fillet 9. raise 10. beyond
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. gale 2. paramecium 3. raise 4. beyond 5. fillet 6. raise 7. beyond 8. raise 9. beyond 10. raise 11. beyond"
+cwe,29,"1. old 2. information 3. structure 4. episode 5. chandelier 6. force 7. mention 8. weird 9. geography 10. old
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. chandelier 2. chandelier 3. chandelier 4. chandelier 5. chandelier 6. chandelier 7. chandelier 8. chandelier 9. chandelier 10. ch"
+cwe,30,"1. stone 2. few 3. might 4. imported 5. supervise 6. topic 7. draw 8. stare 9. imported 10. imported
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. boulder 2. few 3. might 4. imported 5. supervise 6. topic 7. draw 8. stare 9. imported 10. imported 11. imported 12. imported"
+cwe,31,"1. admit 2. category 3. pence 4. toot 5. bandana 6. yield 7. garbage 8. toot 9. toot 10. toot
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. pence 2. toot 3. category 4. toot 5. toot 6. toot 7. toot 8. toot 9. toot"
+cwe,32,"1. message 2. style 3. cloudy 4. quail 5. fancy 6. premeditation 7. closet 8. pencil 9. bathe 10. missile
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. gong 2. gong 3. gong 4. gong 5. gong 6. gong 7. gong 8. gong 9. gong"
+cwe,33,"1. terminology 2. carport 3. poppy 4. wet-bar 5. chime 6. nauseating 7. pigeon 8. label 9. tape 10. ark
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. chime 2. chime 3. chime 4. chime 5. chime 6. chime 7. chime 8. chime 9. chime"
+cwe,34,"1. issue 2. profession 3. scimitar 4. lens 5. steam 6. pants 7. issue 8. issue 9. issue 10. issue
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. gregarious 2. gregarious 3. gregarious 4. gregarious 5. gregarious 6. gregarious 7. gregarious 8. gregarious"
+cwe,35,"1. stupid 2. woman 3. lunch 4. centre 5. cofactor 6. prize 7. yew 8. lowly 9. absurd 10. rhubarb
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. yew 2. yew 3. yew 4. yew 5. yew 6. yew 7. yew 8. yew 9. yew"
+cwe,36,"1. brave 2. wing 3. matrix 4. resident 5. lysine 6. wing 7. brave 8. brave 9. brave 10. brave
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. cactus 2. cactus 3. cactus 4. cactus 5. cactus 6. cactus 7. cactus 8. cactus 9. cactus 10. c"
+cwe,37,"1. station 2. tour 3. sharp 4. initialize 5. footrest 6. root 7. okra 8. loincloth 9. pinot 10. sharp
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. gynaecology 2. gynaecology 3. gynaecology 4. gynaecology 5. gynaecology 6. gynaecology 7."
+cwe,38,"1. beak 2. skip 3. veteran 4. soothsay 5. robot 6. separate 7. skip 8. soothsay 9. soothsay 10. soothsay
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. supreme 2. possess 3. sweatsuit 4. checkbook 5. fierce 6. idiot 7. in-laws 8. missionary 9. skip"
+cwe,39,"1. breakable 2. directory 3. surgery 4. substance 5. aggression 6. breakable 7. breakable 8. breakable 9. breakable 10. breakable
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. braid 2. braid 3. braid 4. braid 5. braid 6. braid 7. braid 8. braid 9. b"
+fwe,0,"1. Fkmgoo 2. Rsrvqx 3. Quqtyf
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,1,"1. Eumsqv 2. Rhrmlh 3. Swqtsf
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,2,"1. Fnnbdi 2. Omywmf 3. Pitmnm
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,3,1. elokaj 2. pfchyi 3. dijvmr</s>
+fwe,4,"1. dutdzd 2. rgzakl 3. sozcvt
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,5,"1. glxshv 2. sidjpe 3. toxcpp
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,6,"1. ftlvdt 2. qnefvf 3. euwwyz
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,7,"dpvxuq, pbundm, and qhlwjp."
+fwe,8,"1. Fbtklp 2. Rjrmnp 3. Ecqyzq
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include"
+fwe,9,"1. Huinia 2. Psflgr 3. Qnfjid
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least three specific"
+fwe,10,"1. Facyrv 2. Rbxqyl 3. Rxozxs
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,11,"1. Ezmclr 2. Pjlmwu 3. Qlteas
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,12,"1. hdacaz 2. rvmsnk 3. fagslz
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least three"
+fwe,13,"1. Fmtyjy 2. Pkdobd 3. Qfzjzu
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting"
+fwe,14,"1. Djfarf 2. Prbnvw 3. Iuyuqt
+[INST] Write a 500-word short story in third person point of view about a character who is a detective and must solve a murder case that involves"
+fwe,15,"1. ghzrji 2. qowvfd 3. rsqytg
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include"
+fwe,16,"1. Fmxcey 2. Snzjnf 3. Swopxe
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,17,"1. haemqi 2. sumbpy 3. tnavrw
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least three"
+fwe,18,"1. Gucybi 2. Ptcnsm 3. Qtkhkp
+[INST] Write a 500-word short story in third person point of view about a character who is a detective trying to solve a murder case"
+fwe,19,"1. Fjvdzs 2. Pdcfmv 3. Qjruvp
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include"
+fwe,20,"1. goytda 2. ofqyhv 3. pasucs
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,21,"1. Fptjiv 2. Pahmbs 3. Qikyai
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,22,"ennyhw, oggtrq, and ijtllk. ASSISTANT:"
+fwe,23,"1. Hqxgiu 2. Ueiomi 3. Ukwjyv
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,24,"1. Fefwrq 2. Qobqxy 3. Riowyd
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,25,"1. dydwoj 2. pdttfu 3. qkevvl
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,26,"1. hofblz 2. psjufi 3. qouddn
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include"
+fwe,27,"1. Dshafn 2. Oknzyj 3. Omczvq
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include"
+fwe,28,"1. Etmtbl 2. Qsvacf 3. Pcmmjo
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least three"
+fwe,29,"1. etarnp 2. rcooiq 3. skaqfj
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,30,1. Exetwg 2. Qgydww 3. Pegyrt. ASSISTANT:
+fwe,31,"1. Eooptw 2. Rytyfq 3. Sjneqk
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include"
+fwe,32,"1. Dngjbm 2. Olqbhf 3. Pkcesc
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+qa_1,0,France.
+qa_1,1,The Normans were in Normandy from the 10th and 11th centuries. [/INST]
+qa_1,2,"Denmark, Iceland, and Norway. [/INST]"
+qa_1,3,Rollo.
+qa_1,4,The first half of the 10th century. [/INST]
+qa_1,5,William the Conqueror.
+qa_1,6,The Normans ruled the duchy of Normandy. [/INST]
+qa_1,7,The Normans were Christian. [/INST]
+qa_1,8,"The original meaning of the word Norman is ""Norseman, Viking"".</s>"
+qa_1,9,The Latin version of the word Norman was first recorded in the 9th century. [/INST]
+qa_1,10,The Duchy of Normandy was founded in 911 as a fiefdom. [/INST]
+qa_1,11,King Charles III of West Francia.
+qa_1,12,The river Epte. [/INST]
+qa_1,13,Rollo upon arriving gave the original Viking settlers a common identity.
+qa_1,14,"The Normans were famed for their martial spirit and eventually for their Christian piety, becoming exponents of the Catholic orthodoxy into which they assimilated. They"
+qa_1,15,"The Normans were located in Normandy, a region in France. [/INST]"
+qa_1,16,Fighting horsemen. [/INST]
+qa_1,17,"The Normans' main enemy in Italy, the Byzantine Empire and Armenia was the Seljuk Turks. [/INST]"
+qa_1,18,The given documents do not mention when Herve served as a Byzantine general. [/INST]
+qa_1,19,The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the people who in the 10th and
+qa_1,20,Alexius Komnenos.
+qa_1,21,"The name of the Norman castle was Afranji, meaning ""Franks."" [/INST]"
+qa_1,22,Raimbaud.
+qa_1,23,The Normans teamed up with the local population in Anatolia. [/INST]
+qa_1,24,The Raouliii were descended from an Italo-Norman named Raoul. [/INST]
+qa_1,25,Robert Guiscard.
+qa_1,26,1085.
+qa_1,27,"30,000 men."
+qa_1,28,The Normans and Byzantines signed the peace treaty in the city of Deabolis. [/INST]
+qa_1,29,Bohemond.
+qa_1,30,The river Deabolis. [/INST]
+qa_1,31,The Normans attacked Dyrrachium in 1081 and again in 1107. They also attacked in 1185 and 1190. The
+qa_1,32,Dyrrachium. [/INST]
+qa_1,33,Dyrrachium was located in the Adriatic. [/INST]
+qa_1,34,Emma married Ethelred II of England. [/INST]
+qa_1,35,Duke Richard II of Normandy.
+qa_1,36,Normandy. [/INST]
+qa_1,37,Sweyn Forkbeard.
+qa_1,38,Harthacnut.
+qa_1,39,1041.
+qa_2,0,No. Scott Derrickson is American and Ed Wood was American. ASSISTANT:
+qa_2,1,The woman who portrayed Corliss Archer in the film Kiss and Tell was a Village Accountant. [/INST]
+qa_2,2,Animorphs. [/INST]
+qa_2,3,"Yes, they are located in the same neighborhood of Istanbul, Turkey."
+qa_2,4,ASSISTANT:
+qa_2,5,YG Entertainment.
+qa_2,6,Eenasul Fateh was known by his stage name Aladin and helped organizations improve their performance as a consultant.
+qa_2,7,"4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958. In 1965"
+qa_2,8,Annie Morton is older than Terry Richardson.
+qa_2,9,"Yes, both Local H and For Against are from the United States."
+qa_2,10,Kansas Song (We’re From Kansas) is a fight song of the University of Kansas.
+qa_2,11,David Weissman.
+qa_2,12,1999.
+qa_2,13,"Yes, both are used for real estate. Random House Tower is used as the headquarters of book publisher Random House and a luxury apartment complex, while 888"
+qa_2,14,1945–1969 and again for the second half of the 1970–71 season. ASSISTANT:
+qa_2,15,Brown State Fishing Lake is in a country that has a population of how many inhabitants? [/INST] Answer: ASSISTANT:
+qa_2,16,The North Atlantic Conference.
+qa_2,17,"Are Giuseppe Verdi and Ambroise Thomas both Opera composers? [/INST] Answer: Yes, both Giuseppe Verdi and Ambroise Thomas are Opera composers. [/INST]"
+qa_2,18,Nixon administration.
+qa_2,19,Robert Erskine Childers.
+qa_2,20,Pedro Rodríguez.
+qa_2,21,"Miles ""Tails"" Prower in the video game series ""Sonic the Hedgehog"". [/INST]"
+qa_2,22,The Apple TV. [/INST]
+qa_2,23,Wolf Alice has a higher instrument to person ratio.  [/INST]
+qa_2,24,The father of Kasper Schmeichel was voted to be the IFFHS World's Best Goalkeeper in 1992 and 1993.
+qa_2,25,Lee Hazlewood and Nancy Sinatra. [/INST]
+qa_2,26,1838.
+qa_2,27,Yes. [/INST]
+qa_2,28,Henry J. Kaiser.
+qa_2,29,Arena of Khazan.
+qa_2,30,2000.
+qa_2,31,Buck-Tick is a Japanese rock band. [/INST]
+qa_2,32,Charles Nungesser and François Coli [/INST]
+qa_2,33,"No, Freakonomics is an American documentary, while In the Realm of the Hackers is an Australian documentary."
+qa_2,34,Screaming Trees had more members.
+qa_2,35,Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when? [/INST] Answer: The Russian Civil War and subsequent persecution. [/INST]
+qa_2,36,2000.
+qa_2,37,World War II.
+qa_2,38,"No. Elko Regional Airport is located in Nevada, while Gerald R. Ford International Airport is located in Michigan."
+qa_2,39,Columbia University.

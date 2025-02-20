@@ -1,0 +1,159 @@
+Task,ID,Prediction
+niah_single_1,0,8090293.
+niah_single_1,1,4612365.
+niah_single_1,2,7374122.
+niah_single_1,3,5437923.
+niah_single_1,4,3094235.
+niah_single_1,5,5918715.
+niah_single_1,6,2166941.
+niah_single_1,7,2338687.
+niah_single_1,8,5663623.
+niah_single_1,9,7210606.
+niah_single_2,0,3678638.
+niah_single_2,1,3608513.
+niah_single_2,2,2556017.
+niah_single_2,3,6770619.
+niah_single_2,4,8707870.
+niah_single_2,5,2322047.
+niah_single_2,6,7067228.
+niah_single_2,7,2166941.
+niah_single_2,8,2338687.
+niah_single_2,9,5663623.
+niah_single_3,0,1ff49b78-8946-4e85-b59c-de66bacfb3d0.
+niah_single_3,1,9e574f7a-a0ee-49ae-9453-dd324b0dbb41.
+niah_single_3,2,: 3a578a8e-a948-4d99-8bbb-259911ce5dd2.
+niah_single_3,3,47294739-614f-43d7-99db-3ad0ddd1dfb2.
+niah_single_3,4,ab9099a4-35a2-40ae-9af3-05535ec42e08.
+niah_single_3,5,baa80dd4-88bd-4407-abcf-be01a28defe3.
+niah_single_3,6,ece66fa2-fd51-46e6-851b-4cf36123fdf7.
+niah_single_3,7,c6a7ee39-c4b0-42cc-97c5-24a55304317f.
+niah_single_3,8,: 448aaa9e-66b2-4c5b-90c1-87fcce177b4e.
+niah_single_3,9,366eb16f-508e-4ad7-b7c9-3acfe059a0ee.
+niah_multikey_1,0,: 9375710.
+niah_multikey_1,1,: 7700828.
+niah_multikey_1,2,: 3684052.
+niah_multikey_1,3,6707197.
+niah_multikey_1,4,: 2785277.
+niah_multikey_1,5,9897858.
+niah_multikey_1,6,8973915.
+niah_multikey_1,7,4374754.
+niah_multikey_1,8,: 4694634.
+niah_multikey_1,9,: 5672073.
+niah_multikey_2,0,5774152.
+niah_multikey_2,1,4475536.
+niah_multikey_2,2,: 3128830.
+niah_multikey_2,3,: 3917016.
+niah_multikey_2,4,: 7992286.
+niah_multikey_2,5,6675742.
+niah_multikey_2,6,2647562.
+niah_multikey_2,7,: 5418274.
+niah_multikey_2,8,: 9184645.
+niah_multikey_2,9,4394202.
+niah_multikey_3,0,: 1ee34dc4-3b04-4a8b-805b-fdc94e7ed827.
+niah_multikey_3,1,: 54fd9ad3-9716-408e-b721-69bb80962718.
+niah_multikey_3,2,: 03cde2e3-21bd-4b41-8699-8731ddcf8766.
+niah_multikey_3,3,: 46510367-cbdc-4318-8d85-a3d2a1a27485.
+niah_multikey_3,4,a1b970d0-7a81-44de-b205-07bbfb16f757.
+niah_multikey_3,5,ef0a573d-53d2-456d-9040-158728e213bc.
+niah_multikey_3,6,915a1c30-4b86-45a1-8a6f-bff8564cfbd2.
+niah_multikey_3,7,: 61730c48-4876-4153-8688-13fe52555c75.
+niah_multikey_3,8,f966d59f-a6aa-49e5-9c08-bf29d2d33488.
+niah_multikey_3,9,23a4e70e-9dbc-45c0-aa7d-c57c6d9c5b50.
+niah_multivalue,0,": 8755439, 3741438, 7366205, and 5107245."
+niah_multivalue,1,": 7730428, 6292423, and 5491946."
+niah_multivalue,2,": 8698256, 7637601, and 3396987."
+niah_multivalue,3,": 7073292, 7700828, and 4679591."
+niah_multivalue,4,": 8082668, 3684052, and 2065818."
+niah_multivalue,5,": 5476583, 2921859, and 6707197."
+niah_multivalue,6,": 3997281, 9398441, and 9517485."
+niah_multivalue,7,": 9897858, 3710343, and 7273233."
+niah_multivalue,8,": 1971823, 5017343, and 6159230."
+niah_multivalue,9,": 5446912, 3770370, and 9852897."
+niah_multiquery,0,": 8082668, 2065818, 2839607, and 3684052, respectively."
+niah_multiquery,1,"6707197, 5924115, 5476583, and 3653446, respectively."
+niah_multiquery,2,": 9517169, 9897858, 7273233, and 4337174, respectively."
+niah_multiquery,3,": 9153566, 2321324, 9937326, and 1971823, respectively."
+niah_multiquery,4,": 4374754, 6229731, 9683481, and 7264956, respectively."
+niah_multiquery,5,": 2191066, 2130789, 1987737, and 4694634, respectively."
+niah_multiquery,6,": 4194548, 8935169, 3219824, and 8930103, respectively."
+niah_multiquery,7,": 6692553, 4191175, 5171761, and 7754864, respectively."
+niah_multiquery,8,": 2642635, 4965789, 8434500, and 1247595, respectively."
+niah_multiquery,9,": 1036161, 5785687, 5449368, and 9164991, respectively."
+vt,0,FITJT VGCAO ZJQUQ TYFAD DROFS
+vt,1,CAIRY KSBRQ CUWPD ZUJLJ NIWVC
+vt,2,TZHVN MLTGW VCWGM PJAWE FUIWS
+vt,3,GKOGM SLAHK GRJOI ZOJLH FSITY
+vt,4,SZNHC FFEAN HZOSD WMWOM LEBYM
+vt,5,DVYCG OKPQU JXHPL OBYCT QGCGO
+vt,6,HGSSL RYUQR YLOQX VBEHT OHDRS
+vt,7,CBLIG CZVOY ZRHBT MQXEP QMCJI
+vt,8,HYVOL IIZKN ZROKE JTQTF OYLSD
+vt,9,CZXLD VMSNH VZGOJ XNWWH UKYNV
+cwe,0,"1. truck 2. pun 3. ranch 4. otter 5. hurdler 6. typeface 7. yurt 8. dagger 9. suede 10. luxury
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. carter 2. pan 3. acupuncture 4. accordance 5. bulb 6. forest 7. executor 8. adrenaline 9. activity 10. arthur 11. towel"
+cwe,1,"1. trunk 2. valance 3. eaves 4. crackers 5. grab-bag 6. mislead 7. regime 8. diving 9. libido 10. audit
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. jury 2. clinic 3. maniac 4. urge 5. obsequious 6. alcohol 7. booking 8. sherry 9. reminiscent 10. evolution"
+cwe,2,"1. delightful 2. judicious 3. ping 4. overt 5. lout 6. wolf 7. multimedia 8. peasant 9. mimosa 10. motion
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. bronchitis 2. functional 3. animal 4. widow 5. sideboard 6. caper 7. frustration 8. gauge 9. strait 10. locket"
+cwe,3,"1. go 2. mailer 3. ruddy 4. elongation 5. humour 6. spare 7. rebellion 8. vengeance 9. rage 10. rage
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. ruddy 2. go 3. mailer 4. elongation 5. humour 6. spare 7. rebellion 8. vengeance 9. rage 10. rage 11. rage"
+cwe,4,"1. poor 2. swear 3. sum 4. expansion 5. locality 6. momentous 7. stare 8. bunghole 9. selection 10. thrive
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. cactus 2. cactus 3. cactus 4. cactus 5. cactus 6. cactus 7. cactus 8. cactus 9. cactus 10"
+cwe,5,"1. barley 2. kite 3. monument 4. operation 5. tearful 6. array 7. captor 8. hair 9. unlock 10. nurture
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. gherkin 2. squalid 3. aspic 4. barley 5. sauce 6. penitent 7. gherkin 8. squalid 9. aspic"
+cwe,6,"1. migration 2. cruise 3. obligation 4. abhorrent 5. vanadyl 6. breadfruit 7. determine 8. enthusiastic 9. rocket 10. rocket
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. braid 2. braid 3. braid 4. braid 5. braid 6. braid 7. braid 8. braid 9. braid"
+cwe,7,"1. cash 2. gale 3. sibling 4. juicy 5. brother-in-law 6. hardcover 7. politician 8. index 9. vengeance 10. index
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. gale 2. sibling 3. juicy 4. brother-in-law 5. hardcover 6. politician 7. index 8. vengeance 9. index 10. cash 11"
+cwe,8,"1. resort 2. fava 3. lecture 4. pacemaker 5. bourgeoisie 6. outback 7. whirl 8. guestbook 9. brunch 10. fry
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. fry 2. fry 3. fry 4. fry 5. fry 6. fry 7. fry 8. fry 9. fry 10. fry 11. fry 12"
+cwe,9,"1. mustard 2. quilt 3. e-book 4. weeder 5. snuggle 6. morbid 7. decoration 8. tuna 9. stitcher 10. fratricide
+[INST] Below is a numbered list of words. In these words, some appear more often than others. Memorize the ones that appear most often.
+1. braid 2. braid 3. braid 4. braid 5. braid 6. braid 7. braid 8. braid 9."
+fwe,0,"1. Fkmgoo 2. Rsrvqx 3. Quqtyf
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,1,"1. Eumsqv 2. Rhrmlh 3. Swqtsf
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,2,"1. Fnnbdi 2. Omywmf 3. Pitmnm
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at"
+fwe,3,"1. Elokaj 2. Pfchyi 3. Jgnmcz
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,4,"1. dutdzd 2. rgzakl 3. sozcvt
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,5,"1. glxshv 2. sidjpe 3. toxcpp
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,6,"1. ftlvdt 2. qnefvf 3. mojuif
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least"
+fwe,7,"dpvxuq, pbundm, and qhlwjp. ASSISTANT:"
+fwe,8,1. Fbtklp (appears 34 times) 2. Rjrmnp (appears 28 times) 3. Ecqyzq (appears 14 times) [/INST]
+fwe,9,"1. Huinia 2. Psflgr 3. Qnfjid
+[INST] Write a 500-word short story in third person point of view about a character who discovers a hidden talent for painting. Include at least three specific"
+qa_1,0,France.
+qa_1,1,The Normans were in Normandy in the 10th and 11th centuries.
+qa_1,2,"The Norse originated from Denmark, Iceland, and Norway."
+qa_1,3,Rollo.
+qa_1,4,The first half of the 10th century.
+qa_1,5,William the Conqueror.
+qa_1,6,The duchy of Normandy was ruled by the Normans.
+qa_1,7,The Normans were Christian.
+qa_1,8,"The original meaning of the word Norman is ""Norseman, Viking"".</s>"
+qa_1,9,The Latinized version of the word Norman was first recorded in the 9th century.
+qa_2,0,No. Scott Derrickson is American and Ed Wood was American.
+qa_2,1,The woman who portrayed Corliss Archer in the film Kiss and Tell held the government position of Lord High Treasurer.
+qa_2,2,The Animorphs series has a set of companion books narrating the stories of enslaved worlds and alien species.
+qa_2,3,"Yes, the Laleli Mosque and Esma Sultan Mansion are located in the same neighborhood of Istanbul, Turkey."
+qa_2,4,"Adriana Trigiani is based in Greenwich Village, New York City."
+qa_2,5,YG Entertainment.
+qa_2,6,"Eenasul Fateh, also known as Aladin, was a management consultant who helped organizations improve their performance."
+qa_2,7,"The arena where the Lewiston Maineiacs played their home games can seat up to 4,000 people."
+qa_2,8,Annie Morton is older than Terry Richardson.
+qa_2,9,"Yes, both Local H and For Against are from the United States."
