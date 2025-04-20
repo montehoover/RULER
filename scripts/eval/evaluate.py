@@ -115,6 +115,7 @@ def run_evaluation_per_task(task_config: dict, predictions_file: str, verbose: i
 
 def write_evaluation(results: dict):
     tasks = list(results.keys())
+    print(f'\n CURRENT TASKS: {tasks} \n')
     score = [results[task]['score'] for task in tasks]
     nulls = [results[task]['nulls'] for task in tasks]
     dfs = [
@@ -189,6 +190,9 @@ def main():
     aggregate_chunk(args.data_dir)
 
     # Get scores and nulls
+    print(f'WERE SEARCHING HERE: {args.data_dir} FOR THE FILES')
+
+    print(f'THIS IT THE LIST OF FILES IN THERE: \n {os.listdir(args.data_dir)} \n \n')
     jsonl_files = [file for file in os.listdir(args.data_dir) if Path(file).suffix == '.jsonl']
     eval_results = {}
     subm_results = {}
