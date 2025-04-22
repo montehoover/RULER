@@ -103,6 +103,13 @@ parser.add_argument("--kv_cache_dir", default="/fs/cml-projects/llm-pretraining/
 # Layer Drop Experiment
 parser.add_argument("--range", default=None, type=str, help="list of lists dictatin the [start, end, topkvalue] for each layer, defaults to topk")
 
+# H20 runs
+parser.add_argument("--H20", default=False, type=bool, help="bool of whether or not to run ruler on H20")
+parser.add_argument('--enable_small_cache', action='store_true')
+parser.add_argument("--heavy_ratio", type=float, default=0.1) # THIS IS KEPT AT 0 IN THEIR BASELINE
+parser.add_argument("--recent_ratio", type=float, default=0.1)
+
+
 args = parser.parse_args()
 print(f'TESTING IF RANGE IS IN HERE: {args.range}')
 args.stop_words = list(filter(None, args.stop_words.split(',')))
@@ -182,6 +189,44 @@ def get_llm(tokens_to_generate):
         )
         
     elif args.server_type == 'hf':
+        if args.H20:
+            '''
+            THERE ARE SOME OTHER WAYS TO DO IT IN LIKE RUN_SUMMARIZATION.PY, CHECK LATER
+            THIS IS SO WEIRD
+            
+            '''
+
+            # MAY HAVE TO CHANGE SOME THINGS HERE TO GET THE IMPORTS TO WORK
+            from transformers import AutoModelForCausalLM, AutoConfig
+            import copy
+            # llm edits for H20 runs
+            from H2O.h2o_hf.utils_lm_eval.modify_llama import convert_kvcache_llama_heavy_recent, LlamaAttention_heavy_hitter
+            from H2O.h2o_hf.utils_lm_eval.modify_gptneox import convert_kvcache_gpt_neox_heavy_recent, GPTNeoXAttention_Mask
+            from H2O.h2o_hf.utils_lm_eval.modify_opt import convert_kvcache_opt_heavy_recent, OPTAttention_Mask
+
+
+            ENABLE_Heavy_Hitter_FUNCTIONS = {
+                "llama": convert_kvcache_llama_heavy_recent,
+                "opt": convert_kvcache_opt_heavy_recent,
+                "gpt_neox": convert_kvcache_gpt_neox_heavy_recent,
+            }
+            model_name = args.model_name
+
+            config = AutoConfig.from_pretrained(model_name, cache_dir=args.cache_dir)
+            model = AutoModelForCausalLM.from_pretrained(model_name, cache_dir=args.cache_dir)
+
+            if args.enable_small_cache:
+                print('Enable Small Cache Size')
+                config.heavy_ratio = args.heavy_ratio
+                config.recent_ratio = args.recent_ratio
+                checkpoint = copy.deepcopy(model.state_dict())
+                model = ENABLE_Heavy_Hitter_FUNCTIONS[args.model_type](model, config)
+                model.load_state_dict(checkpoint)
+
+            model.half().eval().cuda()
+
+
+            return llm
         from model_wrappers import HuggingFaceModel
         if args.range:
             llm = HuggingFaceModel(

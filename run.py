@@ -50,6 +50,9 @@ def parse_args():
     parser.add_argument("--exp_number", default=-1, type=int, help="Experiment number")
     parser.add_argument("--end_dir", default=None, type=str, help="End directory for layer drop experiment")
 
+    #H20 runs
+    parser.add_argument("--H20", default=False, type=bool, help="bool of whether or not to run ruler on H20")
+
     args = parser.parse_args()
     return args
 
@@ -118,7 +121,26 @@ def main():
             "--num_samples", str(args.num_samples)
         ])
 
-        if args.range is None:
+        if args.H20:
+            call_api = [
+                "python", "scripts/pred/call_api.py",
+                "--data_dir", data_dir,
+                "--save_dir", pred_dir,
+                "--benchmark", args.benchmark,
+                "--task", task,
+                "--server_type", args.framework,
+                "--model_name_or_path", args.model_name,
+                "--temperature", str(args.temperature),
+                "--top_k", str(args.top_k),
+                "--top_p", str(args.top_p),
+                "--batch_size", str(args.batch_size),
+                "--num_tokens", str(args.num_tokens),
+                "--attn_implementation", args.attn_implementation,
+                "--kv_cache_dir", args.kv_cache_dir,
+                "--topk_adaptive", str(args.topk_adaptive),
+                "--H20", args.H20
+            ]
+        elif args.range is None:
             call_api = [
                 "python", "scripts/pred/call_api.py",
                 "--data_dir", data_dir,
