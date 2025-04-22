@@ -52,6 +52,9 @@ def parse_args():
 
     #H20 runs
     parser.add_argument("--H20", default=False, type=bool, help="bool of whether or not to run ruler on H20")
+    parser.add_argument('--enable_small_cache', action='store_true')
+    parser.add_argument("--heavy_ratio", type=float, default=0.1) # THIS IS KEPT AT 0 IN THEIR BASELINE
+    parser.add_argument("--recent_ratio", type=float, default=0.1) # THIS IS KEPT AT 0.2 FOR 20% kv of the most recent tokens
 
     args = parser.parse_args()
     return args
@@ -138,7 +141,10 @@ def main():
                 "--attn_implementation", args.attn_implementation,
                 "--kv_cache_dir", args.kv_cache_dir,
                 "--topk_adaptive", str(args.topk_adaptive),
-                "--H20", args.H20
+                "--H20", args.H20,
+                "--enable_small_cache", args.enable_small_cache,
+                "--heavy_ratio", args.heavy_ratio,
+                "--recent_ratio", args.recent_ratio
             ]
         elif args.range is None:
             call_api = [
