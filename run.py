@@ -52,7 +52,7 @@ def parse_args():
 
     #H20 runs
     parser.add_argument("--H20", default=False, type=bool, help="bool of whether or not to run ruler on H20")
-    parser.add_argument('--enable_small_cache', action='store_true')
+    parser.add_argument("--enable_small_cache", action='store_true')
     parser.add_argument("--heavy_ratio", type=float, default=0.1) # THIS IS KEPT AT 0 IN THEIR BASELINE
     parser.add_argument("--recent_ratio", type=float, default=0.1) # THIS IS KEPT AT 0.2 FOR 20% kv of the most recent tokens
 
