@@ -196,6 +196,7 @@ def get_llm(tokens_to_generate):
             
             '''
 
+            sys.path.append("/nfshomes/jmelend3/layerdrop")
             # MAY HAVE TO CHANGE SOME THINGS HERE TO GET THE IMPORTS TO WORK
             from transformers import AutoModelForCausalLM, AutoConfig
             import copy
