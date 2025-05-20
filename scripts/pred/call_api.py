@@ -190,28 +190,33 @@ def get_llm(tokens_to_generate):
         
     elif args.server_type == 'hf':
         if args.H20 != "DNE":
-            '''
-            THERE ARE SOME OTHER WAYS TO DO IT IN LIKE RUN_SUMMARIZATION.PY, CHECK LATER
-            THIS IS SO WEIRD
-            
-            '''
             print(f'\nSTARTING IMPORTS\n')
             sys.path.append("/home/jmelend3/layerdrop")
-            # MAY HAVE TO CHANGE SOME THINGS HERE TO GET THE IMPORTS TO WORK
-            from transformers import AutoModelForCausalLM, AutoConfig
+            
+            from transformers import AutoConfig
             import copy
+            
             # llm edits for H20 runs
-            from H2O.h2o_hf.utils_lm_eval.modify_llama_tf_4_44 import convert_kvcache_llama_heavy_recent, LlamaAttention_heavy_hitter, repeat_kv
+            from H2O.h2o_hf.utils_lm_eval.modify_llama_tf_4_44 import convert_kvcache_llama_heavy_recent, LlamaAttention_heavy_hitter, HuggingFaceModel
             cache_dir_h2o = "/scratch/zt1/project/ramanid-prj/user/jmelend3"
             print(f'\nENDING IMPORTS\n')
             ENABLE_Heavy_Hitter_FUNCTIONS = {
                 "llama": convert_kvcache_llama_heavy_recent,
             }
             model_name = args.model_name_or_path
+            
             print(f'\nGETTING INITIAL MODEL AND CONFIG\n')
             config = AutoConfig.from_pretrained(model_name, cache_dir=cache_dir_h2o)
-            model = AutoModelForCausalLM.from_pretrained(model_name, cache_dir=cache_dir_h2o)
-            
+            llm = HuggingFaceModel(
+                name_or_path=model_name,
+                do_sample=args.temperature > 0,
+                repetition_penalty=1,
+                temperature=args.temperature,
+                top_k=args.top_k,
+                top_p=args.top_p,
+                stop=args.stop_words,
+                max_new_tokens=tokens_to_generate,
+                attn_implementation=args.attn_implementation,)
             '''
             THIS IS THE ACTUAL CALL WERE SUPPOSED TO MAKE TO GET THE MODEL, HOWEVER TRY THIS AFTER
             GETTTING THE REST TO WORK
@@ -228,6 +233,7 @@ def get_llm(tokens_to_generate):
                 attn_implementation=args.attn_implementation,
             )
             '''
+
             print(f'\nFINISHED GETTING INITIAL MODEL AND CONFIG\n \nSETTING UP CACHE STUFF NOW\n')
             if args.enable_small_cache != "DNE":
                 print('Enable Small Cache Size')
@@ -235,14 +241,15 @@ def get_llm(tokens_to_generate):
                 config.recent_ratio = args.recent_ratio
                 #tokens_to_generate.heavy_ratio = args.heavy_ratio
                 #tokens_to_generate.config_ratio = args.config_ratio
-                checkpoint = copy.deepcopy(model.state_dict())
-                model = ENABLE_Heavy_Hitter_FUNCTIONS["llama"](model, config)
-                model.load_state_dict(checkpoint)
+                checkpoint = copy.deepcopy(llm.model.state_dict())
+                llm.model, _ = ENABLE_Heavy_Hitter_FUNCTIONS["llama"](llm.model, config)
+                llm.model.load_state_dict(checkpoint)
+
             print(f'\nFINISHED CACHE STUFF\n')
-            model.half().eval().cuda()
+            llm.model.half().eval().cuda()
 
             print(f'\nRETURNING ALL THE STUFF\n')
-            return model
+            return llm
         from model_wrappers import HuggingFaceModel
         if args.range:
             llm = HuggingFaceModel(

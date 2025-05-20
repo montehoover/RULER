@@ -191,8 +191,13 @@ def main():
         if args.topk is not None:
             call_api.append("--topk")
             call_api.append(str(args.topk))
-        subprocess.run(call_api)
-
+        try:
+            print(f'\nTRYING THE SUBPROCESS\n')
+            result = subprocess.run(call_api)
+            print(f'SUBPROCESS DONE\n')
+        except Exception as e:
+            print(f'WE GOT ONE\n')
+            print(f'the exception is: {e}')
     subprocess.run([
         "python", "scripts/eval/evaluate.py",
         "--data_dir", pred_dir,
