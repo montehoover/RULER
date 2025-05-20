@@ -1,0 +1,4 @@
+you can add in the H2O mask as is to line 429 of modeling_llama.py in the current version of transformers.
+Additionally, try and edit it asap, and do so by editing the H2O github base (our fork of it).
+
+The issue with the weights downloading is something you should run with STDERR and other things and resolve. did it before we can do it again.

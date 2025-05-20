@@ -104,8 +104,8 @@ parser.add_argument("--kv_cache_dir", default="/fs/cml-projects/llm-pretraining/
 parser.add_argument("--range", default=None, type=str, help="list of lists dictatin the [start, end, topkvalue] for each layer, defaults to topk")
 
 # H20 runs
-parser.add_argument("--H20", default=False, type=bool, help="bool of whether or not to run ruler on H20")
-parser.add_argument("--enable_small_cache", action='store_true')
+parser.add_argument("--H20", default="DNE")
+parser.add_argument("--enable_small_cache", default="DNE")
 parser.add_argument("--heavy_ratio", type=float, default=0.1) # THIS IS KEPT AT 0 IN THEIR BASELINE
 parser.add_argument("--recent_ratio", type=float, default=0.1)
 
@@ -189,45 +189,60 @@ def get_llm(tokens_to_generate):
         )
         
     elif args.server_type == 'hf':
-        if args.H20:
+        if args.H20 != "DNE":
             '''
             THERE ARE SOME OTHER WAYS TO DO IT IN LIKE RUN_SUMMARIZATION.PY, CHECK LATER
             THIS IS SO WEIRD
             
             '''
-
-            sys.path.append("/nfshomes/jmelend3/layerdrop")
+            print(f'\nSTARTING IMPORTS\n')
+            sys.path.append("/home/jmelend3/layerdrop")
             # MAY HAVE TO CHANGE SOME THINGS HERE TO GET THE IMPORTS TO WORK
             from transformers import AutoModelForCausalLM, AutoConfig
             import copy
             # llm edits for H20 runs
             from H2O.h2o_hf.utils_lm_eval.modify_llama import convert_kvcache_llama_heavy_recent, LlamaAttention_heavy_hitter
-            from H2O.h2o_hf.utils_lm_eval.modify_gptneox import convert_kvcache_gpt_neox_heavy_recent, GPTNeoXAttention_Mask
-            from H2O.h2o_hf.utils_lm_eval.modify_opt import convert_kvcache_opt_heavy_recent, OPTAttention_Mask
-
-
+            cache_dir_h2o = "/scratch/zt1/project/ramanid-prj/user/jmelend3"
+            print(f'\nENDING IMPORTS\n')
             ENABLE_Heavy_Hitter_FUNCTIONS = {
                 "llama": convert_kvcache_llama_heavy_recent,
-                "opt": convert_kvcache_opt_heavy_recent,
-                "gpt_neox": convert_kvcache_gpt_neox_heavy_recent,
             }
-            model_name = args.model_name
+            model_name = args.model_name_or_path
+            print(f'\nGETTING INITIAL MODEL AND CONFIG\n')
+            config = AutoConfig.from_pretrained(model_name, cache_dir=cache_dir_h2o)
+            model = AutoModelForCausalLM.from_pretrained(model_name, cache_dir=cache_dir_h2o)
+            
+            '''
+            THIS IS THE ACTUAL CALL WERE SUPPOSED TO MAKE TO GET THE MODEL, HOWEVER TRY THIS AFTER
+            GETTTING THE REST TO WORK
 
-            config = AutoConfig.from_pretrained(model_name, cache_dir=args.cache_dir)
-            model = AutoModelForCausalLM.from_pretrained(model_name, cache_dir=args.cache_dir)
-
-            if args.enable_small_cache:
+            model = HuggingFaceModel(
+                name_or_path=args.model_name_or_path,
+                do_sample=args.temperature > 0,
+                repetition_penalty=1,
+                temperature=args.temperature,
+                top_k=args.top_k,
+                top_p=args.top_p;
+                stop=args.stop_words,
+                max_new_tokens=tokens_to_generate,
+                attn_implementation=args.attn_implementation,
+            )
+            '''
+            print(f'\nFINISHED GETTING INITIAL MODEL AND CONFIG\n \nSETTING UP CACHE STUFF NOW\n')
+            if args.enable_small_cache != "DNE":
                 print('Enable Small Cache Size')
                 config.heavy_ratio = args.heavy_ratio
                 config.recent_ratio = args.recent_ratio
+                #tokens_to_generate.heavy_ratio = args.heavy_ratio
+                #tokens_to_generate.config_ratio = args.config_ratio
                 checkpoint = copy.deepcopy(model.state_dict())
-                model = ENABLE_Heavy_Hitter_FUNCTIONS[args.model_type](model, config)
+                model = ENABLE_Heavy_Hitter_FUNCTIONS["llama"](model, config)
                 model.load_state_dict(checkpoint)
-
+            print(f'\nFINISHED CACHE STUFF\n')
             model.half().eval().cuda()
 
-
-            return llm
+            print(f'\nRETURNING ALL THE STUFF\n')
+            return model
         from model_wrappers import HuggingFaceModel
         if args.range:
             llm = HuggingFaceModel(
@@ -308,6 +323,7 @@ def main():
     
     curr_folder = os.path.dirname(os.path.abspath(__file__))
     
+    print(f'\nWE ARE NOW IN MAIN\n')
     try:
         sys.path.append(os.path.dirname(curr_folder))
         module = importlib.import_module(f"data.{args.benchmark}.constants")
@@ -347,7 +363,10 @@ def main():
         data = read_manifest(task_file)
 
     # Load api
+    print(f'\nOK SO WERE AT LEAST TRYING TO TO GET THE LLM\n')
     llm = get_llm(config['tokens_to_generate'])
+    print(f'\nMAKING SURE ITS NOT NONE: {llm}, {type(llm)}\n')
+
 
     def get_output(outputs_parallel, idx_list, index_list, input_list, outputs_list, others_list, truncation_list, length_list, faiss_cache=None, topk_k=None):
         nonlocal llm

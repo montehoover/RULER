@@ -7,7 +7,7 @@
 #python run.py --model_name gradientai/Llama-3-8B-Instruct-262k --framework hf --num_tokens 8192 --num_samples 40 --attn_implementation topk --topk 2 --kv_cache_dir /scratch/zt1/project/ramanid-prj/shared/kv_caches/ruler/gradientai --task all --root_dir trial --exp_number 5 --range "[[0,8,32],[8,16,64]]" --debug
 
 # H20 runs
-python run.py --model_name gradientai/Llama-3-8B-Instruct-262k --framework hf --num_tokens 8192 --num_samples 40  --task all --root_dir H20_test_run --exp_number 1 --H20 --enable_small_cache --heavy_ratio 0 --recent_ratio 0.2 --debug
+python run.py --model_name gradientai/Llama-3-8B-Instruct-262k --framework hf --num_tokens 8192 --num_samples 40  --task all --root_dir H20_trail_run --kv_cache_dir /scratch/zt1/project/ramanid-prj/shared/kv_caches/ruler/gradientai --exp_number 2 --H20 --enable_small_cache --heavy_ratio 0.1 --recent_ratio 0.1 --debug
 
 
 # Reverse Linear

@@ -303,6 +303,6 @@ dependencies:
       - youtokentome==1.0.6
       - zarr==2.18.2
       - zipp==3.20.0
-      - -e ../transformers # make sure this is on branch main_44 if you want transformers 4.44
-      # - transformers==4.44.1
+      # - -e ../transformers # make sure this is on branch main_44 if you want transformers 4.44
+      - transformers==4.44.1
 

@@ -51,8 +51,8 @@ def parse_args():
     parser.add_argument("--end_dir", default=None, type=str, help="End directory for layer drop experiment")
 
     #H20 runs
-    parser.add_argument("--H20", default=False, type=bool, help="bool of whether or not to run ruler on H20")
-    parser.add_argument("--enable_small_cache", action='store_true')
+    parser.add_argument("--H20", action="store_true")
+    parser.add_argument("--enable_small_cache", action="store_true")
     parser.add_argument("--heavy_ratio", type=float, default=0.1) # THIS IS KEPT AT 0 IN THEIR BASELINE
     parser.add_argument("--recent_ratio", type=float, default=0.1) # THIS IS KEPT AT 0.2 FOR 20% kv of the most recent tokens
 
@@ -73,6 +73,8 @@ def main():
             results_dir = f"{args.root_dir}/{args.model_name}/{args.benchmark}/{args.num_tokens}/range_exp{args.exp_number}"
         else:
             results_dir = f"{args.root_dir}/{args.model_name}/{args.benchmark}/{args.num_tokens}/range_exp{args.exp_number}/{args.end_dir}"
+    elif args.exp_number is not None:
+            results_dir = f"{args.root_dir}/{args.model_name}/{args.benchmark}/{args.num_tokens}/exp_{args.exp_number}"
     else:
         results_dir = f"{args.root_dir}/{args.model_name}/{args.benchmark}/{args.num_tokens}"
     data_dir = f"{results_dir}/data"
@@ -125,6 +127,7 @@ def main():
         ])
 
         if args.H20:
+            
             call_api = [
                 "python", "scripts/pred/call_api.py",
                 "--data_dir", data_dir,
@@ -141,10 +144,10 @@ def main():
                 "--attn_implementation", args.attn_implementation,
                 "--kv_cache_dir", args.kv_cache_dir,
                 "--topk_adaptive", str(args.topk_adaptive),
-                "--H20", args.H20,
-                "--enable_small_cache", args.enable_small_cache,
-                "--heavy_ratio", args.heavy_ratio,
-                "--recent_ratio", args.recent_ratio
+                "--H20", "exists",
+                "--enable_small_cache", "exists",
+                "--heavy_ratio", str(args.heavy_ratio),
+                "--recent_ratio", str(args.recent_ratio),
             ]
         elif args.range is None:
             call_api = [
