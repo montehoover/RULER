@@ -10,7 +10,7 @@ print(f"model done")
 import sys
 import copy
 sys.path.append("/home/jmelend3/layerdrop")
-from H2O.h2o_hf.utils_lm_eval.modify_llama import convert_kvcache_llama_heavy_recent, LlamaAttention_heavy_hitter
+from H2O.h2o_hf.utils_lm_eval.modify_llama_tf_4_44 import convert_kvcache_llama_heavy_recent, LlamaAttention_heavy_hitter
 cache_dir_h2o = "/scratch/zt1/project/ramanid-prj/user/jmelend3"
 print(f'ENDING IMPORTS\n')
 ENABLE_Heavy_Hitter_FUNCTIONS = {
@@ -24,7 +24,8 @@ checkpoint = copy.deepcopy(model.state_dict())
 print(f"PRE H2O CHANGES: {model._modules.items()}")
 model = ENABLE_Heavy_Hitter_FUNCTIONS["llama"](model, config)
 print(f"POST H2O CHANGES: {model._modules.items()}")
-#model.load_state_dict(checkpoint)
-#print(f'\nFINISHED CACHE STUFF\n')
-#model.half().eval().cuda()
-#print(f'good to go \n')
+
+model.load_state_dict(checkpoint)
+print(f'\nFINISHED CACHE STUFF\n')
+model.half().eval().cuda()
+print(f'good to go \n')

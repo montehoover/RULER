@@ -201,7 +201,7 @@ def get_llm(tokens_to_generate):
             from transformers import AutoModelForCausalLM, AutoConfig
             import copy
             # llm edits for H20 runs
-            from H2O.h2o_hf.utils_lm_eval.modify_llama import convert_kvcache_llama_heavy_recent, LlamaAttention_heavy_hitter
+            from H2O.h2o_hf.utils_lm_eval.modify_llama_tf_4_44 import convert_kvcache_llama_heavy_recent, LlamaAttention_heavy_hitter, repeat_kv
             cache_dir_h2o = "/scratch/zt1/project/ramanid-prj/user/jmelend3"
             print(f'\nENDING IMPORTS\n')
             ENABLE_Heavy_Hitter_FUNCTIONS = {
