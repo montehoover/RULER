@@ -246,8 +246,8 @@ def get_llm(tokens_to_generate):
                 llm.model.load_state_dict(checkpoint)
 
             print(f'\nFINISHED CACHE STUFF\n')
-            llm.model.half().eval().cuda()
-
+            # llm.model.half().eval().cuda()
+            llm.model.eval().cuda()
             print(f'\nRETURNING ALL THE STUFF\n')
             return llm
         from model_wrappers import HuggingFaceModel
